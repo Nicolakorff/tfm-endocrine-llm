@@ -1,6 +1,7 @@
 # Sistema de Neuromodulación Endocrina para LLMs
 
 TFM - Máster en Grandes Modelos de Lenguaje y Lingüística Computacional
+Tutor - Matías Nuñez
 
 # README.md (actualizar sección demo)
 
