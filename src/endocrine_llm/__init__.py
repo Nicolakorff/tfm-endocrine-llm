@@ -22,3 +22,23 @@ __all__ = [
     'ExperimentRunner',
     'ResultVisualizer',
 ]
+
+__version__ = "0.2.0"
+
+from .core import (
+    HormoneProfile,
+    EndocrineModulatedLLM,
+    HORMONE_PROFILES
+)
+from .metrics import TextMetrics, AdvancedMetrics, EmpathyMetrics
+from .experiment import ExperimentRunner
+
+__all__ = [
+    'HormoneProfile',
+    'EndocrineModulatedLLM',
+    'HORMONE_PROFILES',
+    'TextMetrics',
+    'AdvancedMetrics',
+    'EmpathyMetrics',
+    'ExperimentRunner',
+]
