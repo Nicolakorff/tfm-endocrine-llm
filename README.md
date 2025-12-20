@@ -4,7 +4,7 @@ TFM - Máster en Grandes Modelos de Lenguaje y Lingüística Computacional
 
 ## 🚀 Demo Rápida
 
-[![Open In Colab](https://colab.research.google.com/drive/19o0i3AqptAxGdIdYMx0Q_mFjYGOwdcRY?usp=sharing)
+[![Open In Colab](https://colab.research.google.com/drive/19o0i3AqptAxGdIdYMx0Q_mFjYGOwdcRY#scrollTo=S66DBlI_MgQQ)
 
 Prueba el sistema directamente en tu navegador sin instalación.
 
