@@ -2,9 +2,11 @@
 
 TFM - Máster en Grandes Modelos de Lenguaje y Lingüística Computacional
 
+# README.md (actualizar sección demo)
+
 ## 🚀 Demo Rápida
 
-[![Open In Colab](https://colab.research.google.com/drive/19o0i3AqptAxGdIdYMx0Q_mFjYGOwdcRY?usp=sharing)]
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Nicolakorff/tfm-endocrine-llm/blob/main/examples/01_demo_basico.ipynb)
 
 Prueba el sistema directamente en tu navegador sin instalación.
 
