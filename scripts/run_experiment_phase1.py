@@ -2,24 +2,26 @@
 Experimento Fase 1: Evaluar efecto de hormonas individuales
 """
 
+from pathlib import Path
+
+import pandas as pd
+
 from endocrine_llm import (
     EndocrineModulatedLLM,
     HORMONE_PROFILES,
     ExperimentRunner
 )
-import pandas as pd
-from pathlib import Path
 
 # Configuración
 OUTPUT_DIR = Path("data/results")
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
 # Inicializar
-print("🧠 Inicializando modelo...")
+print(" Inicializando modelo...")
 model = EndocrineModulatedLLM("gpt2")  # o "gpt2-medium" si tienes GPU potente
 
 # Cargar prompts
-print("📝 Cargando prompts...")
+print(" Cargando prompts...")
 prompts_df = pd.read_csv("data/prompts/prompts_dataset.csv")
 prompts = prompts_df['prompt'].tolist()
 
@@ -36,7 +38,7 @@ profiles_phase1 = {
 }
 
 # Ejecutar experimento
-print("\n🧪 Ejecutando Fase 1...")
+print("\n Ejecutando Fase 1...")
 runner = ExperimentRunner(model, compute_advanced_metrics=True)
 
 runner.run_experiment(
@@ -48,14 +50,14 @@ runner.run_experiment(
 )
 
 # Guardar resultados
-print("\n💾 Guardando resultados...")
+print("\n Guardando resultados...")
 runner.save_results(
     json_path=str(OUTPUT_DIR / "phase1_results.json"),
     csv_path=str(OUTPUT_DIR / "phase1_results.csv")
 )
 
 # Mostrar estadísticas
-print("\n📊 ESTADÍSTICAS RESUMIDAS:")
+print("\n ESTADÍSTICAS RESUMIDAS:")
 summary = runner.get_summary_statistics()
 print(summary)
 
@@ -65,6 +67,6 @@ runner.export_examples(
     num_examples=3
 )
 
-print(f"\n✅ Fase 1 completada")
+print("\n  Fase 1 completada")
 print(f"   Total generaciones: {len(runner.results)}")
 print(f"   Resultados en: {OUTPUT_DIR}")

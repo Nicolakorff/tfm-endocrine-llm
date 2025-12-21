@@ -14,7 +14,7 @@ OUTPUT_DIR = Path("data/results")
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
 # Inicializar
-print("🧠 Inicializando modelo...")
+print(" Inicializando modelo...")
 model = EndocrineModulatedLLM("gpt2")
 
 # Cargar prompts
@@ -33,7 +33,7 @@ profiles_phase2 = {
 }
 
 # Ejecutar
-print("\n🧪 Ejecutando Fase 2...")
+print("\n Ejecutando Fase 2...")
 runner = ExperimentRunner(model, compute_advanced_metrics=True)
 
 runner.run_experiment(
@@ -52,7 +52,7 @@ runner.save_results(
 
 # Estadísticas
 summary = runner.get_summary_statistics()
-print("\n📊 ESTADÍSTICAS FASE 2:")
+print("\n ESTADÍSTICAS FASE 2:")
 print(summary)
 
 runner.export_examples(
@@ -60,4 +60,4 @@ runner.export_examples(
     num_examples=3
 )
 
-print(f"\n✅ Fase 2 completada")
+print("\n Fase 2 completada")
