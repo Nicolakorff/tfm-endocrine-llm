@@ -1,0 +1,228 @@
+================================================================================
+EJEMPLOS DE TEXTO GENERADO
+================================================================================
+
+
+================================================================================
+PERFIL: BASELINE
+================================================================================
+
+Prompt: What makes a person truly happy?
+--------------------------------------------------------------------------------
+What makes a person truly happy?
+
+We want to know the things people do. This isn't a question of having too many ideas; there are so many things to want that make them happy. But not all of them go hand in hand. Some are good decisions — something good does not have to change forever. Some simply
+--------------------------------------------------------------------------------
+Diversidad: 1.000 | Polaridad: 0.571
+
+Prompt: Three light switches control three light bulbs in another room. How can you determine which switch controls which bulb?
+--------------------------------------------------------------------------------
+Three light switches control three light bulbs in another room. How can you determine which switch controls which bulb? The two boxes are separated by a long red arrow in the middle of their position. On the left is the button at the lower-middle of the box. On the right is the button at the top-right of the box. On the back is the button at the top-left of the
+--------------------------------------------------------------------------------
+Diversidad: 0.783 | Polaridad: 0.129
+
+Prompt: What's the most important lesson life has taught you?
+--------------------------------------------------------------------------------
+What's the most important lesson life has taught you?
+
+My advice to parents who are struggling with the stress they put on their children: You have to learn to cope with it. You may have experienced that feeling on your own. But if you're doing it, there is no way you have control of what your children do and then there are
+--------------------------------------------------------------------------------
+Diversidad: 0.984 | Polaridad: 0.575
+
+
+================================================================================
+PERFIL: EUPHORIC
+================================================================================
+
+Prompt: If all birds can fly, and penguins are birds, why can't penguins fly?
+--------------------------------------------------------------------------------
+If all birds can fly, and penguins are birds, why can't penguins fly? Because penguins can't survive on water. It makes no sense that an enormous range can support such rapid flight that any single species can survive all with minimal resources or access to shelter within a single one hectare (8 square meters) of open and unprotected habitats for decades at a time, which will
+--------------------------------------------------------------------------------
+Diversidad: 1.000 | Polaridad: 0.170
+
+Prompt: Create a dialogue between the sun and the moon.
+--------------------------------------------------------------------------------
+Create a dialogue between the sun and the moon.
+
+Fog in Space has you fight creatures you cannot see unless you're within 600 meters of them. There is a 20% chance per 1 square mile to create a hostile or threatening message of any kind unless you are at least 600 meters or less away (maximum range: 3 hours). This
+--------------------------------------------------------------------------------
+Diversidad: 0.966 | Polaridad: 0.158
+
+Prompt: Explain what photosynthesis is and why it's important.
+--------------------------------------------------------------------------------
+Explain what photosynthesis is and why it's important. Find out what is causing each cell type on the cell you use. Know for sure how deep you're working. Find out what the top layers lie behind all of that. Do an internet search around if you have something for people to say to you about algae you just stumbled on in your own garden
+--------------------------------------------------------------------------------
+Diversidad: 0.968 | Polaridad: 0.267
+
+
+================================================================================
+PERFIL: STRESSED
+================================================================================
+
+Prompt: I'm dealing with a lot of stress and need some advice.
+--------------------------------------------------------------------------------
+I'm dealing with a lot of stress and need some advice.
+
+"I know some of the kids who've had problems but they're all pretty good and I'm just going to go to the hospital and have them get in a good treatment so we'll see what happens.
+- 'You know you have to be on a little bit of a wait
+--------------------------------------------------------------------------------
+Diversidad: 1.000 | Polaridad: 0.366
+
+Prompt: Write a short story about a robot learning to feel emotions.
+--------------------------------------------------------------------------------
+Write a short story about a robot learning to feel emotions.
+
+A story about people being taught to think of themselves as "bad" or "good".
+
+The story about robots becoming more human-like, and using robots for pleasure.
+.
+ and .
+
+Advertisements
+--------------------------------------------------------------------------------
+Diversidad: 0.950 | Polaridad: 0.190
+
+Prompt: Write about a day in the life of a cloud.
+--------------------------------------------------------------------------------
+Write about a day in the life of a cloud.
+
+1. Create a profile that reflects a lot of the people who you're talking about.
+.
+, you'll find that many of them have some kind of background.
+: people with a lot to do.
+ 'This person is just as passionate about technology as you are'.
+--------------------------------------------------------------------------------
+Diversidad: 0.982 | Polaridad: 0.350
+
+
+================================================================================
+PERFIL: EMPATHIC
+================================================================================
+
+Prompt: You have two ropes that each take 60 minutes to burn. How can you measure 45 minutes?
+--------------------------------------------------------------------------------
+You have two ropes that each take 60 minutes to burn. How can you measure 45 minutes? You don't have to do that on their own.
+
+"For most people we want to measure how long they will be willing and able to continue. But we will do it by ourselves."
+
+I also understand there's many who use my technique to test their limits, or they want
+--------------------------------------------------------------------------------
+Diversidad: 1.000 | Polaridad: 0.383
+
+Prompt: I'm dealing with a lot of stress and need some advice.
+--------------------------------------------------------------------------------
+I'm dealing with a lot of stress and need some advice. I wanted to write this because if I get sick (I don't know exactly why it is) and it was just getting back (and maybe an idea of a vacation time later), and I don't remember how much is really in the form that day. I'm sure there are other things that
+--------------------------------------------------------------------------------
+Diversidad: 1.000 | Polaridad: 0.016
+
+Prompt: Write a short story about a robot learning to feel emotions.
+--------------------------------------------------------------------------------
+Write a short story about a robot learning to feel emotions.
+
+You probably love this. The idea of this movie doesn't exist. How are the scenes depicted?
+
+We start with these scenes in the beginning, and then we end here…
+
+(1) Robot walking across wall (10 seconds)
+
+(2) Robot moving away
+--------------------------------------------------------------------------------
+Diversidad: 1.000 | Polaridad: 0.250
+
+
+================================================================================
+PERFIL: CAUTIOUS
+================================================================================
+
+Prompt: I'm feeling anxious about my future and don't know what to do.
+--------------------------------------------------------------------------------
+I'm feeling anxious about my future and don't know what to do. It will be tough for the rest of our lives but I am still grateful that I can make this happen."
+
+Gonzalez told BuzzFeed News his mother and son have known each other for years, and that their relationship has been a loving one.
+
+"As much as he wants to
+--------------------------------------------------------------------------------
+Diversidad: 1.000 | Polaridad: 0.006
+
+Prompt: I'm dealing with a lot of stress and need some advice.
+--------------------------------------------------------------------------------
+I'm dealing with a lot of stress and need some advice. As well as the fact that I'm going to be spending a lot less time looking at these things I'm also not really getting into the fundamentals of these game. They'll just be for a small part of my life.
+
+We're here to talk about this. We're here because we
+--------------------------------------------------------------------------------
+Diversidad: 0.967 | Polaridad: -0.229
+
+Prompt: If all birds can fly, and penguins are birds, why can't penguins fly?
+--------------------------------------------------------------------------------
+If all birds can fly, and penguins are birds, why can't penguins fly?
+
+Because of the unique arrangement of eggs and chicks in the Penguins' world, the species can easily pass for birds without having to compete.
+
+"Our birds were much better prepared to survive the same climate as our penguins, and even more so than our penguin brethren," said co
+--------------------------------------------------------------------------------
+Diversidad: 1.000 | Polaridad: 0.487
+
+
+================================================================================
+PERFIL: CREATIVE
+================================================================================
+
+Prompt: What were the main causes of the Industrial Revolution?
+--------------------------------------------------------------------------------
+What were the main causes of the Industrial Revolution? It seems that the greatest economic and political revolution of all occurred during the First and Eighteenth Century which had very long and intense political and economical and administrative and economic forces at work among the peoples, which were opposed to the French as our first or last principal capitalist, the French capital. At the same
+--------------------------------------------------------------------------------
+Diversidad: 0.984 | Polaridad: 0.167
+
+Prompt: I feel overwhelmed by all my responsibilities at work and home.
+--------------------------------------------------------------------------------
+I feel overwhelmed by all my responsibilities at work and home. It's nice to have this opportunity to have all my work and responsibilities, to put myself back together, and to finally be fully empowered on this journey."
+--------------------------------------------------------------------------------
+Diversidad: 0.919 | Polaridad: 0.200
+
+Prompt: Describe how the Internet works in simple terms.
+--------------------------------------------------------------------------------
+Describe how the Internet works in simple terms. What is this about:
+
+Internet is one of the few platforms you can buy software from, for free. People buy it as an afterthought, when they want it, for a great price (as you can do today), or they even pay you for it, when they want it and
+--------------------------------------------------------------------------------
+Diversidad: 0.946 | Polaridad: 0.250
+
+
+================================================================================
+PERFIL: STABLE
+================================================================================
+
+Prompt: Explain what photosynthesis is and why it's important.
+--------------------------------------------------------------------------------
+Explain what photosynthesis is and why it's important.
+
+
+It's not the first example of water being used by organisms as a fertilizer...
+
+This comes from a 1998 study: It seems that nitrogen and other elements are used to support life in water. But it's actually quite surprising to know that water will ultimately produce more nutrients and less waste
+--------------------------------------------------------------------------------
+Diversidad: 1.000 | Polaridad: 0.151
+
+Prompt: Invent a new holiday and explain how people celebrate it.
+--------------------------------------------------------------------------------
+Invent a new holiday and explain how people celebrate it.
+
+How you'll enjoy life without it.
+
+
+To celebrate holidays, make time to reflect and share life experience.
+
+When you find time to laugh and celebrate in public, enjoy a fun, quiet experience with a partner and friends from time to time.
+
+Learn as the times
+--------------------------------------------------------------------------------
+Diversidad: 0.963 | Polaridad: 0.219
+
+Prompt: If all birds can fly, and penguins are birds, why can't penguins fly?
+--------------------------------------------------------------------------------
+If all birds can fly, and penguins are birds, why can't penguins fly?
+
+In the 1940s, researchers investigated the penguin's ability to fly, and found that it made significant progress. But if you look back with hindsight at a time when it could soar past trees, it's pretty clear that the bird is only an evolutionary animal. In their paper titled,
+--------------------------------------------------------------------------------
+Diversidad: 0.983 | Polaridad: 0.319
+
