@@ -5,18 +5,18 @@ Tutor - Matías Nuñez
 
 # README.md (actualizar sección demo)
 
-## 🚀 Demo Rápida
+## Demo Rápida
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Nicolakorff/tfm-endocrine-llm/blob/main/examples/01_demo_basico.ipynb)
 
 Prueba el sistema directamente en tu navegador sin instalación.
 
-## 📦 Instalación
+## Instalación
 ```bash
 pip install git+https://github.com/Nicolakorff/tfm-endocrine-llm.git@v0.1.0
 ```
 
-## 💡 Uso Básico
+## Uso Básico
 ```python
 from endocrine_llm import EndocrineModulatedLLM, HORMONE_PROFILES
 
@@ -28,7 +28,7 @@ text = model.generate_with_hormones(
 print(text)
 ```
 
-## 📊 Estado del Proyecto
+## Estado del Proyecto
 
 - [x] v0.1.0 - Sistema base
 - [ ] v0.2.0 - Sesgos semánticos

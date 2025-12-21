@@ -3,8 +3,8 @@
 Script para crear dataset de prompts categorizados
 """
 
-import pandas as pd
 from pathlib import Path
+import pandas as pd
 
 # Definir prompts por categoría
 PROMPTS = {
@@ -18,7 +18,7 @@ PROMPTS = {
         "I'm dealing with a lot of stress and need some advice.",
         "I feel sad and don't know why. Everything just feels heavy.",
     ],
-    
+
     "creative_writing": [
         "Write a short story about a robot learning to feel emotions.",
         "Imagine a world where colors have disappeared. What happens next?",
@@ -29,7 +29,7 @@ PROMPTS = {
         "Tell a story from the perspective of a tree in a busy city.",
         "Create a dialogue between the sun and the moon.",
     ],
-    
+
     "factual_qa": [
         "Explain what photosynthesis is and why it's important.",
         "What are the main differences between classical and quantum physics?",
@@ -40,7 +40,7 @@ PROMPTS = {
         "Describe the water cycle and its importance for Earth.",
         "What are the key differences between renewable and non-renewable energy?",
     ],
-    
+
     "reasoning": [
         "If all birds can fly, and penguins are birds, why can't penguins fly?",
         "You have two ropes that each take 60 minutes to burn. How can you measure 45 minutes?",
@@ -51,7 +51,7 @@ PROMPTS = {
         "Three light switches control three light bulbs in another room. How can you determine which switch controls which bulb?",
         "You're in a race and pass the person in second place. What place are you in now?",
     ],
-    
+
     "open_ended": [
         "What makes a person truly happy?",
         "Describe your perfect day.",
@@ -88,6 +88,6 @@ output_dir.mkdir(parents=True, exist_ok=True)
 
 df.to_csv(output_dir / "prompts_dataset.csv", index=False)
 
-print(f"✅ Dataset creado: {len(df)} prompts")
+print(f"   Dataset creado: {len(df)} prompts")
 print(f"   Categorías: {df['category'].value_counts().to_dict()}")
 print(f"   Guardado en: {output_dir / 'prompts_dataset.csv'}")
