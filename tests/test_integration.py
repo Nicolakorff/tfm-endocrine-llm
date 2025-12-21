@@ -1,12 +1,12 @@
 """Tests de integración end-to-end"""
 import pytest
+import pandas as pd
 from endocrine_llm import (
     EndocrineModulatedLLM,
     HORMONE_PROFILES,
     ExperimentRunner,
     TextMetrics
 )
-import pandas as pd
 
 
 def test_full_pipeline():
