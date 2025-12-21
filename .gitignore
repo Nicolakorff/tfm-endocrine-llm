@@ -15,10 +15,9 @@ build/
 *.ipynb_checkpoints
 
 # Data
-data/results/*
-!data/results/.gitkeep
-*.json
-*.csv
+# data/results/*
+# !data/results/.gitkeep
+## Elimina las reglas globales para ignorar todos los .json y .csv
 !data/prompts/prompts_dataset.csv
 
 # IDEs
