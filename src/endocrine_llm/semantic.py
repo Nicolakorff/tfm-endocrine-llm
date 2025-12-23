@@ -134,7 +134,7 @@ class SemanticBiasManager:
                 ]
             )
         }
-        
+
         return categories
 
     def _precompute_category_embeddings(self):
@@ -188,7 +188,7 @@ class SemanticBiasManager:
                 show_progress_bar=False
             )
             category.embedding = embeddings.mean(dim=0)
-        
+
         self.categories[name] = category
         print(f" Categoría '{name}' añadida")
 
@@ -287,7 +287,7 @@ class SemanticBiasManager:
                 ).to(self.device)
 
             # Calcular similitud coseno
-            similarities = F.cosine_similarity(
+            similarities = torch.nn.functional.cosine_similarity(
                 batch_embeddings,
                 target_embedding.unsqueeze(0),
                 dim=1
@@ -333,7 +333,7 @@ class SemanticBiasManager:
         # Calcular similitud con cada categoría
         similarities = {}
         for name, category in self.categories.items():
-            sim = F.cosine_similarity(
+            sim = torch.nn.functional.cosine_similarity(
                 text_embedding.unsqueeze(0),
                 category.embedding.unsqueeze(0),
                 dim=1
