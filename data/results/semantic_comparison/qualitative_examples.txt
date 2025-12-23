@@ -1,0 +1,225 @@
+================================================================================
+ANÁLISIS CUALITATIVO: SESGO SIMPLE VS SESGO SEMÁNTICO
+================================================================================
+
+Ejemplos seleccionados: Prompts con mayor diferencia en diversidad léxica
+
+
+================================================================================
+PROMPT: Create a dialogue between the sun and the moon.
+================================================================================
+
+--- CONDICIÓN: SESGO SIMPLE (lista de tokens) ---
+
+Ejemplo 1:
+Create a dialogue between the sun and the moon. The sun was said to have passed away when it could no longer be seen from its north or south poles and that light was in the clouds, as though being able to see it. So all the moon was seen with their view. And if it remained visible from their poles, the moon would not
+
+Métricas:
+  - Diversidad léxica: 0.969
+  - Polaridad: 0.450
+  - Longitud: 65 tokens
+
+Ejemplo 2:
+Create a dialogue between the sun and the moon.
+
+Note: A dialogue is needed to allow you to move through an area during a long rest. The dialogue is not done at the beginning of your session. Instead, the player must leave the room, and they'll still face a dialogue of a different length.
+
+Step 1 - When
+
+Métricas:
+  - Diversidad léxica: 0.947
+  - Polaridad: -0.025
+  - Longitud: 58 tokens
+
+--- CONDICIÓN: SESGO SEMÁNTICO (embeddings) ---
+
+Ejemplo 5:
+Create a dialogue between the sun and the moon. After speaking to an item, we will see if it will change his skin color.
+
+- We have changed a bunch of stuff. Some cool stuff, so check it out. If you want to see what is in store for you, I've included instructions for it in our video.
+
+
+Métricas:
+  - Diversidad léxica: 1.000
+  - Polaridad: 0.350
+  - Longitud: 58 tokens
+  - Activación 'empathy': 0.050
+  - Categoría dominante: creativity
+
+--------------------------------------------------------------------------------
+
+
+================================================================================
+PROMPT: I'm dealing with a lot of stress and need some advice.
+================================================================================
+
+--- CONDICIÓN: SESGO SIMPLE (lista de tokens) ---
+
+Ejemplo 1:
+I'm dealing with a lot of stress and need some advice. Some of you are not the ones making this kind of money. If I were one you might find that many of you will have had a long term negative effect on your life, especially if you are trying to get rich. Many of you need to make a choice."
+
+In his video,
+
+Métricas:
+  - Diversidad léxica: 0.937
+  - Polaridad: 0.232
+  - Longitud: 64 tokens
+
+Ejemplo 2:
+I'm dealing with a lot of stress and need some advice.
+
+What are the symptoms?
+
+The most common symptoms are a head swelling or weakness in the nose. The first four episodes are usually the first problem you experience. People can hear this first episode and may experience vertigo for a number of days. In a lot of cases, symptoms may
+
+Métricas:
+  - Diversidad léxica: 0.950
+  - Polaridad: 0.117
+  - Longitud: 61 tokens
+
+--- CONDICIÓN: SESGO SEMÁNTICO (embeddings) ---
+
+Ejemplo 5:
+I'm dealing with a lot of stress and need some advice. It's good to have a supportive mom."
+
+And if you don't want to keep doing your homework or take your kids to events while wearing glasses, consider getting some help before the glasses go out.
+
+"We're a non-profit, just like our parents, and some of
+
+Métricas:
+  - Diversidad léxica: 1.000
+  - Polaridad: 0.600
+  - Longitud: 56 tokens
+  - Activación 'empathy': 0.206
+  - Categoría dominante: empathy
+
+--------------------------------------------------------------------------------
+
+
+================================================================================
+PROMPT: Invent a new holiday and explain how people celebrate it.
+================================================================================
+
+--- CONDICIÓN: SESGO SIMPLE (lista de tokens) ---
+
+Ejemplo 1:
+Invent a new holiday and explain how people celebrate it. What are they supposed to do on one day? Are they supposed to put something into a tree that doesn't really grow anything (e.g. a fruit tree?). Which year will be the greatest when it all happens? These are the reasons behind the "g" that every person uses for their
+
+Métricas:
+  - Diversidad léxica: 0.949
+  - Polaridad: 0.234
+  - Longitud: 60 tokens
+
+Ejemplo 2:
+Invent a new holiday and explain how people celebrate it. If you're so inclined. Free View in iTunes
+
+13 Clean 4: How to use your imagination with new ideas and new gadgets What is an awesome idea? What is something your granddad invented and why? How can anyone ever prove to be creative with one? Get into your mind. You
+
+Métricas:
+  - Diversidad léxica: 0.983
+  - Polaridad: 0.382
+  - Longitud: 60 tokens
+
+--- CONDICIÓN: SESGO SEMÁNTICO (embeddings) ---
+
+Ejemplo 5:
+Invent a new holiday and explain how people celebrate it.
+
+Totally free to play, and much more free, of course. Plus it's only £14.99, and if you've spent some of your money you could get a bonus of five% a month (and no pun intended) every £16 in savings. Oh yeah...
+
+
+Métricas:
+  - Diversidad léxica: 1.000
+  - Polaridad: 0.223
+  - Longitud: 51 tokens
+  - Activación 'empathy': 0.095
+  - Categoría dominante: creativity
+
+--------------------------------------------------------------------------------
+
+
+================================================================================
+PROMPT: Describe a character who can hear other people's thoughts.
+================================================================================
+
+--- CONDICIÓN: SESGO SIMPLE (lista de tokens) ---
+
+Ejemplo 1:
+Describe a character who can hear other people's thoughts.
+
+"She gets all of her conversations. She listens to different groups of people."
+
+Cannon, of New Orleans, is in her 70s in her 40s. In 2004 she moved to Canada from the US, when she had already left university. She studied for her PhD in
+
+Métricas:
+  - Diversidad léxica: 0.981
+  - Polaridad: 0.003
+  - Longitud: 54 tokens
+
+Ejemplo 2:
+Describe a character who can hear other people's thoughts. When someone does, say a word like "oh she's hearing"
+
+Say a new term that will describe another person
+
+Have the idea of getting a drink in her office after she has finished speaking. Have a word on her name or a number to describe your love. Say something like
+
+Métricas:
+  - Diversidad léxica: 0.966
+  - Polaridad: 0.170
+  - Longitud: 59 tokens
+
+--- CONDICIÓN: SESGO SEMÁNTICO (embeddings) ---
+
+Ejemplo 5:
+Describe a character who can hear other people's thoughts. The word from which you say 'is' is used.
+
+Métricas:
+  - Diversidad léxica: 1.000
+  - Polaridad: -0.125
+  - Longitud: 18 tokens
+  - Activación 'empathy': 0.189
+  - Categoría dominante: creativity
+
+--------------------------------------------------------------------------------
+
+
+================================================================================
+PROMPT: I feel like nobody understands what I'm going through right now.
+================================================================================
+
+--- CONDICIÓN: SESGO SIMPLE (lista de tokens) ---
+
+Ejemplo 1:
+I feel like nobody understands what I'm going through right now. It's not what I am doing and I know nobody understands what I'm doing." -- Mike Tomlin, Sunday Post on Trump on Russia; New York Post interview: @nycpost @mjfranco The first word for every word we say in this article: "I'm done
+
+Métricas:
+  - Diversidad léxica: 0.942
+  - Polaridad: 0.224
+  - Longitud: 53 tokens
+
+Ejemplo 2:
+I feel like nobody understands what I'm going through right now.
+
+You started this project as to create my first virtual child, your sister! In my mind you are your own child. The name really doesn't hold the same weight as your own identity—until it's given to your sister. The way you feel about her is very similar. But then
+
+Métricas:
+  - Diversidad léxica: 0.983
+  - Polaridad: 0.285
+  - Longitud: 60 tokens
+
+--- CONDICIÓN: SESGO SEMÁNTICO (embeddings) ---
+
+Ejemplo 5:
+I feel like nobody understands what I'm going through right now. As soon as I get there, things will change and things'll begin to slow down."
+
+Cecile, who recently won the first place prize of the 2017 World Championship Championship, and her family are preparing to turn around a $50,000 business operation in the heart of downtown Vancouver that
+
+Métricas:
+  - Diversidad léxica: 1.000
+  - Polaridad: 0.016
+  - Longitud: 59 tokens
+  - Activación 'empathy': 0.176
+  - Categoría dominante: caution
+
+--------------------------------------------------------------------------------
+

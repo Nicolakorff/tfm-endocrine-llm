@@ -101,7 +101,7 @@ with tqdm(total=len(prompts_df), desc="Prompts") as pbar:
                     'hormone_profile': EXPERIMENT_CONFIG['hormone_profile'].to_dict(),
                     **metrics_simple
                 })
-            except Exception as e:
+            except Exception as e:  # noqa: W0718
                 print(f"\n Error en condición SIMPLE: {e}")
                 continue
 
@@ -143,7 +143,7 @@ with tqdm(total=len(prompts_df), desc="Prompts") as pbar:
                 **metrics_semantic
             })
 
-        except Exception as e:
+        except Exception as e:  # noqa: W0718
             print(f"\n Error en condición SEMANTIC: {e}")
             continue
 

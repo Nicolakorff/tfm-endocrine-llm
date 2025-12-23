@@ -28,6 +28,30 @@ text = model.generate_with_hormones(
 print(text)
 ```
 
+## Novedad: Sesgos Semánticos
+
+El sistema ahora soporta sesgos semánticos basados en embeddings:
+```python
+from endocrine_llm import EndocrineModulatedLLM, HORMONE_PROFILES
+
+model = EndocrineModulatedLLM("gpt2")
+
+# Generación con sesgo semántico
+texts = model.generate_with_semantic_bias(
+    prompt="I'm feeling anxious",
+    hormone_profile=HORMONE_PROFILES["empathic"],
+    semantic_category="empathy",  # 🆕 Basado en similitud semántica
+    semantic_strength=1.5
+)
+```
+
+**Ventajas:**
+- Afecta ~1000 tokens vs ~15 del sesgo simple
+- Mayor cobertura semántica
+- Más flexible (añadir categorías custom)
+
+Ver [documentación completa](docs/semantic_bias_results.md).
+
 ## Estado del Proyecto
 
 - [x] v0.1.0 - Sistema base
