@@ -96,8 +96,7 @@ class SemanticBiasManager:
                     "imagine a fantastical world full of wonder",
                     "let's think outside the box with innovative ideas",
                     "picture something original and artistic",
-                    "envision creative possibilities and unique concepts",
-                    "explore imaginative and inventive approaches"
+                    "envision creative possibilities and unique concepts"
                 ]
             ),
 
@@ -180,6 +179,7 @@ class SemanticBiasManager:
         category = SemanticCategory(name=name, examples=examples)
 
         # Computar embedding
+
         with torch.no_grad():
             embeddings = self.sbert.encode(
                 examples,
