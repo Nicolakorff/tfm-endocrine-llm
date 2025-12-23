@@ -329,89 +329,89 @@ class EndocrineModulatedLLM:
         return [self.tokenizer.decode(out, skip_special_tokens=True) for out in outputs]
 
 
-# Sesgos Semánticos
-def generate_with_semantic_bias(
-    self,
-    prompt: str,
-    hormone_profile: HormoneProfile,
-    semantic_category: str,
-    semantic_strength: float = 1.0,
-    max_new_tokens: int = 50,
-    num_return_sequences: int = 1,
-) -> List[str]:
-    """
-    Genera texto con modulación hormonal + sesgo semántico.
 
-    Args:
-        prompt: Texto de entrada
-        hormone_profile: Configuración hormonal
-        semantic_category: Categoría semántica ('empathy', 'creativity', etc.)
-        semantic_strength: Fuerza del sesgo semántico
-        max_new_tokens: Tokens máximos
-        num_return_sequences: Número de secuencias
+    def generate_with_semantic_bias(
+        self,
+        prompt: str,
+        hormone_profile: HormoneProfile,
+        semantic_category: str,
+        semantic_strength: float = 1.0,
+        max_new_tokens: int = 50,
+        num_return_sequences: int = 1,
+    ) -> List[str]:
+        """
+        Genera texto con modulación hormonal + sesgo semántico.
 
-    Returns:
-        Lista de textos generados
+        Args:
+            prompt: Texto de entrada
+            hormone_profile: Configuración hormonal
+            semantic_category: Categoría semántica ('empathy', 'creativity', etc.)
+            semantic_strength: Fuerza del sesgo semántico
+            max_new_tokens: Tokens máximos
+            num_return_sequences: Número de secuencias
 
-    Example:
-        >>> texts = model.generate_with_semantic_bias(
-        ...     "I'm feeling sad",
-        ...     HORMONE_PROFILES["empathic"],
-        ...     semantic_category="empathy",
-        ...     semantic_strength=1.5
-        ... )
-    """
-    # Lazy import para evitar dependencia obligatoria
-    from .semantic import SemanticBiasManager, SemanticLogitsProcessor
+        Returns:
+            Lista de textos generados
 
-    # Crear semantic manager si no existe
-    if not hasattr(self, 'semantic_manager'):
-        print("   Inicializando SemanticBiasManager...")
-        self.semantic_manager = SemanticBiasManager(
-            self.tokenizer,
-            device=self.device
+        Example:
+            >>> texts = model.generate_with_semantic_bias(
+            ...     "I'm feeling sad",
+            ...     HORMONE_PROFILES["empathic"],
+            ...     semantic_category="empathy",
+            ...     semantic_strength=1.5
+            ... )
+        """
+        # Lazy import para evitar dependencia obligatoria
+        from .semantic import SemanticBiasManager, SemanticLogitsProcessor
+
+        # Crear semantic manager si no existe
+        if not hasattr(self, 'semantic_manager'):
+            print("   Inicializando SemanticBiasManager...")
+            self.semantic_manager = SemanticBiasManager(
+                self.tokenizer,
+                device=self.device
+            )
+
+        # Construir procesadores
+        hormonal_processor = HormonalLogitsProcessor(
+            hormone_profile=hormone_profile,
+            empathetic_tokens=self.empathetic_tokens
         )
 
-    # Construir procesadores
-    hormonal_processor = HormonalLogitsProcessor(
-        hormone_profile=hormone_profile,
-        empathetic_tokens=self.empathetic_tokens
-    )
+        semantic_processor = SemanticLogitsProcessor(
+            semantic_manager=self.semantic_manager,
+            category=semantic_category,
+            strength=semantic_strength
+        )
 
-    semantic_processor = SemanticLogitsProcessor(
-        semantic_manager=self.semantic_manager,
-        category=semantic_category,
-        strength=semantic_strength
-    )
+        processors = [hormonal_processor, semantic_processor]
 
-    processors = [hormonal_processor, semantic_processor]
+        if hormone_profile.cortisol >= 0.6:
+            processors.append(NoRepeatNGramLogitsProcessor(3))
 
-    if hormone_profile.cortisol >= 0.6:
-        processors.append(NoRepeatNGramLogitsProcessor(3))
+        logits_processor = LogitsProcessorList(processors)
 
-    logits_processor = LogitsProcessorList(processors)
+        # Preparar inputs
+        inputs = self.tokenizer(
+            prompt,
+            return_tensors="pt",
+            padding=True,
+            truncation=True
+        )
+        inputs = {k: v.to(self.device) for k, v in inputs.items()}
 
-    # Preparar inputs
-    inputs = self.tokenizer(
-        prompt,
-        return_tensors="pt",
-        padding=True,
-        truncation=True
-    )
-    inputs = {k: v.to(self.device) for k, v in inputs.items()}
+        # Generar
+        outputs = self.model.generate(
+            input_ids=inputs["input_ids"],
+            attention_mask=inputs["attention_mask"],
+            max_new_tokens=max_new_tokens,
+            num_return_sequences=num_return_sequences,
+            do_sample=True,
+            top_k=50,
+            top_p=0.95,
+            logits_processor=logits_processor,
+            pad_token_id=self.tokenizer.pad_token_id,
+            eos_token_id=self.tokenizer.eos_token_id,
+        )
 
-    # Generar
-    outputs = self.model.generate(
-        input_ids=inputs["input_ids"],
-        attention_mask=inputs["attention_mask"],
-        max_new_tokens=max_new_tokens,
-        num_return_sequences=num_return_sequences,
-        do_sample=True,
-        top_k=50,
-        top_p=0.95,
-        logits_processor=logits_processor,
-        pad_token_id=self.tokenizer.pad_token_id,
-        eos_token_id=self.tokenizer.eos_token_id,
-    )
-
-    return [self.tokenizer.decode(out, skip_special_tokens=True) for out in outputs]
+        return [self.tokenizer.decode(out, skip_special_tokens=True) for out in outputs]

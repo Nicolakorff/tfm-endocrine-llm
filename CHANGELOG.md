@@ -1,3 +1,22 @@
+## [0.4.0] - 2025-01-06
+
+### Added
+- Sistema de sesgos semánticos basados en Sentence-BERT embeddings
+- SemanticBiasManager para gestionar categorías semánticas
+- SemanticLogitsProcessor compatible con API existente
+- Experimento comparativo sesgo simple vs semántico
+- Análisis estadístico completo con visualizaciones
+- Tablas LaTeX para TFM
+- 5 categorías semánticas predefinidas (empathy, creativity, factual, caution, enthusiasm)
+- Soporte para categorías custom
+
+### Changed
+- EndocrineModulatedLLM ahora incluye método `generate_with_semantic_bias()`
+- Mejorada documentación con resultados experimentales
+
+### Experimental
+- Sistema de sesgos semánticos (puede requerir ajuste de parámetros)
+
 ## [0.3.0] - 2024-12-30
 
 ### Added

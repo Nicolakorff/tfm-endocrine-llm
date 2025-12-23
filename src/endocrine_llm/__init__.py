@@ -44,3 +44,19 @@ __all__ = [
 ]
 
 __version__ = "0.3.0"
+
+__version__ = "0.4.0"
+
+# Añadir imports semánticos
+from .semantic import (
+    SemanticBiasManager,
+    SemanticLogitsProcessor,
+    analyze_semantic_activation
+)
+
+__all__ = [
+    # ... existentes ...
+    'SemanticBiasManager',
+    'SemanticLogitsProcessor',
+    'analyze_semantic_activation',
+]
