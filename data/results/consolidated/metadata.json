@@ -1,0 +1,42 @@
+{
+  "total_generations": 2600,
+  "experiments": {
+    "phase2": 1400,
+    "phase1": 1200
+  },
+  "profiles": {
+    "baseline": 400,
+    "high_dopamine": 200,
+    "high_cortisol": 200,
+    "high_oxytocin": 200,
+    "high_adrenaline": 200,
+    "high_serotonin": 200,
+    "euphoric": 200,
+    "stressed": 200,
+    "empathic": 200,
+    "cautious": 200,
+    "creative": 200,
+    "stable": 200
+  },
+  "columns": [
+    "experiment",
+    "prompt",
+    "profile_name",
+    "generated_text",
+    "generation_idx",
+    "length",
+    "distinct_1",
+    "distinct_2",
+    "distinct_3",
+    "repetition_rate",
+    "sentiment_polarity",
+    "sentiment_subjectivity",
+    "perplexity",
+    "rouge_l",
+    "entropy",
+    "prompt_category",
+    "semantic_activation_empathy",
+    "condition"
+  ],
+  "date_created": "2025-12-24T18:33:07.127825"
+}

@@ -1,0 +1,14 @@
+hormone,metric,correlation,p_value,strength,direction
+dopamine,distinct_2,0.13314615168835608,9.344655016859056e-12,débil,positiva
+dopamine,perplexity,0.44904550828264733,3.1369724930833135e-129,moderada,positiva
+cortisol,distinct_2,-0.07988173204609783,4.547481979446536e-05,débil,negativa
+cortisol,repetition_rate,-0.060669361324993495,0.001968752617734503,débil,negativa
+cortisol,perplexity,-0.43949258772147987,2.9660087658741582e-123,moderada,negativa
+oxytocin,distinct_2,0.05077850111395817,0.009607879790733522,débil,positiva
+oxytocin,perplexity,0.12068206125219492,6.691443166128648e-10,débil,positiva
+adrenaline,distinct_2,-0.2096912942936623,3.174575112290601e-27,débil,negativa
+adrenaline,repetition_rate,0.12553778235546822,1.331373585762991e-10,débil,positiva
+adrenaline,perplexity,-0.26529655302817945,3.945361402816351e-43,débil,negativa
+serotonin,distinct_2,0.11189676388559841,1.0598113627612154e-08,débil,positiva
+serotonin,sentiment_polarity,-0.04255310270473407,0.030027277135960716,débil,negativa
+serotonin,perplexity,0.3368867118146275,5.071729166468804e-70,moderada,positiva
