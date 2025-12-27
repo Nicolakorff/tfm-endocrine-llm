@@ -1,5 +1,0 @@
-,distinct_2,distinct_2,distinct_2,distinct_2,distinct_2,sentiment_polarity,sentiment_polarity,repetition_rate,repetition_rate,length,length
-,count,mean,std,min,max,mean,std,mean,std,mean,std
-condition,,,,,,,,,,,
-semantic_bias,16,0.9805,0.0258,0.9231,1.0,0.1593,0.2084,0.0079,0.0166,55.875,11.2361
-simple_bias,80,0.9777,0.0248,0.8947,1.0,0.1011,0.1896,0.0049,0.0119,58.1,9.6254
