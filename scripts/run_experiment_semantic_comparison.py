@@ -1,7 +1,7 @@
 """
 Experimento: Comparación de Sesgo Simple vs Sesgo Semántico
 
-Este experimento compara directamente el efecto de:
+Compara directamente el efecto de:
 1. Sesgo simple (lista de tokens)
 2. Sesgo semántico (embeddings SBERT)
 
@@ -28,27 +28,27 @@ OUTPUT_DIR = Path("data/results/semantic_comparison")
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
 print("="*80)
-print(" EXPERIMENTO: SESGO SIMPLE VS SESGO SEMÁNTICO")
+print("EXPERIMENTO: SESGO SIMPLE VS SESGO SEMÁNTICO")
 print("="*80 + "\n")
 
 # 1. Inicializar modelo
-print(" Inicializando modelo...")
+print("Inicializando modelo...")
 model = EndocrineModulatedLLM("gpt2")
 
 # 2. Inicializar semantic manager
-print(" Inicializando SemanticBiasManager...")
+print("Inicializando SemanticBiasManager...")
 semantic_manager = SemanticBiasManager(model.tokenizer, device=model.device)
 
 # 3. Cargar prompts
-print(" Cargando prompts...")
+print("Cargando prompts...")
 prompts_df = pd.read_csv("data/prompts/prompts_dataset.csv")
 
 # Seleccionar solo prompts de categorías relevantes
 relevant_categories = ['empathic_support', 'creative_writing']
 prompts_df = prompts_df[prompts_df['category'].isin(relevant_categories)]
 
-print(f"   Total prompts: {len(prompts_df)}")
-print(f"   Categorías: {prompts_df['category'].value_counts().to_dict()}")
+print(f"Total prompts: {len(prompts_df)}")
+print(f"Categorías: {prompts_df['category'].value_counts().to_dict()}")
 
 # 4. Configuración experimental
 EXPERIMENT_CONFIG = {
@@ -67,8 +67,8 @@ for key, value in EXPERIMENT_CONFIG.items():
 results = []
 
 print("\n Ejecutando experimento...")
-print("   Condiciones: SIMPLE vs SEMANTIC")
-print(f"   Total generaciones: {len(prompts_df) * EXPERIMENT_CONFIG['num_generations'] * 2}\n")
+print("Condiciones: SIMPLE vs SEMANTIC")
+print(f"Total generaciones: {len(prompts_df) * EXPERIMENT_CONFIG['num_generations'] * 2}\n")
 
 with tqdm(total=len(prompts_df), desc="Prompts") as pbar:
     for idx, row in prompts_df.iterrows():
@@ -161,12 +161,12 @@ with open(OUTPUT_DIR / "comparison_results.json", 'w', encoding='utf-8') as f:
 # Guardar como CSV para análisis
 df = pd.DataFrame(results)
 df.to_csv(OUTPUT_DIR / "comparison_results.csv", index=False)
-print(f"   JSON: {OUTPUT_DIR / 'comparison_results.json'}")
-print(f"   CSV: {OUTPUT_DIR / 'comparison_results.csv'}")
+print(f"JSON: {OUTPUT_DIR / 'comparison_results.json'}")
+print(f"CSV: {OUTPUT_DIR / 'comparison_results.csv'}")
 
 # 7. Análisis preliminar
 print("\n" + "="*80)
-print(" ANÁLISIS PRELIMINAR")
+print("ANÁLISIS PRELIMINAR")
 print("="*80 + "\n")
 
 # Comparar por condición
@@ -185,7 +185,6 @@ semantic_data = df[df['condition'] == 'semantic_bias']
 print("Tests estadísticos (Simple vs Semantic):")
 print("-" * 60)
 
-
 for metric in ['distinct_2', 'sentiment_polarity', 'repetition_rate']:
     simple_values = simple_data[metric].dropna()
     semantic_values = semantic_data[metric].dropna()
@@ -194,10 +193,10 @@ if len(simple_values) > 0 and len(semantic_values) > 0:
     t_stat, p_value = stats.ttest_ind(simple_values, semantic_values)
 
     print(f"\n{metric}:")
-    print(f"  Simple:   {simple_values.mean():.4f} (SD={simple_values.std():.4f})")
-    print(f"  Semantic: {semantic_values.mean():.4f} (SD={semantic_values.std():.4f})")
-    print(f"  Diferencia: {semantic_values.mean() - simple_values.mean():+.4f}")
-    print(f"  t={t_stat:.3f}, p={p_value:.4f} {'***' if p_value < 0.001 else
+    print(f"Simple:   {simple_values.mean():.4f} (SD={simple_values.std():.4f})")
+    print(f"Semantic: {semantic_values.mean():.4f} (SD={semantic_values.std():.4f})")
+    print(f"Diferencia: {semantic_values.mean() - simple_values.mean():+.4f}")
+    print(f"t={t_stat:.3f}, p={p_value:.4f} {'***' if p_value < 0.001 else
                                                '**' if p_value < 0.01 else
                                                '*' if p_value < 0.05 else 'ns'}")
 
@@ -206,15 +205,15 @@ if 'semantic_activation_empathy' in df.columns:
     semantic_only = df[df['condition'] == 'semantic_bias']
 
     print(f"\n" + "="*80)
-    print(" ANÁLISIS DE ACTIVACIÓN SEMÁNTICA")
+    print("ANÁLISIS DE ACTIVACIÓN SEMÁNTICA")
     print("="*80 + "\n")
 
     print(f"Activación promedio de 'empathy': {semantic_only['semantic_activation_empathy'].mean():.3f}")
     print(f"Activación promedio de 'creativity': {semantic_only['semantic_activation_creativity'].mean():.3f}")
 
-    print("\nCategoría semántica dominante:")
+    print("\n Categoría semántica dominante:")
     print(semantic_only['dominant_semantic_category'].value_counts())
 
     print("\n" + "="*80)
-    print(" Análisis preliminar completado")
+    print("Análisis preliminar completado")
     print("="*80)

@@ -1,4 +1,3 @@
-# scripts/quick_analysis.py
 """
 Análisis rápido de resultados de Fase 1 y 2
 """
@@ -13,7 +12,7 @@ import seaborn as sns
 phase1 = pd.read_csv("data/results/phase1_results.csv")
 phase2 = pd.read_csv("data/results/phase2_results.csv")
 
-print(" RESUMEN DE DATOS")
+print("RESUMEN DE DATOS")
 print(f"Fase 1: {len(phase1)} generaciones")
 print(f"Fase 2: {len(phase2)} generaciones")
 

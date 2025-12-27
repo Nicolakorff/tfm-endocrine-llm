@@ -1,7 +1,5 @@
 """
-metrics.py - Sistema de Métricas de Evaluación
-
-Implementa métricas automáticas para evaluar calidad de texto generado.
+Métricas automáticas para evaluar calidad de texto generado.
 Incluye métricas básicas (diversidad) y avanzadas (perplexity, ROUGE).
 """
 
@@ -168,7 +166,7 @@ class AdvancedMetrics:
             from rouge_score import rouge_scorer
             self.rouge_scorer = rouge_scorer.RougeScorer(['rougeL'], use_stemmer=True)
         except ImportError:
-            print(" rouge-score no instalado. ROUGE-L no estará disponible.")
+            print("rouge-score no instalado. ROUGE-L no estará disponible.")
             self.rouge_scorer = None
 
     def compute_perplexity(self, text: str) -> float:
@@ -194,7 +192,7 @@ class AdvancedMetrics:
 
             return float(torch.exp(loss))
         except Exception as e:
-            print(f" Error calculando perplexity: {e}")
+            print(f"Error calculando perplexity: {e}")
             return float('inf')
 
     def compute_rouge_l(self, reference: str, hypothesis: str) -> float:
@@ -218,7 +216,7 @@ class AdvancedMetrics:
             score = self.rouge_scorer.score(reference, hypothesis)
             return score['rougeL'].fmeasure
         except Exception as e:
-            print(f" Error calculando ROUGE-L: {e}")
+            print(f"Error calculando ROUGE-L: {e}")
             return 0.0
 
     def compute_entropy(self, text: str) -> float:
@@ -246,7 +244,7 @@ class AdvancedMetrics:
 
             return float(entropy.mean())
         except Exception as e:
-            print(f" Error calculando entropía: {e}")
+            print(f"Error calculando entropía: {e}")
             return 0.0
 
     def compute_all(self, prompt: str, generated_text: str) -> Dict[str, float]:
@@ -311,9 +309,9 @@ class EmpathyMetrics:
                     model="cardiffnlp/twitter-roberta-base-emotion",
                     return_all_scores=True
                 )
-                print(" Clasificador de empatía cargado")
+                print("Clasificador de empatía cargado")
             except Exception as e:
-                print(f" No se pudo cargar clasificador: {e}")
+                print(f"No se pudo cargar clasificador: {e}")
 
     def compute_empathy_score(self, text: str) -> float:
         """
@@ -357,7 +355,7 @@ class EmpathyMetrics:
                            if s["label"].lower() in empathy_labels)
             return float(emp_score)
         except Exception as e:
-            print(f" Error en clasificador: {e}")
+            print(f"Error en clasificador: {e}")
             return 0.0
 
     def compute_all(self, text: str) -> Dict[str, float]:

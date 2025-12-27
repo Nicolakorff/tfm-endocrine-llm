@@ -1,13 +1,10 @@
 """Visualización de resultados (stub).
-
 Provee `ResultVisualizer` con métodos no interactivos para tests.
 """
 from typing import Any, Dict
 
-
 class ResultVisualizer:
     """Visualizador mínimo que formatea resultados en dict.
-
     No abre ventanas ni depende de librerías gráficas.
     """
 

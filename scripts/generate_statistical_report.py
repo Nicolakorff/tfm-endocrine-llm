@@ -31,6 +31,7 @@ generación de texto.
 - Fase 1: Hormonas individuales
 - Fase 2: Perfiles combinados
 - Comparación semántica: Sesgo simple vs embeddings
+- Comparación sistema dinámico vs estático
 
 ---
 
@@ -164,5 +165,5 @@ report += """
 with open(REPORT_FILE, 'w', encoding='utf-8') as f:
     f.write(report)
 
-print(f" Reporte guardado: {REPORT_FILE}")
-print(f"\nPara ver: cat {REPORT_FILE}")
+print(f"Reporte guardado: {REPORT_FILE}")
+print(f"\n Para ver: cat {REPORT_FILE}")

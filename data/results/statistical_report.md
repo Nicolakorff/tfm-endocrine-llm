@@ -1,7 +1,7 @@
 # Reporte Estadístico Completo
 ## TFM: Sistema de Neuromodulación Endocrina para LLMs
 
-**Fecha:** 2025-12-25
+**Fecha:** 2025-12-27
 
 ---
 
@@ -15,6 +15,7 @@ generación de texto.
 - Fase 1: Hormonas individuales
 - Fase 2: Perfiles combinados
 - Comparación semántica: Sesgo simple vs embeddings
+- Comparación sistema dinámico vs estático
 
 ---
 
@@ -25,45 +26,45 @@ generación de texto.
 
 #### DISTINCT 2
 
-- **F-statistic:** 17.56
+- **F-statistic:** 19.91
 - **p-value:** 0.0000 ***
-- **η² (effect size):** 0.069
+- **η² (effect size):** 0.093
 - **Interpretación:** Diferencias MUY significativas entre grupos
 - **Asunciones:** Normalidad=Violated, Homogeneidad=Violated
 
 
 #### SENTIMENT POLARITY
 
-- **F-statistic:** 1.43
-- **p-value:** 0.1529 ns
-- **η² (effect size):** 0.006
-- **Interpretación:** No hay diferencias significativas entre grupos
-- **Asunciones:** Normalidad=Violated, Homogeneidad=OK
+- **F-statistic:** 2.25
+- **p-value:** 0.0023 **
+- **η² (effect size):** 0.011
+- **Interpretación:** Diferencias significativas entre grupos
+- **Asunciones:** Normalidad=Violated, Homogeneidad=Violated
 
 
 #### REPETITION RATE
 
-- **F-statistic:** 12.39
+- **F-statistic:** 10.39
 - **p-value:** 0.0000 ***
-- **η² (effect size):** 0.050
+- **η² (effect size):** 0.051
 - **Interpretación:** Diferencias MUY significativas entre grupos
 - **Asunciones:** Normalidad=Violated, Homogeneidad=Violated
 
 
 #### LENGTH
 
-- **F-statistic:** 0.55
-- **p-value:** 0.8675 ns
-- **η² (effect size):** 0.002
-- **Interpretación:** No hay diferencias significativas entre grupos
-- **Asunciones:** Normalidad=Violated, Homogeneidad=OK
+- **F-statistic:** 47.24
+- **p-value:** 0.0000 ***
+- **η² (effect size):** 0.196
+- **Interpretación:** Diferencias MUY significativas entre grupos
+- **Asunciones:** Normalidad=Violated, Homogeneidad=Violated
 
 
 #### PERPLEXITY
 
-- **F-statistic:** 106.11
+- **F-statistic:** 231.80
 - **p-value:** 0.0000 ***
-- **η² (effect size):** 0.311
+- **η² (effect size):** 0.544
 - **Interpretación:** Diferencias MUY significativas entre grupos
 - **Asunciones:** Normalidad=Violated, Homogeneidad=Violated
 
@@ -127,9 +128,11 @@ Ver:
 
 Los perfiles hormonales muestran efectos significativos en:
 
-- **distinct_2**: con un tamaño de efecto mediano (η²=0.069)
-- **repetition_rate**: con un tamaño de efecto pequeño (η²=0.050)
-- **perplexity**: con un tamaño de efecto grande (η²=0.311)
+- **distinct_2**: con un tamaño de efecto mediano (η²=0.093)
+- **sentiment_polarity**: con un tamaño de efecto pequeño (η²=0.011)
+- **repetition_rate**: con un tamaño de efecto pequeño (η²=0.051)
+- **length**: con un tamaño de efecto grande (η²=0.196)
+- **perplexity**: con un tamaño de efecto grande (η²=0.544)
 
 
 ### 4.2 Relaciones Hormonas-Métricas

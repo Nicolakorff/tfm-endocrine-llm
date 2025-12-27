@@ -1,5 +1,6 @@
 """
-Experimento Fase 2: Evaluar perfiles hormonales combinados
+Experimento Fase 2: 
+Evalua perfiles hormonales combinados
 """
 
 from endocrine_llm import (
@@ -14,7 +15,7 @@ OUTPUT_DIR = Path("data/results")
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
 # Inicializar
-print(" Inicializando modelo...")
+print("Inicializando modelo...")
 model = EndocrineModulatedLLM("gpt2")
 
 # Cargar prompts

@@ -60,6 +60,6 @@ latex_table1 += r"""\hline
 with open(OUTPUT_DIR / "table_statistical_comparison.tex", 'w') as f:
     f.write(latex_table1)
 
-print(f" Tabla LaTeX guardada: {OUTPUT_DIR / 'table_statistical_comparison.tex'}")
-print("\nContenido:")
+print(f"Tabla LaTeX guardada: {OUTPUT_DIR / 'table_statistical_comparison.tex'}")
+print("\n Contenido:")
 print(latex_table1)

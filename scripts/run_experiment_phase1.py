@@ -1,11 +1,10 @@
 """
-Experimento Fase 1: Evaluar efecto de hormonas individuales
+Experimento Fase 1: 
+Evalua efecto de hormonas individuales
 """
 
 from pathlib import Path
-
 import pandas as pd
-
 from endocrine_llm import (
     EndocrineModulatedLLM,
     HORMONE_PROFILES,
@@ -17,15 +16,15 @@ OUTPUT_DIR = Path("data/results")
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
 # Inicializar
-print(" Inicializando modelo...")
-model = EndocrineModulatedLLM("gpt2")  # o "gpt2-medium" si tienes GPU potente
+print("Inicializando modelo...")
+model = EndocrineModulatedLLM("gpt2")  # o "gpt2-medium" según recursos
 
 # Cargar prompts
-print(" Cargando prompts...")
+print("Cargando prompts...")
 prompts_df = pd.read_csv("data/prompts/prompts_dataset.csv")
 prompts = prompts_df['prompt'].tolist()
 
-print(f"   Total prompts: {len(prompts)}")
+print(f"Total prompts: {len(prompts)}")
 
 # Seleccionar perfiles para Fase 1
 profiles_phase1 = {
@@ -67,6 +66,6 @@ runner.export_examples(
     num_examples=3
 )
 
-print("\n  Fase 1 completada")
-print(f"   Total generaciones: {len(runner.results)}")
-print(f"   Resultados en: {OUTPUT_DIR}")
+print("\n Fase 1 completada")
+print(f"Total generaciones: {len(runner.results)}")
+print(f"Resultados en: {OUTPUT_DIR}")

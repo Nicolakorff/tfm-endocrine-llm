@@ -1,5 +1,6 @@
 """
-Análisis Estadístico Completo: Comparación Sesgo Simple vs Semántico
+Análisis Estadístico Completo: 
+Compara Sesgo Simple vs Sesgo Semántico
 """
 
 import pandas as pd
@@ -73,11 +74,11 @@ for metric in ['distinct_2', 'sentiment_polarity', 'repetition_rate', 'length']:
         effect = "grande"
 
     print(f"\n{metric}:")
-    print(f"  M_simple={simple_vals.mean():.4f}, SD={simple_vals.std():.4f}")
-    print(f"  M_semantic={semantic_vals.mean():.4f}, SD={semantic_vals.std():.4f}")
-    print(f"  Diferencia: {semantic_vals.mean() - simple_vals.mean():+.4f}")
-    print(f"  t({len(simple_vals)+len(semantic_vals)-2})={t_stat:.3f}, p={p_value:.4f}")
-    print(f"  Cohen's d={cohens_d:.3f} (efecto {effect})")
+    print(f"M_simple={simple_vals.mean():.4f}, SD={simple_vals.std():.4f}")
+    print(f"M_semantic={semantic_vals.mean():.4f}, SD={semantic_vals.std():.4f}")
+    print(f"Diferencia: {semantic_vals.mean() - simple_vals.mean():+.4f}")
+    print(f"t({len(simple_vals)+len(semantic_vals)-2})={t_stat:.3f}, p={p_value:.4f}")
+    print(f"Cohen's d={cohens_d:.3f} (efecto {effect})")
 
     results_table.append({
         'metric': metric,
@@ -180,14 +181,14 @@ plt.savefig(
     dpi=300,
     bbox_inches='tight'
 )
-print(f"   Figura guardada: {OUTPUT_DIR / 'figure_semantic_comparison.png'}")
+print(f"Figura guardada: {OUTPUT_DIR / 'figure_semantic_comparison.png'}")
 
 plt.savefig(
     OUTPUT_DIR / 'figure_semantic_comparison.pdf',
     bbox_inches='tight'
 )
-print(f"   PDF guardado: {OUTPUT_DIR / 'figure_semantic_comparison.pdf'}")
+print(f"PDF guardado: {OUTPUT_DIR / 'figure_semantic_comparison.pdf'}")
 
 print("\n" + "="*80)
-print(" Análisis estadístico completado")
+print("Análisis estadístico completado")
 print("="*80)

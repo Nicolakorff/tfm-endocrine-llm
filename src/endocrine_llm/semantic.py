@@ -1,7 +1,5 @@
 """
-semantic.py - Sesgos Semánticos Basados en Embeddings
-
-Implementa modulación rica usando similitud semántica con Sentence-BERT
+Modulación rica usando similitud semántica con Sentence-BERT
 en lugar de listas simples de tokens.
 """
 
@@ -376,7 +374,7 @@ class SemanticLogitsProcessor:
 
         # Pre-computar bias si la categoría existe
         if category in self.manager.categories:
-            print(f"   Pre-computing semantic bias for '{category}'...")
+            print(f"Pre-computing semantic bias for '{category}'...")
             # Por ahora, dejamos que se compute on-demand
             self.bias_cache = None
         else:

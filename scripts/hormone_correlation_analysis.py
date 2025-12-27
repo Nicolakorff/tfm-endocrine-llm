@@ -10,7 +10,7 @@ import seaborn as sns
 from pathlib import Path
 
 print("="*80)
-print(" ANÁLISIS DE CORRELACIÓN: HORMONAS VS MÉTRICAS")
+print("ANÁLISIS DE CORRELACIÓN: HORMONAS VS MÉTRICAS")
 print("="*80 + "\n")
 
 # Configuración
@@ -26,8 +26,8 @@ df = pd.read_csv(DATA_DIR / "all_experiments_consolidated.csv")
 hormone_cols = [col for col in df.columns if col.startswith('hormone_')]
 
 if not hormone_cols:
-    print("   No se encontraron columnas hormonales")
-    print("   Intentando extraer de profile_name...")
+    print("No se encontraron columnas hormonales")
+    print("Intentando extraer de profile_name...")
 
     # Fallback: usar valores conocidos de perfiles
     from endocrine_llm import HORMONE_PROFILES
@@ -54,14 +54,14 @@ if not hormone_cols:
     df = pd.concat([df, hormone_df], axis=1)
     hormone_cols = hormone_df.columns.tolist()
 
-print(f"   Columnas hormonales encontradas: {hormone_cols}")
+print(f"Columnas hormonales encontradas: {hormone_cols}")
 
 # 2. SELECCIONAR MÉTRICAS
 metrics = ['distinct_2', 'sentiment_polarity', 'repetition_rate', 'length']
 if 'perplexity' in df.columns:
     metrics.append('perplexity')
 
-print(f"   Métricas a analizar: {metrics}")
+print(f"Métricas a analizar: {metrics}")
 
 # 3. PREPARAR DATASET PARA CORRELACIÓN
 print("\n2. Preparando datos para correlación...")
@@ -70,10 +70,10 @@ print("\n2. Preparando datos para correlación...")
 corr_cols = hormone_cols + metrics
 df_corr = df[corr_cols].dropna()
 
-print(f"   Observaciones con datos completos: {len(df_corr)}")
+print(f"Observaciones con datos completos: {len(df_corr)}")
 
 if len(df_corr) < 30:
-    print("   Datos insuficientes para análisis de correlación")
+    print("Datos insuficientes para análisis de correlación")
     exit(1)
 
 # 4. MATRIZ DE CORRELACIÓN
@@ -85,7 +85,7 @@ corr_matrix = df_corr.corr(method='pearson')
 # Extraer submatriz: hormonas vs métricas
 corr_hormones_metrics = corr_matrix.loc[hormone_cols, metrics]
 
-print("\nMatriz de correlación (Hormonas × Métricas):")
+print("\n Matriz de correlación (Hormonas × Métricas):")
 print(corr_hormones_metrics.round(3))
 
 # Guardar
@@ -151,9 +151,9 @@ for hormone in hormone_cols:
 if significant_corrs:
     sig_df = pd.DataFrame(significant_corrs)
     sig_df.to_csv(OUTPUT_DIR / "significant_correlations.csv", index=False)
-    print(f"\n   {len(significant_corrs)} correlaciones significativas guardadas")
+    print(f"\n {len(significant_corrs)} correlaciones significativas guardadas")
 else:
-    print("\n   No se encontraron correlaciones significativas")
+    print("\n No se encontraron correlaciones significativas")
 
 # 7. VISUALIZACIÓN - HEATMAP
 print("\n6. Generando heatmap...")
@@ -234,7 +234,7 @@ if significant_corrs:
                 fontsize=14, fontweight='bold')
     plt.tight_layout()
     plt.savefig(OUTPUT_DIR / 'correlation_scatterplots.png', dpi=300, bbox_inches='tight')
-    print(f"   {OUTPUT_DIR / 'correlation_scatterplots.png'}")
+    print(f" {OUTPUT_DIR / 'correlation_scatterplots.png'}")
 
 # 9. TABLA LATEX
 print("\n8. Generando tabla LaTeX...")
@@ -282,8 +282,8 @@ latex_table += r"""\hline
 
 with open(OUTPUT_DIR / "correlation_table.tex", 'w') as f:
     f.write(latex_table)
-print(f"   {OUTPUT_DIR / 'correlation_table.tex'}")
+print(f" {OUTPUT_DIR / 'correlation_table.tex'}")
 
 print("\n" + "="*80)
-print(" ANÁLISIS DE CORRELACIÓN COMPLETADO")
+print("ANÁLISIS DE CORRELACIÓN COMPLETADO")
 print("="*80)

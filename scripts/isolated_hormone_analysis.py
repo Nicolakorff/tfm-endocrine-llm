@@ -1,6 +1,4 @@
 """
-isolated_hormone_analysis.py
-
 Análisis específico del efecto de hormonas individuales (Fase 1).
 Compara cada hormona alta vs baseline para aislar efectos.
 """
@@ -13,7 +11,7 @@ import seaborn as sns
 from pathlib import Path
 
 print("="*80)
-print(" ANÁLISIS: EFECTO DE HORMONAS INDIVIDUALES (AISLADAS)")
+print("ANÁLISIS: EFECTO DE HORMONAS INDIVIDUALES (AISLADAS)")
 print("="*80 + "\n")
 
 # Configuración
@@ -25,12 +23,12 @@ OUTPUT_DIR.mkdir(exist_ok=True)
 print("1. Cargando datos de Fase 1 (hormonas individuales)...")
 
 if not (DATA_DIR / "phase1_results.csv").exists():
-    print(" ERROR: phase1_results.csv no encontrado")
-    print("   Ejecuta primero: python scripts/run_experiment_phase1.py")
+    print("ERROR: phase1_results.csv no encontrado")
+    print("Ejecuta primero: python scripts/run_experiment_phase1.py")
     exit(1)
 
 df = pd.read_csv(DATA_DIR / "phase1_results.csv")
-print(f"   Total generaciones: {len(df)}")
+print(f"Total generaciones: {len(df)}")
 
 # 2. IDENTIFICAR PERFILES
 print("\n2. Identificando perfiles de hormonas individuales...")
@@ -50,18 +48,18 @@ available_profiles = df['profile_name'].unique()
 missing = [p for p in individual_profiles if p not in available_profiles]
 
 if missing:
-    print(f"    Perfiles faltantes: {missing}")
+    print(f"Perfiles faltantes: {missing}")
     individual_profiles = [p for p in individual_profiles if p in available_profiles]
 
-print(f"   Perfiles disponibles para análisis: {individual_profiles}")
+print(f"Perfiles disponibles para análisis: {individual_profiles}")
 
 # Filtrar solo perfiles individuales
 df_isolated = df[df['profile_name'].isin(individual_profiles)].copy()
-print(f"   Observaciones para análisis: {len(df_isolated)}")
+print(f"Observaciones para análisis: {len(df_isolated)}")
 
 # Verificar que tenemos baseline
 if 'baseline' not in individual_profiles:
-    print("    ERROR: No se encontró perfil 'baseline'")
+    print("ERROR: No se encontró perfil 'baseline'")
     exit(1)
 
 # 3. MÉTRICAS A ANALIZAR
@@ -87,14 +85,14 @@ for hormone_profile in individual_profiles:
     hormone_data = df_isolated[df_isolated['profile_name'] == hormone_profile]
 
     print(f"\n {hormone_name.upper()}")
-    print(f"   n_baseline={len(baseline_data)}, n_hormone={len(hormone_data)}")
+    print(f"n_baseline={len(baseline_data)}, n_hormone={len(hormone_data)}")
 
     for metric in metrics:
         baseline_vals = baseline_data[metric].dropna()
         hormone_vals = hormone_data[metric].dropna()
 
         if len(baseline_vals) < 5 or len(hormone_vals) < 5:
-            print(f"    {metric}: datos insuficientes")
+            print(f" {metric}: datos insuficientes")
             continue
 
         # Estadísticas
@@ -128,12 +126,12 @@ for hormone_profile in individual_profiles:
         # Dirección del efecto
         direction = "↑" if diff > 0 else "↓"
 
-        print(f"\n   {metric}:")
-        print(f"      Baseline: M={baseline_mean:.4f} (SD={baseline_std:.4f})")
-        print(f"      {hormone_name}: M={hormone_mean:.4f} (SD={hormone_std:.4f})")
-        print(f"      Diferencia: {direction} {abs(diff):.4f}")
-        print(f"      t={t_stat:.3f}, p={p_value:.4f} {sig}")
-        print(f"      Cohen's d={cohens_d:.3f} (efecto {effect_interpretation})")
+        print(f"\n {metric}:")
+        print(f"Baseline: M={baseline_mean:.4f} (SD={baseline_std:.4f})")
+        print(f"{hormone_name}: M={hormone_mean:.4f} (SD={hormone_std:.4f})")
+        print(f"Diferencia: {direction} {abs(diff):.4f}")
+        print(f"t={t_stat:.3f}, p={p_value:.4f} {sig}")
+        print(f"Cohen's d={cohens_d:.3f} (efecto {effect_interpretation})")
 
         # Guardar resultados
         effects_results.append({
@@ -158,7 +156,7 @@ print("\n5. Guardando resultados...")
 
 effects_df = pd.DataFrame(effects_results)
 effects_df.to_csv(OUTPUT_DIR / "hormone_effects_summary.csv", index=False)
-print(f"    {OUTPUT_DIR / 'hormone_effects_summary.csv'}")
+print(f" {OUTPUT_DIR / 'hormone_effects_summary.csv'}")
 
 # 6. VISUALIZACIÓN PRINCIPAL: EFECTO POR HORMONA
 print("\n6. Generando visualizaciones...")
@@ -206,7 +204,7 @@ for idx, metric in enumerate(metrics[:4]):
 plt.tight_layout()
 plt.savefig(OUTPUT_DIR / 'hormone_effects_barplot.png', dpi=300, bbox_inches='tight')
 plt.savefig(OUTPUT_DIR / 'hormone_effects_barplot.pdf', bbox_inches='tight')
-print(f"    {OUTPUT_DIR / 'hormone_effects_barplot.png'}")
+print(f" {OUTPUT_DIR / 'hormone_effects_barplot.png'}")
 
 # Figura 2: Heatmap de efectos
 fig, ax = plt.subplots(figsize=(10, 6))
@@ -243,7 +241,7 @@ ax.set_xticklabels([label.get_text().replace('_', ' ').title()
 plt.tight_layout()
 plt.savefig(OUTPUT_DIR / 'hormone_effects_heatmap.png', dpi=300, bbox_inches='tight')
 plt.savefig(OUTPUT_DIR / 'hormone_effects_heatmap.pdf', bbox_inches='tight')
-print(f"    {OUTPUT_DIR / 'hormone_effects_heatmap.png'}")
+print(f" {OUTPUT_DIR / 'hormone_effects_heatmap.png'}")
 
 # Figura 3: Boxplots comparativos
 fig, axes = plt.subplots(2, 2, figsize=(16, 12))
@@ -273,7 +271,7 @@ for idx, metric in enumerate(metrics[:4]):
 
 plt.tight_layout()
 plt.savefig(OUTPUT_DIR / 'hormone_effects_boxplots.png', dpi=300, bbox_inches='tight')
-print(f"    {OUTPUT_DIR / 'hormone_effects_boxplots.png'}")
+print(f" {OUTPUT_DIR / 'hormone_effects_boxplots.png'}")
 
 # 7. TABLA LATEX
 print("\n7. Generando tabla LaTeX...")
@@ -333,7 +331,7 @@ latex_table += r"""\end{tabular}
 
 with open(OUTPUT_DIR / "isolated_hormones_table.tex", 'w') as f:
     f.write(latex_table)
-print(f"    {OUTPUT_DIR / 'isolated_hormones_table.tex'}")
+print(f" {OUTPUT_DIR / 'isolated_hormones_table.tex'}")
 
 # 8. RESUMEN TEXTUAL
 print("\n8. Generando resumen textual...")
@@ -409,14 +407,14 @@ with open(OUTPUT_DIR / "isolated_hormones_summary.md", 'w') as f:
 print(f"    {OUTPUT_DIR / 'isolated_hormones_summary.md'}")
 
 print("\n" + "="*80)
-print(" ANÁLISIS DE HORMONAS INDIVIDUALES COMPLETADO")
+print("ANÁLISIS DE HORMONAS INDIVIDUALES COMPLETADO")
 print("="*80)
 
 print("\n Resumen de efectos significativos:")
 sig_effects = effects_df[effects_df['p_value'] < 0.05]
-print(f"   Total efectos significativos: {len(sig_effects)}")
+print(f"Total efectos significativos: {len(sig_effects)}")
 
 if len(sig_effects) > 0:
-    print("\n   Por hormona:")
+    print("\n Por hormona:")
     for hormone, count in sig_effects.groupby('hormone').size().sort_values(ascending=False).items():
-        print(f"      {hormone.title()}: {count}")
+        print(f" {hormone.title()}: {count}")

@@ -10,7 +10,7 @@ from pathlib import Path
 from scipy import stats
 
 print("="*80)
-print(" CREANDO FIGURAS INDIVIDUALES PARA TFM")
+print("CREANDO FIGURAS INDIVIDUALES PARA TFM")
 print("="*80 + "\n")
 
 DATA_DIR = Path("data/results")
@@ -46,7 +46,7 @@ ax.text(0.5, 0.55, 'Vector Hormonal H = [d, c, o, a, s]',
        ha='center', va='center', fontsize=12, fontweight='bold')
 
 # Hormonas individuales
-hormones = ['Dopamina\n(exploración)', 'Cortisol\n(cautela)', 'Oxitocina\n(empatía)', 
+hormones = ['Dopamina\n(exploración)', 'Cortisol\n(cautela)', 'Oxitocina\n(empatía)',
            'Adrenalina\n(activación)', 'Serotonina\n(estabilidad)']
 x_positions = np.linspace(0.15, 0.85, 5)
 
@@ -80,7 +80,7 @@ plt.tight_layout()
 plt.savefig(OUTPUT_DIR / 'fig1_architecture.png', dpi=300, bbox_inches='tight')
 plt.savefig(OUTPUT_DIR / 'fig1_architecture.pdf', bbox_inches='tight')
 plt.close()
-print(f"  fig1_architecture.png/pdf")
+print(f"fig1_architecture.png/pdf")
 
 # 2. FIGURA: PERFILES HORMONALES
 print("\n2. Creando visualización de perfiles hormonales...")
@@ -123,7 +123,7 @@ plt.tight_layout()
 plt.savefig(OUTPUT_DIR / 'fig2_hormone_profiles.png', dpi=300, bbox_inches='tight')
 plt.savefig(OUTPUT_DIR / 'fig2_hormone_profiles.pdf', bbox_inches='tight')
 plt.close()
-print(f"  fig2_hormone_profiles.png/pdf")
+print(f"fig2_hormone_profiles.png/pdf")
 
 # 3. FIGURA: EJEMPLO DE GENERACIÓN
 print("\n3. Creando figura de ejemplo comparativo...")
@@ -175,7 +175,7 @@ plt.tight_layout()
 plt.savefig(OUTPUT_DIR / 'fig3_generation_example.png', dpi=300, bbox_inches='tight')
 plt.savefig(OUTPUT_DIR / 'fig3_generation_example.pdf', bbox_inches='tight')
 plt.close()
-print(f"  fig3_generation_example.png/pdf")
+print(f"fig3_generation_example.png/pdf")
 
 # 4. FIGURA: DISTRIBUCIÓN DE MÉTRICAS
 print("\n4. Creando figura de distribución de métricas...")
@@ -212,7 +212,7 @@ plt.tight_layout()
 plt.savefig(OUTPUT_DIR / 'fig4_metrics_distribution.png', dpi=300, bbox_inches='tight')
 plt.savefig(OUTPUT_DIR / 'fig4_metrics_distribution.pdf', bbox_inches='tight')
 plt.close()
-print(f"   fig4_metrics_distribution.png/pdf")
+print(f"fig4_metrics_distribution.png/pdf")
 
 # 5. FIGURA: COMPARACIÓN TOP PERFILES
 print("\n5. Creando comparación de top perfiles...")
@@ -240,10 +240,10 @@ plt.tight_layout()
 plt.savefig(OUTPUT_DIR / 'fig5_top_profiles_comparison.png', dpi=300, bbox_inches='tight')
 plt.savefig(OUTPUT_DIR / 'fig5_top_profiles_comparison.pdf', bbox_inches='tight')
 plt.close()
-print(f"   fig5_top_profiles_comparison.png/pdf")
+print(f"fig5_top_profiles_comparison.png/pdf")
 
 print("\n" + "="*80)
-print(" FIGURAS INDIVIDUALES CREADAS")
+print("FIGURAS INDIVIDUALES CREADAS")
 print("="*80)
-print(f"\nTotal figuras generadas: 5")
+print("\n Total figuras generadas: 5")
 print(f"Ubicación: {OUTPUT_DIR}")

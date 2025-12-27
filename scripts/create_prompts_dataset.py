@@ -1,6 +1,5 @@
-# Script para generar dataset: scripts/create_prompts_dataset.py
 """
-Script para crear dataset de prompts categorizados
+Crear dataset de prompts categorizados
 """
 
 from pathlib import Path
@@ -88,6 +87,6 @@ output_dir.mkdir(parents=True, exist_ok=True)
 
 df.to_csv(output_dir / "prompts_dataset.csv", index=False)
 
-print(f"   Dataset creado: {len(df)} prompts")
-print(f"   Categorías: {df['category'].value_counts().to_dict()}")
-print(f"   Guardado en: {output_dir / 'prompts_dataset.csv'}")
+print(f"Dataset creado: {len(df)} prompts")
+print(f"Categorías: {df['category'].value_counts().to_dict()}")
+print(f"Guardado en: {output_dir / 'prompts_dataset.csv'}")

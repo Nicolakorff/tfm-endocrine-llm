@@ -1,5 +1,5 @@
 """
-Análisis ANOVA completo de todos los experimentos con tests post-hoc.
+Implementa análisis ANOVA completo de todos los experimentos con tests post-hoc.
 """
 
 import pandas as pd
@@ -13,7 +13,7 @@ import seaborn as sns
 from pathlib import Path
 
 print("="*80)
-print(" ANÁLISIS ANOVA COMPLETO")
+print("ANÁLISIS ANOVA COMPLETO")
 print("="*80 + "\n")
 
 # Configuración
@@ -24,8 +24,8 @@ OUTPUT_DIR.mkdir(exist_ok=True)
 # 1. CARGAR DATOS CONSOLIDADOS
 print("1. Cargando datos consolidados...")
 df = pd.read_csv(DATA_DIR / "all_experiments_consolidated.csv")
-print(f"   Total observaciones: {len(df)}")
-print(f"   Perfiles únicos: {df['profile_name'].nunique()}")
+print(f"Total observaciones: {len(df)}")
+print(f"Perfiles únicos: {df['profile_name'].nunique()}")
 
 # 2. PREPARAR DATOS PARA ANOVA
 print("\n2. Preparando datos para ANOVA...")
@@ -35,14 +35,14 @@ profile_counts = df['profile_name'].value_counts()
 valid_profiles = profile_counts[profile_counts >= 30].index.tolist()
 
 df_anova = df[df['profile_name'].isin(valid_profiles)].copy()
-print(f"   Perfiles con n≥30: {len(valid_profiles)}")
-print(f"   Observaciones para ANOVA: {len(df_anova)}")
+print(f"Perfiles con n≥30: {len(valid_profiles)}")
+print(f"Observaciones para ANOVA: {len(df_anova)}")
 
 # Perfiles incluidos
-print("\n   Perfiles incluidos en ANOVA:")
+print("\n Perfiles incluidos en ANOVA:")
 for profile in valid_profiles:
     n = len(df_anova[df_anova['profile_name'] == profile])
-    print(f"      {profile}: n={n}")
+    print(f" {profile}: n={n}")
 
 # 3. ANOVA PARA CADA MÉTRICA
 print("\n3. Ejecutando ANOVA para cada métrica...")
@@ -62,13 +62,23 @@ for metric in metrics:
     df_metric = df_anova[[metric, 'profile_name']].dropna()
 
     if len(df_metric) < 50:
-        print(f"   Datos insuficientes (n={len(df_metric)}), saltando...")
+        print(f"Datos insuficientes (n={len(df_metric)}), saltando...")
         continue
 
+    # Recalcular perfiles válidos para esta métrica específica (mínimo 30 observaciones)
+    metric_profile_counts = df_metric['profile_name'].value_counts()
+    valid_profiles_metric = metric_profile_counts[metric_profile_counts >= 30].index.tolist()
+    
+    if len(valid_profiles_metric) < 2:
+        print(f"Insuficientes grupos con n≥30 (solo {len(valid_profiles_metric)}), saltando...")
+        continue
+    
+    print(f"Perfiles con n≥30 para {metric}: {len(valid_profiles_metric)}")
+
     # Verificar normalidad por grupo (test de Shapiro-Wilk en muestra)
-    print("   Tests de normalidad (muestra de 50 por grupo):")
+    print("Tests de normalidad (muestra de 50 por grupo):")
     normality_ok = True
-    for profile in valid_profiles[:5]:  # Solo primeros 5 para no saturar
+    for profile in valid_profiles_metric[:5]:  # Solo primeros 5 para no saturar
         sample = df_metric[df_metric['profile_name'] == profile][metric].sample(
             min(50, len(df_metric[df_metric['profile_name'] == profile]))
         )
@@ -80,19 +90,19 @@ for metric in metrics:
 
     # Test de Levene (homogeneidad de varianzas)
     groups = [df_metric[df_metric['profile_name'] == p][metric].values 
-              for p in valid_profiles]
+              for p in valid_profiles_metric]
     levene_stat, levene_p = stats.levene(*groups)
-    print("\n   Test de Levene (homogeneidad):")
-    print(f"      F={levene_stat:.3f}, p={levene_p:.3f} {'✓' if levene_p > 0.05 else '✗'}")
+    print("\nTest de Levene (homogeneidad):")
+    print(f" F={levene_stat:.3f}, p={levene_p:.3f} {'✓' if levene_p > 0.05 else '✗'}")
 
     homogeneity_ok = levene_p > 0.05
 
     # ANOVA one-way
     f_stat, p_value = stats.f_oneway(*groups)
 
-    print("\n   ANOVA One-Way:")
-    print(f"      F({len(valid_profiles)-1}, {len(df_metric)-len(valid_profiles)}) = {f_stat:.3f}")
-    print(f"      p = {p_value:.4f}")
+    print("\n ANOVA One-Way:")
+    print(f" F({len(valid_profiles_metric)-1}, {len(df_metric)-len(valid_profiles_metric)}) = {f_stat:.3f}")
+    print(f" p = {p_value:.4f}")
 
     if p_value < 0.001:
         sig = "***"
@@ -107,26 +117,26 @@ for metric in metrics:
         sig = "ns"
         interpretation = "No hay diferencias significativas entre grupos"
 
-    print(f"      Significancia: {sig}")
-    print(f"      Interpretación: {interpretation}")
+    print(f"Significancia: {sig}")
+    print(f"Interpretación: {interpretation}")
 
     # Eta squared (effect size)
     grand_mean = df_metric[metric].mean()
     ss_between = sum(len(df_metric[df_metric['profile_name']==p]) * 
                      (df_metric[df_metric['profile_name']==p][metric].mean() - grand_mean)**2 
-                     for p in valid_profiles)
+                     for p in valid_profiles_metric)
     ss_total = sum((df_metric[metric] - grand_mean)**2)
     eta_squared = ss_between / ss_total if ss_total > 0 else 0
 
-    print(f"      η² = {eta_squared:.4f}", end="")
+    print(f" η² = {eta_squared:.4f}", end="")
     if eta_squared < 0.01:
-        print(" (efecto trivial)")
+        print("(efecto trivial)")
     elif eta_squared < 0.06:
-        print(" (efecto pequeño)")
+        print("(efecto pequeño)")
     elif eta_squared < 0.14:
-        print(" (efecto mediano)")
+        print("(efecto mediano)")
     else:
-        print(" (efecto grande)")
+        print("(efecto grande)")
 
     # Guardar resultados
     anova_results.append({
@@ -144,7 +154,7 @@ for metric in metrics:
 
     # 4. TEST POST-HOC (Tukey HSD) si ANOVA significativo
     if p_value < 0.05:
-        print("\n    Test Post-Hoc (Tukey HSD):")
+        print("\n Test Post-Hoc (Tukey HSD):")
 
         tukey = pairwise_tukeyhsd(
             endog=df_metric[metric],
@@ -166,15 +176,15 @@ for metric in metrics:
         )
 
         if len(significant) > 0:
-            print(f"      Comparaciones significativas: {len(significant)}")
-            print("\n      Top 5 diferencias más grandes:")
+            print(f"Comparaciones significativas: {len(significant)}")
+            print("\n Top 5 diferencias más grandes:")
             for idx, row in significant.head(5).iterrows():
-                print(f"         {row['group1']:20s} vs {row['group2']:20s}: "
+                print(f" {row['group1']:20s} vs {row['group2']:20s}: "
                       f"Δ={row['meandiff']:+.4f} (p={row['p-adj']:.4f})")
         else:
-            print("      No se encontraron diferencias significativas en post-hoc")
+            print("No se encontraron diferencias significativas en post-hoc")
 
-        print(f"\n      Resultados completos guardados: tukey_{metric}.csv")
+        print(f"\n Resultados completos guardados: tukey_{metric}.csv")
 
 # 5. GUARDAR RESUMEN DE ANOVA
 print("\n" + "="*80)
@@ -182,7 +192,7 @@ print("5. Guardando resumen de ANOVA...")
 
 anova_df = pd.DataFrame(anova_results)
 anova_df.to_csv(OUTPUT_DIR / "anova_summary.csv", index=False)
-print(f"   {OUTPUT_DIR / 'anova_summary.csv'}")
+print(f" {OUTPUT_DIR / 'anova_summary.csv'}")
 
 # 6. CREAR TABLA LATEX
 print("\n6. Generando tabla LaTeX...")
@@ -229,7 +239,7 @@ latex_table += r"""\hline
 
 with open(OUTPUT_DIR / "anova_table.tex", 'w') as f:
     f.write(latex_table)
-print(f"   {OUTPUT_DIR / 'anova_table.tex'}")
+print(f" {OUTPUT_DIR / 'anova_table.tex'}")
 
 # 7. VISUALIZACIÓN
 print("\n7. Generando visualizaciones...")
@@ -266,8 +276,8 @@ for idx, metric in enumerate(metrics[:4]):
 plt.tight_layout()
 plt.savefig(OUTPUT_DIR / 'anova_comparison.png', dpi=300, bbox_inches='tight')
 plt.savefig(OUTPUT_DIR / 'anova_comparison.pdf', bbox_inches='tight')
-print(f"   {OUTPUT_DIR / 'anova_comparison.png'}")
-print(f"   {OUTPUT_DIR / 'anova_comparison.pdf'}")
+print(f" {OUTPUT_DIR / 'anova_comparison.png'}")
+print(f" {OUTPUT_DIR / 'anova_comparison.pdf'}")
 
 print("\n" + "="*80)
 print(" ANÁLISIS ANOVA COMPLETADO")
@@ -285,8 +295,8 @@ for _, row in anova_df.iterrows():
               f"Homogeneidad={row['homogeneity_assumption']}")
 
 print("\n" + "="*80)
-print(" Dataset final:")
-print(f"   Filas: {len(df_anova)}")
-print(f"   Columnas: {len(df_anova.columns)}")
-print(f"   Tamaño: {df_anova.memory_usage(deep=True).sum() / 1024**2:.2f} MB")
+print("Dataset final:")
+print(f"Filas: {len(df_anova)}")
+print(f"Columnas: {len(df_anova.columns)}")
+print(f"Tamaño: {df_anova.memory_usage(deep=True).sum() / 1024**2:.2f} MB")
 print("="*80)
