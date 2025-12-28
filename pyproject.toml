@@ -100,6 +100,7 @@ Repository = "https://github.com/Nicolakorff/tfm-endocrine-llm"
 Changelog = "https://github.com/Nicolakorff/tfm-endocrine-llm/blob/main/CHANGELOG.md"
 
 [tool.setuptools]
+package-dir = {"" = "src"}
 packages = ["endocrine_llm"]
 
 [tool.setuptools.package-data]
