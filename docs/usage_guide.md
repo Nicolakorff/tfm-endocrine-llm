@@ -3,6 +3,7 @@
 **Sistema de Neuromodulación Endocrina para LLMs**  
 **Versión:** 0.5.0  
 **Última actualización:** Enero 2025
+**Estado:** Completado y validado
 
 ---
 
@@ -1237,7 +1238,6 @@ for i, prompt in enumerate(prompts, 1):
 
 **Documentación completa:** [GitHub](https://github.com/Nicolakorff/tfm-endocrine-llm)  
 **Issues:** [GitHub Issues](https://github.com/Nicolakorff/tfm-endocrine-llm/issues)  
-**Email:** nicola.korff@example.com
 
 ---
 
@@ -1249,3 +1249,5 @@ MIT License - Ver [LICENSE](../LICENSE) para detalles
 
 **Última actualización:** Enero 2025  
 **Versión del sistema:** 0.5.0
+
+**FIN DEL DOCUMENTO**

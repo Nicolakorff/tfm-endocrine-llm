@@ -2,7 +2,7 @@
 
 **Versión:** 1.0  
 **Fecha:** Diciembre 2024  
-**Estado:** Completado
+**Estado:** Completado y validado
 
 ---
 
@@ -39,3 +39,5 @@ Resultados del experimento de **Fase 1: Hormonas Aisladas**, evaluando el efecto
 | Repetición | **12.39** | <0.001 | **0.050** | PEQUEÑO |
 
 Ver diseño en: [design_phase1.md](design_phase1.md)
+
+**FIN DEL DOCUMENTO**

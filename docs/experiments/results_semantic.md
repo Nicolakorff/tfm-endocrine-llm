@@ -2,10 +2,10 @@
 
 ## Sistema de Neuromodulación Endocrina para LLMs - Experimento Semántico
 
-**Fecha:** Enero 2025  
-**Autor:** Nicola Korff  
+**Fecha:** Enero 2025   
 **Fase Experimental:** 4 - Sesgos Semánticos  
 **Versión:** 1.0
+**Estado:** Completado y validado
 
 ---
 
@@ -455,5 +455,4 @@ python scripts/create_semantic_figures.py
 
 ---
 
-**Documento preparado para:** TFM - Máster en Grandes Modelos de Lenguaje  
-**Estado:** Completo y listo para integración en capítulo de Resultados
+**FIN DEL DOCUMENTO**

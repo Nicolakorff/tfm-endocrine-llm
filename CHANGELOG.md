@@ -287,3 +287,5 @@ y este proyecto adhiere a [Semantic Versioning](https://semver.org/spec/v2.0.0.h
 - [0.2.0]: https://github.com/Nicolakorff/tfm-endocrine-llm/releases/tag/v0.2.0
 - [0.1.0]: https://github.com/Nicolakorff/tfm-endocrine-llm/releases/tag/v0.1.0
 - [Unreleased]: https://github.com/Nicolakorff/tfm-endocrine-llm/compare/v0.5.0...HEAD
+
+**FIN DEL DOCUMENTO**

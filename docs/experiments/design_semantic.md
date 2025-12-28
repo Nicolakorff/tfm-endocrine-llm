@@ -4,9 +4,7 @@
 
 **Versión:** 2.0  
 **Fecha:** Enero 2025  
-**Autor:** Nicola Korff  
-**Tutor:** Matías Nuñez  
-**Estado:** Completo y validado
+**Estado:** Completado y validado
 
 ---
 
@@ -639,24 +637,4 @@ data/results/semantic_comparison/
 
 ---
 
-**Versión del Documento:** 2.0  
-**Última Actualización:** Enero 2025  
-**Aprobado por:** Matías Nuñez  
-**Estado:** Listo para ejecución
-
----
-
-## Contacto
-
-**Investigador Principal:**  
-Nicola Korff  
-Email: nicola.korff@example.com
-
-**Supervisor:**  
-Matías Nuñez  
-Email: matias.nunez@example.com
-
----
-
-**Documento preparado para:** TFM - Máster en Grandes Modelos de Lenguaje  
-**Cumplimiento ético:** No aplica (sin participantes humanos en esta fase)
+**FIN DEL DOCUMENTO**

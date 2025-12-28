@@ -5,8 +5,9 @@
 [![Version](https://img.shields.io/badge/version-0.5.0-green.svg)](https://github.com/Nicolakorff/tfm-endocrine-llm/releases)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 
-> **TFM - Máster en Grandes Modelos de Lenguaje y Lingüística Computacional**  
-> **Autor:** Nicola Korff | **Tutor:** Matías Nuñez | **Fecha:** Enero 2025
+> **TFM - Máster en Grandes Modelos de Lenguaje y Lingüística Computacional**
+> **Universidad:** Universidad de la Rioja | **Fecha:** Enero 2025
+> **Autor:** Nicola Korff | **Tutor:** Matías Nuñez 
 
 Sistema biológicamente inspirado que modula la generación de texto en LLMs mediante un **sistema hormonal artificial** con 5 hormonas sintéticas que ajustan dinámicamente el comportamiento del modelo.
 
@@ -31,7 +32,7 @@ print(texts[0])
 # → "I'm feeling anxious. I understand how stressful that can be..."
 ```
 
-****[Más ejemplos](docs/quickstart.md) | **** [Guía completa](docs/usage_guide.md) | **** [Notebooks](examples/)
+**** [Guía completa](docs/usage_guide.md) | **** [Notebooks](examples/)
 
 ---
 
@@ -72,27 +73,23 @@ print(texts[0])
 | **Diversidad** | 0.547 | 0.623 | +13.9% |
 | **p-value** | - | - | <0.001 |
 
-****[Resultados completos](docs/results/tfm_results.md) | ****[Figuras](docs/figures/figures_guide.md)
+****[Resultados completos](docs/results/) | ****[Figuras](docs/figures/figures_guide.md)
 
 ---
 
 ## Documentación
 
 ### Para Usuarios
-- **[Instalación](docs/installation.md)** - Guía de instalación detallada
-- **[Quick Start](docs/quickstart.md)** - Primeros pasos en 5 minutos
 - **[Guía de Uso](docs/usage_guide.md)** - Documentación completa
 - **[Notebooks](examples/)** - Ejemplos interactivos en Colab
 
 ### Para Investigadores
 - **[Experimentos](docs/experiments/)** - Diseños experimentales
-- **[Resultados del TFM](docs/results/tfm_results.md)** - Análisis completo
+- **[Resultados del TFM](docs/results/)** - Análisis completo
 - **[Guía de Figuras](docs/figures/figures_guide.md)** - Figuras para LaTeX
 
 ### Desarrollo
 - **[Changelog](CHANGELOG.md)** - Historial de cambios
-- **[Contribuir](CONTRIBUTING.md)** - Guía de contribución
-- **[API Reference](docs/api_reference.md)** - Documentación técnica
 
 ---
 
@@ -200,7 +197,7 @@ cd tfm-endocrine-llm
 pip install -e ".[all]"
 ```
 
-**📘** [Guía de instalación completa](docs/installation.md)
+**** [Guía de instalación completa](docs/installation.md)
 
 ---
 
@@ -302,8 +299,6 @@ Las contribuciones son bienvenidas. Para cambios importantes:
 3. Commit cambios (`git commit -m 'Add AmazingFeature'`)
 4. Push a la rama (`git push origin feature/AmazingFeature`)
 5. Abre un Pull Request
-
-**** [Guía de contribución completa](CONTRIBUTING.md)
 
 ---
 

@@ -124,3 +124,5 @@ Evaluar el **efecto individual de cada hormona artificial** sobre la generación
 ---
 
 **Ver resultados en:** [results_phase1.md](results_phase1.md)
+
+**FIN DEL DOCUMENTO**

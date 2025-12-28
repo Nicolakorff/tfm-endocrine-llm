@@ -2,7 +2,7 @@
 
 **Versión:** 1.0  
 **Fecha:** Enero 2025  
-**Estado:** Completo y validado
+**Estado:** Completado y validado
 
 ---
 
@@ -290,5 +290,4 @@ Demuestra que:
 
 ---
 
-**Preparado para:** TFM - Máster en Grandes Modelos de Lenguaje  
-**Estado:** Listo para ejecución
+**FIN DEL DOCUMENTO**
