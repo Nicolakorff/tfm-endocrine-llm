@@ -334,12 +334,27 @@ class EndocrineModulatedLLM:
         print(f"   Dispositivo: {self.device}")
 
         # Cargar modelo y tokenizer
-        self.tokenizer = AutoTokenizer.from_pretrained(model_name, trust_remote_code=True)
-        self.model = AutoModelForCausalLM.from_pretrained(
-            model_name, 
-            trust_remote_code=True,
-            device_map="auto" if torch.cuda.is_available() else "cpu"
-        )
+        try:
+            self.tokenizer = AutoTokenizer.from_pretrained(model_name, trust_remote_code=True)
+            self.model = AutoModelForCausalLM.from_pretrained(
+                model_name, 
+                trust_remote_code=True,
+                device_map="auto" if torch.cuda.is_available() else "cpu"
+            )
+        except Exception as e:
+            print(f"  Error en carga principal: {e}")
+            print(f"  Reintentando con opciones alternativas...")
+            
+            # Fallback: cargar sin device_map en CPU
+            self.tokenizer = AutoTokenizer.from_pretrained(model_name, trust_remote_code=True)
+            self.model = AutoModelForCausalLM.from_pretrained(
+                model_name,
+                trust_remote_code=True,
+                torch_dtype=torch.float16 if torch.cuda.is_available() else torch.float32,
+                low_cpu_mem_usage=True
+            )
+            self.model = self.model.to(self.device)
+        
         if not torch.cuda.is_available():
             self.model = self.model.to(self.device)
         self.model.eval()
