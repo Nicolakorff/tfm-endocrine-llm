@@ -1,0 +1,34 @@
+# ============================================================================
+# Instalación de Desarrollo
+# Incluye testing, linting, formatting, docs
+# ============================================================================
+
+# Full requirements with semantic
+-r requirements-semantic.txt
+
+# Testing
+pytest>=7.4.0
+pytest-cov>=4.1.0
+pytest-mock>=3.11.0
+pytest-timeout>=2.1.0
+
+# Code Quality
+black>=23.0.0
+isort>=5.12.0
+flake8>=6.0.0
+mypy>=1.4.0
+pylint>=2.17.0
+
+# Documentation
+sphinx>=7.0.0
+sphinx-rtd-theme>=1.3.0
+sphinx-autodoc-typehints>=1.24.0
+
+# Jupyter
+jupyter>=1.0.0
+ipykernel>=6.25.0
+ipywidgets>=8.1.0
+notebook>=7.0.0
+
+# Utilities
+pre-commit>=3.3.0

@@ -3,18 +3,18 @@ requires = ["setuptools>=65.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "tfm-endocrine-llm"
-version = "0.5.0" 
+name = "endocrine-llm"
+version = "0.5.0"
 description = "Sistema de Neuromodulación Endocrina para LLMs con Modulación Dinámica"
 readme = "README.md"
 requires-python = ">=3.8"
-license = {text = "MIT"} 
-keywords = ["llm", "neuromodulation", "hormones", "nlp", "ai", "transformers"]
+license = {text = "MIT"}
+keywords = ["llm", "neuromodulation", "hormones", "nlp", "ai", "transformers", "dynamic-systems"]
 authors = [
-    {name = "Nicola Korff", email = "nicolavonkorff@gmail.com"}
+    {name = "Nicola Korff", email = "nicola.korff@example.com"}
 ]
 maintainers = [
-    {name = "Nicola Korff", email = "nicolavonkorff@gmail.com"}
+    {name = "Nicola Korff", email = "nicola.korff@example.com"}
 ]
 
 classifiers = [
@@ -34,16 +34,17 @@ classifiers = [
 
 dependencies = [
     # Core ML
-    "torch>=2.0.0",
-    "transformers>=4.30.0",
+    "torch>=2.0.0,<2.5.0",
+    "transformers>=4.30.0,<5.0.0",
     
     # Data & Analysis
-    "pandas>=2.0.0",
-    "numpy>=1.24.0,<2.0.0",  
+    "pandas>=2.0.0,<3.0.0",
+    "numpy>=1.24.0,<2.0.0",
+    "scipy>=1.10.0,<2.0.0",
     
     # Visualization
-    "matplotlib>=3.7.0",
-    "seaborn>=0.12.0",
+    "matplotlib>=3.7.0,<4.0.0",
+    "seaborn>=0.12.0,<1.0.0",
     
     # NLP & Metrics
     "nltk>=3.8.0",
@@ -53,19 +54,19 @@ dependencies = [
     
     # Utilities
     "tqdm>=4.65.0",
-    "scipy>=1.10.0",  
 ]
 
 [project.optional-dependencies]
-# Semantic features (opcional)
+# Semantic features (opcional - para sesgos semánticos)
 semantic = [
-    "sentence-transformers>=2.2.0",
+    "sentence-transformers>=2.2.0,<3.0.0",
 ]
 
 # Development tools
 dev = [
     "pytest>=7.4.0",
     "pytest-cov>=4.1.0",
+    "pytest-mock>=3.11.0",
     "black>=23.0.0",
     "isort>=5.12.0",
     "flake8>=6.0.0",
@@ -88,20 +89,15 @@ notebook = [
 
 # Complete installation (todo incluido)
 all = [
-    "tfm-endocrine-llm[semantic,dev,docs,notebook]",
+    "endocrine-llm[semantic,dev,docs,notebook]",
 ]
 
 [project.urls]
-Homepage = "https://github.com/nicolakorff/tfm-endocrine-llm" 
-Documentation = "https://github.com/nicolakorff/tfm-endocrine-llm#readme"
-Repository = "https://github.com/nicolakorff/tfm-endocrine-llm"
-"Bug Tracker" = "https://github.com/nicolakorff/tfm-endocrine-llm/issues"
-Changelog = "https://github.com/nicolakorff/tfm-endocrine-llm/blob/main/CHANGELOG.md"
-
-[project.scripts]
-# CLI tools (opcional - añadir scripts de línea de comandos)
-# endocrine-experiment = "endocrine_llm.cli:run_experiment"
-# endocrine-analyze = "endocrine_llm.cli:analyze_results"
+Homepage = "https://github.com/Nicolakorff/tfm-endocrine-llm"
+Documentation = "https://github.com/Nicolakorff/tfm-endocrine-llm#readme"
+Repository = "https://github.com/Nicolakorff/tfm-endocrine-llm"
+"Bug Tracker" = "https://github.com/Nicolakorff/tfm-endocrine-llm/issues"
+Changelog = "https://github.com/Nicolakorff/tfm-endocrine-llm/blob/main/CHANGELOG.md"
 
 [tool.setuptools]
 packages = ["endocrine_llm"]
@@ -109,8 +105,9 @@ packages = ["endocrine_llm"]
 [tool.setuptools.package-data]
 endocrine_llm = ["py.typed"]
 
-
-# Herramientas de desarrollo
+# ============================================================================
+# Development Tools Configuration
+# ============================================================================
 
 [tool.black]
 line-length = 100
@@ -118,7 +115,6 @@ target-version = ['py38', 'py39', 'py310', 'py311']
 include = '\.pyi?$'
 extend-exclude = '''
 /(
-  # directories
   \.eggs
   | \.git
   | \.hg

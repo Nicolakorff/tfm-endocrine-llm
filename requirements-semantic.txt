@@ -1,0 +1,10 @@
+# ============================================================================
+# Instalación con Características Semánticas
+# Incluye sentence-transformers para sesgos basados en embeddings
+# ============================================================================
+
+# Base requirements
+-r requirements.txt
+
+# Semantic features
+sentence-transformers>=2.2.0,<3.0.0
