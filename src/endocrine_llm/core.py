@@ -334,8 +334,14 @@ class EndocrineModulatedLLM:
         print(f"   Dispositivo: {self.device}")
 
         # Cargar modelo y tokenizer
-        self.tokenizer = AutoTokenizer.from_pretrained(model_name)
-        self.model = AutoModelForCausalLM.from_pretrained(model_name).to(self.device)
+        self.tokenizer = AutoTokenizer.from_pretrained(model_name, trust_remote_code=True)
+        self.model = AutoModelForCausalLM.from_pretrained(
+            model_name, 
+            trust_remote_code=True,
+            device_map="auto" if torch.cuda.is_available() else "cpu"
+        )
+        if not torch.cuda.is_available():
+            self.model = self.model.to(self.device)
         self.model.eval()
 
         # Configurar pad token
