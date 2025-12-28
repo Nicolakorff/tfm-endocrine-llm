@@ -1,4 +1,4 @@
-# 🔬 Diseño Experimental: Sistema Dinámico (Fase 3)
+# Diseño Experimental: Sistema Dinámico (Fase 3)
 
 **Versión:** 1.0  
 **Fecha:** Enero 2025  
@@ -6,13 +6,13 @@
 
 ---
 
-## 📋 Objetivo
+## Objetivo
 
 Evaluar si el **sistema de actualización hormonal dinámica** produce resultados cualitativamente diferentes y superiores a los **perfiles hormonales estáticos** en términos de diversidad léxica, adaptación contextual y calidad del contenido.
 
 ---
 
-## 🎯 Hipótesis
+## Hipótesis
 
 ### H1: Diversidad Léxica (Principal)
 
@@ -44,7 +44,7 @@ Evaluar si el **sistema de actualización hormonal dinámica** produce resultado
 
 ---
 
-## 📊 Variables
+## Variables
 
 ### Variable Independiente (VI)
 
@@ -73,7 +73,7 @@ Evaluar si el **sistema de actualización hormonal dinámica** produce resultado
 
 ---
 
-## 🎲 Diseño Experimental
+## Diseño Experimental
 
 ### Tipo de Diseño
 
@@ -116,7 +116,7 @@ TOTAL: 40 prompts × 6 perfiles × 3 reps = 720 generaciones
 
 ---
 
-## 📏 Tamaño de Muestra
+## Tamaño de Muestra
 
 ### Cálculo de Potencia
 
@@ -133,7 +133,7 @@ TOTAL: 40 prompts × 6 perfiles × 3 reps = 720 generaciones
 
 ---
 
-## 📊 Análisis Estadístico
+## Análisis Estadístico
 
 ### Fase 1: Análisis Descriptivo
 
@@ -193,7 +193,7 @@ F_stat, p_value = stats.f_oneway(*groups)
 
 ---
 
-## 📈 Resultados Esperados
+## Resultados Esperados
 
 ### H1: Diversidad Léxica
 
@@ -228,7 +228,7 @@ Cambio Hormonal por Categoría:
 
 ---
 
-## ⚠️ Limitaciones
+## Limitaciones
 
 1. **Modelo pequeño:** DistilGPT2 (82M) - resultados pueden variar en modelos grandes
 2. **Learning rate fijo:** 0.15 no optimizado experimentalmente
@@ -238,7 +238,7 @@ Cambio Hormonal por Categoría:
 
 ---
 
-## 🔮 Trabajo Futuro
+## Trabajo Futuro
 
 1. **Grid search** de hiperparámetros:
    - `learning_rate` ∈ [0.05, 0.30], step 0.05
@@ -259,7 +259,7 @@ Cambio Hormonal por Categoría:
 
 ---
 
-## 📁 Archivos Generados
+## Archivos Generados
 
 **Datos:**
 - `data/results/phase3_dynamic_results.csv` - Resultados completos
@@ -273,7 +273,7 @@ Cambio Hormonal por Categoría:
 
 ---
 
-## 🎓 Implicaciones para el TFM
+## Implicaciones para el TFM
 
 ### Contribución Principal
 

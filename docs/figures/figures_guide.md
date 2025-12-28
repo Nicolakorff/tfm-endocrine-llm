@@ -1,4 +1,4 @@
-# 📊 Guía de Figuras para TFM
+# Guía de Figuras para TFM
 
 **Sistema de Neuromodulación Endocrina para LLMs**  
 **Versión:** 2.0 (con Sistema Dinámico)  
@@ -6,7 +6,7 @@
 
 ---
 
-## 📋 Índice de Figuras
+## Índice de Figuras
 
 ### Figuras Principales (Metodología y Resultados)
 
@@ -25,7 +25,7 @@
 
 ---
 
-## 🎨 Figura Maestra
+## Figura Maestra
 
 **Archivo:** `data/results/tfm_figures/master_figure.pdf`  
 **Ubicación:** Capítulo 5 - Inicio o Apéndice A  
@@ -55,7 +55,7 @@ Si incluye Fase 3:
 
 ---
 
-## 🔄 Figuras Sistema Dinámico
+## Figuras Sistema Dinámico
 
 ### Figura 11: Ejemplo de Trayectoria Hormonal
 
@@ -94,7 +94,7 @@ Learning rate: 0.15, Update interval: 5 tokens.}
 
 ---
 
-## 📁 Copiar Figuras a LaTeX
+## Copiar Figuras a LaTeX
 
 ```bash
 #!/bin/bash
@@ -115,7 +115,7 @@ echo "✓ Figuras copiadas a tfm_latex/figures/"
 
 ---
 
-## 📐 Especificaciones Técnicas
+## Especificaciones Técnicas
 
 - **Resolución:** 300 DPI
 - **Formato principal:** PDF (vectorial)
@@ -126,7 +126,7 @@ echo "✓ Figuras copiadas a tfm_latex/figures/"
 
 ---
 
-## ✅ Checklist de Calidad
+## Checklist de Calidad
 
 - [ ] Ejes con etiquetas claras
 - [ ] Leyendas legibles
@@ -139,5 +139,5 @@ echo "✓ Figuras copiadas a tfm_latex/figures/"
 
 ---
 
-**Total figuras:** ~13-15 (según datos disponibles)  
-**Preparado para:** TFM - Máster en Grandes Modelos de Lenguaje
+**Total figuras:** 13-15 (aun en proceso)  
+

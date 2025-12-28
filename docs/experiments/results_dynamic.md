@@ -1,4 +1,4 @@
-# 📊 Resultados: Sistema Dinámico vs Estático (Fase 3)
+# Resultados: Sistema Dinámico vs Estático (Fase 3)
 
 **Versión:** 1.0  
 **Fecha:** Enero 2025  
@@ -6,7 +6,7 @@
 
 ---
 
-## 📋 Resumen Ejecutivo
+## Resumen Ejecutivo
 
 Este documento presenta los resultados de la comparación entre el **sistema hormonal dinámico** (con actualización en tiempo real) y el **sistema estático** (perfiles fijos).
 
@@ -24,7 +24,7 @@ Este documento presenta los resultados de la comparación entre el **sistema hor
 
 ---
 
-## 📊 Resultados Principales
+## Resultados Principales
 
 ### 1. Diversidad Léxica (Distinct-2)
 
@@ -107,7 +107,7 @@ Este documento presenta los resultados de la comparación entre el **sistema hor
 
 ---
 
-## 📈 Visualizaciones
+## Visualizaciones
 
 ### Figura 1: Comparación Boxplots
 
@@ -181,7 +181,7 @@ Este documento presenta los resultados de la comparación entre el **sistema hor
 
 ---
 
-## 🎯 Validación de Hipótesis
+## Validación de Hipótesis
 
 ### H1: Diversidad Léxica ✓/✗
 
@@ -226,7 +226,7 @@ Este documento presenta los resultados de la comparación entre el **sistema hor
 
 ---
 
-## 💡 Conclusiones
+## Conclusiones
 
 ### Hallazgos Principales
 
@@ -244,7 +244,7 @@ Este documento presenta los resultados de la comparación entre el **sistema hor
 
 ---
 
-## ⚠️ Limitaciones
+## Limitaciones
 
 1. **Muestra:** 40 prompts de 200 totales (20%)
 2. **Learning rate:** Fijo en 0.15 (no optimizado)
@@ -254,7 +254,7 @@ Este documento presenta los resultados de la comparación entre el **sistema hor
 
 ---
 
-## 🔮 Trabajo Futuro
+## Trabajo Futuro
 
 ### Corto Plazo
 1. Aumentar muestra a 200 prompts completos
@@ -273,7 +273,7 @@ Este documento presenta los resultados de la comparación entre el **sistema hor
 
 ---
 
-## 📁 Archivos Generados
+## Archivos Generados
 
 ### Datos
 - `data/results/phase3_dynamic_results.csv` - Dataset completo (720 filas)
@@ -293,7 +293,7 @@ Este documento presenta los resultados de la comparación entre el **sistema hor
 
 ---
 
-## 📚 Referencias para Interpretación
+## Referencias para Interpretación
 
 ### Umbrales de Efecto (Cohen's d)
 - d < 0.2: Trivial
@@ -313,7 +313,7 @@ Este documento presenta los resultados de la comparación entre el **sistema hor
 
 ---
 
-## 📝 Notas para Completar
+## Notas para Completar
 
 **IMPORTANTE:** Este documento contiene placeholders (0.XXX) que deben ser reemplazados con los datos reales de tu experimento.
 

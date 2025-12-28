@@ -1,4 +1,4 @@
-# 🧬 Sistema de Neuromodulación Endocrina para LLMs
+# Sistema de Neuromodulación Endocrina para LLMs
 
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -12,7 +12,7 @@ Sistema biológicamente inspirado que modula la generación de texto en LLMs med
 
 ---
 
-## 🚀 Quick Start (30 segundos)
+## Quick Start (30 segundos)
 
 ```bash
 pip install git+https://github.com/Nicolakorff/tfm-endocrine-llm.git
@@ -31,13 +31,13 @@ print(texts[0])
 # → "I'm feeling anxious. I understand how stressful that can be..."
 ```
 
-**▶️** [Más ejemplos](docs/quickstart.md) | **📚** [Guía completa](docs/usage_guide.md) | **📓** [Notebooks](examples/)
+****[Más ejemplos](docs/quickstart.md) | **** [Guía completa](docs/usage_guide.md) | **** [Notebooks](examples/)
 
 ---
 
-## ✨ Características Principales
+## Características Principales
 
-### 🎭 Tres Modos de Modulación
+### Tres Modos de Modulación
 
 | Modo | Descripción | Cobertura | Uso |
 |------|-------------|-----------|-----|
@@ -45,17 +45,17 @@ print(texts[0])
 | **Dinámico** | Actualización en tiempo real | Adaptativo | Aprendizaje contextual |
 | **Semántico** | Basado en embeddings SBERT | ~1000 tokens | Contenido específico |
 
-### 🧬 Cinco Hormonas Artificiales
+### Cinco Hormonas Artificiales
 
-- **🎯 Dopamina** - Creatividad y exploración
-- **⚠️ Cortisol** - Cautela y precisión
-- **💙 Oxitocina** - Empatía y prosocialidad
-- **⚡ Adrenalina** - Intensidad y urgencia
-- **🌊 Serotonina** - Estabilidad y coherencia
+- **Dopamina** - Creatividad y exploración
+- **Cortisol** - Cautela y precisión
+- **Oxitocina** - Empatía y prosocialidad
+- **Adrenalina** - Intensidad y urgencia
+- **Serotonina** - Estabilidad y coherencia
 
 ---
 
-## 📊 Resultados Principales (TFM)
+## Resultados Principales (TFM)
 
 ### Sistema Dinámico vs Estático
 
@@ -72,31 +72,31 @@ print(texts[0])
 | **Diversidad** | 0.547 | 0.623 | +13.9% |
 | **p-value** | - | - | <0.001 |
 
-**📈** [Resultados completos](docs/results/tfm_results.md) | **📊** [Figuras](docs/figures/figures_guide.md)
+****[Resultados completos](docs/results/tfm_results.md) | ****[Figuras](docs/figures/figures_guide.md)
 
 ---
 
-## 📖 Documentación
+## Documentación
 
 ### Para Usuarios
-- 📘 **[Instalación](docs/installation.md)** - Guía de instalación detallada
-- 🚀 **[Quick Start](docs/quickstart.md)** - Primeros pasos en 5 minutos
-- 📚 **[Guía de Uso](docs/usage_guide.md)** - Documentación completa
-- 📓 **[Notebooks](examples/)** - Ejemplos interactivos en Colab
+- **[Instalación](docs/installation.md)** - Guía de instalación detallada
+- **[Quick Start](docs/quickstart.md)** - Primeros pasos en 5 minutos
+- **[Guía de Uso](docs/usage_guide.md)** - Documentación completa
+- **[Notebooks](examples/)** - Ejemplos interactivos en Colab
 
 ### Para Investigadores
-- 🧪 **[Experimentos](docs/experiments/)** - Diseños experimentales
-- 📊 **[Resultados del TFM](docs/results/tfm_results.md)** - Análisis completo
-- 📈 **[Guía de Figuras](docs/figures/figures_guide.md)** - Figuras para LaTeX
+- **[Experimentos](docs/experiments/)** - Diseños experimentales
+- **[Resultados del TFM](docs/results/tfm_results.md)** - Análisis completo
+- **[Guía de Figuras](docs/figures/figures_guide.md)** - Figuras para LaTeX
 
 ### Desarrollo
-- 📝 **[Changelog](CHANGELOG.md)** - Historial de cambios
-- 🤝 **[Contribuir](CONTRIBUTING.md)** - Guía de contribución
-- 🔧 **[API Reference](docs/api_reference.md)** - Documentación técnica
+- **[Changelog](CHANGELOG.md)** - Historial de cambios
+- **[Contribuir](CONTRIBUTING.md)** - Guía de contribución
+- **[API Reference](docs/api_reference.md)** - Documentación técnica
 
 ---
 
-## 🎯 Ejemplos de Uso
+## Ejemplos de Uso
 
 ### Generación con Perfil Hormonal
 
@@ -111,7 +111,7 @@ HORMONE_PROFILES["creative"]  # Alta dopamina, baja cautela
 HORMONE_PROFILES["cautious"]  # Alto cortisol, baja dopamina
 ```
 
-### Sistema Dinámico (🆕 v0.5.0)
+### Sistema Dinámico (v0.5.0)
 
 ```python
 from endocrine_llm import HormoneProfile
@@ -147,7 +147,7 @@ texts = model.generate_with_semantic_bias(
 
 ---
 
-## 🏗️ Arquitectura
+## Arquitectura
 
 ```
 ┌─────────────────────────────────────────────────┐
@@ -178,7 +178,7 @@ texts = model.generate_with_semantic_bias(
 
 ---
 
-## 📦 Instalación
+## Instalación
 
 ### Instalación Básica
 
@@ -204,7 +204,7 @@ pip install -e ".[all]"
 
 ---
 
-## 🧪 Reproducir Experimentos del TFM
+## Reproducir Experimentos del TFM
 
 ```bash
 # 1. Fase 1: Hormonas individuales
@@ -223,11 +223,11 @@ python scripts/consolidate_all_experiments.py
 python scripts/create_master_figure.py
 ```
 
-**⏱️ Tiempo total:** ~2-3 horas en GPU (T4/V100)
+**Tiempo total:** ~2-3 horas en GPU (T4/V100)
 
 ---
 
-## 📚 Citación
+## Citación
 
 Si usas este sistema en tu investigación, por favor cita:
 
@@ -236,6 +236,7 @@ Si usas este sistema en tu investigación, por favor cita:
   title={Sistema de Neuromodulación Endocrina para Modelos de Lenguaje: 
          Un Enfoque Biológicamente Inspirado para Control Dinámico},
   author={Korff, Nicola},
+  tutor={Nuñez, Matías}
   year={2025},
   school={Universidad [Nombre]},
   type={Trabajo Fin de Máster},
@@ -245,11 +246,11 @@ Si usas este sistema en tu investigación, por favor cita:
 
 ---
 
-## 📊 Estructura del Proyecto
+## Estructura del Proyecto
 
 ```
 tfm-endocrine-llm/
-├── endocrine_llm/          # 📦 Paquete principal
+├── endocrine_llm/          # Paquete principal
 │   ├── core.py             # Sistema base + dinámico
 │   ├── metrics.py          # Métricas de evaluación
 │   ├── experiment.py       # Framework experimental
@@ -259,17 +260,17 @@ tfm-endocrine-llm/
 │   ├── prompts/            # Dataset de prompts
 │   └── results/            # Resultados experimentales
 │
-├── scripts/                # 🔧 Scripts de análisis
-├── examples/               # 📓 Notebooks de ejemplo
-├── tests/                  # ✅ Tests unitarios
-└── docs/                   # 📚 Documentación
+├── scripts/                # Scripts de análisis
+├── examples/               # Notebooks de ejemplo
+├── tests/                  # Tests unitarios
+└── docs/                   # Documentación
 ```
 
 ---
 
-## 🗺️ Roadmap
+## Roadmap
 
-### ✅ Completado (v0.5.0)
+### Completado (v0.5.0)
 - [x] Sistema base de modulación hormonal
 - [x] 12 perfiles predefinidos
 - [x] Sistema dinámico con feedback
@@ -278,13 +279,13 @@ tfm-endocrine-llm/
 - [x] Análisis estadístico (ANOVA, t-tests)
 - [x] Visualizaciones para publicación
 
-### 🚧 En Desarrollo (v1.0.0 - TFM Final)
+### En Desarrollo (v1.0.0 - TFM Final)
 - [ ] Documentación completa del TFM
 - [ ] Dataset consolidado final
 - [ ] Figura maestra integrada
 - [ ] Publicación en arXiv
 
-### 🔮 Futuro (v1.1.0+)
+### Futuro (v1.1.0+)
 - [ ] Soporte para modelos grandes (Llama 2, Mistral)
 - [ ] Dashboard interactivo (Streamlit)
 - [ ] API REST para producción
@@ -292,7 +293,7 @@ tfm-endocrine-llm/
 
 ---
 
-## 🤝 Contribuir
+## Contribuir
 
 Las contribuciones son bienvenidas. Para cambios importantes:
 
@@ -302,17 +303,17 @@ Las contribuciones son bienvenidas. Para cambios importantes:
 4. Push a la rama (`git push origin feature/AmazingFeature`)
 5. Abre un Pull Request
 
-**📖** [Guía de contribución completa](CONTRIBUTING.md)
+**** [Guía de contribución completa](CONTRIBUTING.md)
 
 ---
 
-## 📄 Licencia
+## Licencia
 
 Este proyecto está bajo la Licencia MIT - ver el archivo [LICENSE](LICENSE) para detalles.
 
 ---
 
-## 🙏 Agradecimientos
+## Agradecimientos
 
 - **Matías Nuñez** - Supervisor del TFM
 - **HuggingFace** - Librería Transformers
@@ -321,11 +322,11 @@ Este proyecto está bajo la Licencia MIT - ver el archivo [LICENSE](LICENSE) par
 
 ---
 
-## 📞 Contacto
+## Contacto
 
 **Nicola Korff**  
-📧 nicola.korff@example.com  
-🔗 [GitHub](https://github.com/Nicolakorff) | [LinkedIn](https://linkedin.com/in/tu-perfil)
+nicola.korff@example.com  
+GitHub](https://github.com/Nicolakorff) | [LinkedIn](https://www.linkedin.com/in/nicolakorff)
 
 **Issues:** [GitHub Issues](https://github.com/Nicolakorff/tfm-endocrine-llm/issues)  
 **Documentación:** [Wiki](https://github.com/Nicolakorff/tfm-endocrine-llm/wiki)
@@ -334,10 +335,10 @@ Este proyecto está bajo la Licencia MIT - ver el archivo [LICENSE](LICENSE) par
 
 <div align="center">
 
-**⭐ Si este proyecto te resulta útil, dale una estrella ⭐**
+**Si este proyecto te resulta útil, dale una estrella**
 
 Hecho con ❤️ para la comunidad NLP
 
-[🏠 Inicio](#-sistema-de-neuromodulación-endocrina-para-llms) • [📖 Docs](docs/) • [📓 Notebooks](examples/) • [📊 Resultados](docs/results/tfm_results.md)
+[Inicio](#-sistema-de-neuromodulación-endocrina-para-llms) • [Docs](docs/) • [Notebooks](examples/) • [Resultados](docs/results/tfm_results.md)
 
 </div>
