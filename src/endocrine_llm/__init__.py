@@ -88,15 +88,15 @@ def get_version_info():
         }
     }
 
-# Banner de bienvenida (opcional)
+# Banner de bienvenida
 def print_info():
     """Imprime información del sistema"""
     print("="*60)
     print(f"Sistema de Neuromodulación Endocrina v{__version__}")
     print("="*60)
-    print(f"Componentes disponibles:")
-    print(f"  ✓ Core (perfiles hormonales)")
-    print(f"  ✓ Metrics (evaluación)")
-    print(f"  ✓ Experiment (framework)")
-    print(f"  {'✓' if _has_semantic else '✗'} Semantic (sesgos semánticos)")
+    print("Componentes disponibles:")
+    print("Core (perfiles hormonales)")
+    print("Metrics (evaluación)")
+    print("Experiment (framework)")
+    print(f"{'✓' if _has_semantic else '✗'} Semantic (sesgos semánticos)")
     print("="*60)
