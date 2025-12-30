@@ -18,7 +18,7 @@ Sistema biológicamente inspirado que modula la generación de texto en LLMs med
 1. Demo basic: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Nicolakorff/tfm-endocrine-llm/blob/main/examples/01_demo_basic.ipynb)
 2. Demo isolated: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Nicolakorff/tfm-endocrine-llm/blob/main/examples/demo_isolated.ipynb)
 3. Demo semantic: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Nicolakorff/tfm-endocrine-llm/blob/main/examples/03_demo_semantic.ipynb)
-4. Demo dynamic: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Nicolakorff/tfm-endocrine-llm/blob/main/examples/04_demo_dynamic.ipynb)
+4. Demo dynamic: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Nicolakorff/tfm-endocrine-llm/blob/main/examples/04_demo_dynamic_repo.ipynb)
 
 ---
 
