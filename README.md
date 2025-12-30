@@ -332,9 +332,6 @@ Este proyecto está bajo la Licencia MIT - ver el archivo [LICENSE](LICENSE) par
 nicola.korff@example.com  
 GitHub](https://github.com/Nicolakorff) | [LinkedIn](https://www.linkedin.com/in/nicolakorff)
 
-**Issues:** [GitHub Issues](https://github.com/Nicolakorff/tfm-endocrine-llm/issues)  
-**Documentación:** [Wiki](https://github.com/Nicolakorff/tfm-endocrine-llm/wiki)
-
 ---
 
 <div align="center">
