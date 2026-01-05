@@ -4,7 +4,6 @@ en lugar de listas simples de tokens.
 """
 
 import torch
-import torch.nn.functional as F
 from sentence_transformers import SentenceTransformer, util
 from typing import List, Dict, Optional
 import numpy as np
@@ -56,7 +55,7 @@ class SemanticBiasManager:
         self.tokenizer = tokenizer
         self.device = device
 
-        print(f" Cargando modelo de embeddings: {model_name}...")
+        print(f"Cargando modelo de embeddings: {model_name}...")
         self.sbert = SentenceTransformer(model_name)
         self.sbert.to(device)
         self.sbert.eval()
@@ -70,8 +69,8 @@ class SemanticBiasManager:
         # Cache de embeddings de tokens (para eficiencia)
         self.token_embedding_cache = {}
 
-        print(f" SemanticBiasManager inicializado")
-        print(f"   Categorías disponibles: {list(self.categories.keys())}")
+        print("SemanticBiasManager inicializado")
+        print(f"Categorías disponibles: {list(self.categories.keys())}")
 
     def _build_default_categories(self) -> Dict[str, SemanticCategory]:
         """Construye categorías semánticas predefinidas"""
@@ -136,7 +135,7 @@ class SemanticBiasManager:
 
     def _precompute_category_embeddings(self):
         """Pre-computa embeddings de todas las categorías"""
-        print("   Computing category embeddings...")
+        print("Computing category embeddings...")
 
         with torch.no_grad():
             for category_name, category in self.categories.items():

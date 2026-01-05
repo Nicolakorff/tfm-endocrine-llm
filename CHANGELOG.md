@@ -20,7 +20,7 @@ y este proyecto adhiere a [Semantic Versioning](https://semver.org/spec/v2.0.0.h
 
 ## [0.5.0] - 2025-01-XX
 
-### Added - Sistema Dinámico (Fase 3)
+### Added - Sistema Dinámico (Fase 4)
 
 **Core Module (`core.py`):**
 - `HormoneProfile` con soporte para actualización dinámica (`dynamic=True`, `learning_rate`)
@@ -55,7 +55,7 @@ y este proyecto adhiere a [Semantic Versioning](https://semver.org/spec/v2.0.0.h
 
 **Analysis & Visualization:**
 - `consolidate_all_experiments.py` actualizado:
-  - Soporte para Fase 3 (`phase3_dynamic_results.csv`)
+  - Soporte para Fase 4 (`phase4_dynamic_results.csv`)
   - Normalización de columnas entre fases
   - Manejo de columnas hormonales dinámicas (`init_*`, `final_*`, `delta_*`)
   - Estadísticas específicas de sistema dinámico
@@ -94,7 +94,7 @@ y este proyecto adhiere a [Semantic Versioning](https://semver.org/spec/v2.0.0.h
 
 ## [0.4.0] - 2025-01-06
 
-### Added - Sistema de Sesgos Semánticos
+### Added - Sistema de Sesgos Semánticos (Fase 3)
 
 **Semantic Module (`semantic.py`):**
 - `SemanticBiasManager` para gestión de categorías semánticas
@@ -142,7 +142,7 @@ y este proyecto adhiere a [Semantic Versioning](https://semver.org/spec/v2.0.0.h
 **Experiments:**
 - Fase 1: Hormonas individuales (baseline + 5 high hormones)
 - Fase 2: Perfiles combinados (6 perfiles: euphoric, stressed, empathic, cautious, creative, stable)
-- Dataset de 200 prompts balanceados (50 por categoría)
+- Dataset de 40 prompts balanceados (8 por categoría)
 - 3 generaciones por combinación prompt-perfil
 
 **Testing:**

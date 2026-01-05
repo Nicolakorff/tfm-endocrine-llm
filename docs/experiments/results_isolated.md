@@ -1,7 +1,10 @@
-# Resultados: Hormonas Aisladas (Fase 1)
+# Resultados: Hormonas Aisladas
+
+## Sistema de Neuromodulación Endocrina para LLMs - Fase 2
 
 **Versión:** 1.0  
 **Fecha:** Diciembre 2024  
+**Fase Experimental:** 2 - Evaluación individual 
 **Estado:** Completado y validado
 
 ---

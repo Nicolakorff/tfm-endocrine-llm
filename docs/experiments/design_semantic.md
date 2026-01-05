@@ -1,6 +1,6 @@
 # Diseño Experimental: Comparación de Sesgos Semánticos
 
-## Sistema de Neuromodulación Endocrina para LLMs - Fase 4
+## Sistema de Neuromodulación Endocrina para LLMs - Fase 3
 
 **Versión:** 2.0  
 **Fecha:** Enero 2025  
@@ -515,14 +515,12 @@ Estimación:
 - No sabemos valor óptimo
 
 **Mitigación:**
-- Documentar elección de 1.5 (basado en pruebas preliminares)
+- Documentar elección de 1.5 (basado en pruebas preliminares) Probar 0.8?
 - Análisis de sensibilidad en trabajo futuro
 
 ---
 
 ## Extensiones Futuras
-
-### Corto Plazo (Post-TFM)
 
 1. **Aumentar muestra:**
    - 50 prompts por tipo (100 total)
@@ -537,10 +535,6 @@ Estimación:
 3. **Todas las categorías:**
    - 5 categorías × 2 sesgos × 20 prompts = 200 experimentos
    - ANOVA completa: categoría × sesgo
-
----
-
-### Medio Plazo (Publicación)
 
 4. **Evaluación humana:**
    - N ≥ 30 anotadores
@@ -558,10 +552,6 @@ Estimación:
    - Named entity recognition
    - Análisis de tópicos (BERTopic)
 
----
-
-### Largo Plazo (Investigación Avanzada)
-
 7. **Sesgos multi-objetivo:**
    - Combinar empathy + creativity
    - Pesos adaptativos aprendidos
@@ -573,34 +563,6 @@ Estimación:
 9. **Integración con sistema dinámico:**
    - Ajuste dinámico de `semantic_strength`
    - Aprendizaje de categoría óptima por contexto
-
----
-
-## Checklist de Ejecución
-
-### Pre-Experimento
-
-- [ ] Verificar instalación de dependencias (`sentence-transformers`)
-- [ ] Preparar dataset de prompts (16 balanceados)
-- [ ] Validar configuración de parámetros
-- [ ] Crear estructura de directorios de resultados
-- [ ] Test de código con 1 prompt (ambas condiciones)
-
-### Experimento
-
-- [ ] Ejecutar generación completa (160 textos)
-- [ ] Verificar guardado de resultados intermedios
-- [ ] Monitorear progreso (tqdm progress bar)
-- [ ] Tiempo estimado: ~30-45 minutos en GPU
-
-### Post-Experimento
-
-- [ ] Calcular métricas para todas las generaciones
-- [ ] Verificar completitud de datos (sin NaN críticos)
-- [ ] Ejecutar análisis estadístico completo
-- [ ] Generar visualizaciones
-- [ ] Crear tablas LaTeX
-- [ ] Redactar interpretación de resultados
 
 ---
 

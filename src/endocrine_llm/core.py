@@ -5,8 +5,8 @@ para modelos de lenguaje usando LogitsProcessor de HuggingFace.
 
 from typing import List, Dict, Optional
 from dataclasses import dataclass, asdict
-from collections import deque  # ← AÑADIR
-import numpy as np  # ← AÑADIR
+from collections import deque
+import numpy as np
 import warnings
 warnings.filterwarnings('ignore')
 import torch
@@ -150,7 +150,7 @@ HORMONE_PROFILES = {
     "creative": HormoneProfile(0.9, 0.3, 0.5, 0.6, 0.5),
     "stable": HormoneProfile(0.5, 0.5, 0.5, 0.3, 0.9),
 
-    # AÑADIR: Perfiles dinámicos
+    # Perfiles dinámicos
     "dynamic_neutral": HormoneProfile(0.5, 0.5, 0.5, 0.5, 0.5, dynamic=True, learning_rate=0.1),
     "dynamic_adaptive": HormoneProfile(0.5, 0.5, 0.5, 0.5, 0.5, dynamic=True, learning_rate=0.2),
     "dynamic_conservative": HormoneProfile(0.5, 0.5, 0.5, 0.5, 0.5, dynamic=True, learning_rate=0.05),
@@ -160,7 +160,7 @@ HORMONE_PROFILES = {
 class HormonalLogitsProcessor(LogitsProcessor):
     """
     Procesador de logits que implementa modulación hormonal.
-    Ahora con tracking para feedback dinámico.
+    Con tracking para feedback dinámico.
 
     Aplica tres transformaciones principales:
     1. Temperatura adaptativa según dopamina y cortisol
@@ -198,7 +198,7 @@ class HormonalLogitsProcessor(LogitsProcessor):
         self.delta = delta
         self.epsilon = epsilon
 
-        # AÑADIR: Tracking para feedback dinámico
+        # Tracking para feedback dinámico
         self.token_history = []
         self.confidence_history = deque(maxlen=10)
         self.entropy_history = deque(maxlen=10)
@@ -252,14 +252,14 @@ class HormonalLogitsProcessor(LogitsProcessor):
                 if token_id < scores.shape[-1]:
                     scores[:, token_id] += self.epsilon * self.H.oxytocin
 
-        # AÑADIR: 4. TRACKING PARA FEEDBACK DINÁMICO
+        # 4. TRACKING PARA FEEDBACK DINÁMICO
         if self.H.dynamic:
             self._track_generation_metrics(scores)
 
         return scores
 
     def _track_generation_metrics(self, scores: torch.FloatTensor):
-        """AÑADIR: Rastrea métricas para actualización hormonal"""
+        """Rastrea métricas para actualización hormonal"""
         # Calcular confianza (probabilidad del token más probable)
         probs = F.softmax(scores, dim=-1)
         max_prob = probs.max().item()
@@ -271,7 +271,7 @@ class HormonalLogitsProcessor(LogitsProcessor):
 
     def get_feedback(self) -> Dict[str, float]:
         """
-        AÑADIR: Obtiene feedback acumulado para actualización hormonal
+        Obtiene feedback acumulado para actualización hormonal
 
         Returns:
             Diccionario con métricas promedio
@@ -293,7 +293,7 @@ class HormonalLogitsProcessor(LogitsProcessor):
         return feedback
 
     def add_token(self, token_id: int):
-        """AÑADIR: Añade token al historial"""
+        """Añade token al historial"""
         self.token_history.append(token_id)
 
 

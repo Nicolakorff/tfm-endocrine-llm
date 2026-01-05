@@ -1,8 +1,10 @@
-# Resultados: Sistema Dinámico vs Estático (Fase 3)
+# Resultados: Sistema Dinámico vs Estático
+
+## Sistema de Neuromodulación Endocrina para LLMs - Fase 4
 
 **Versión:** 1.0  
 **Fecha:** Enero 2025  
-**Fase Experimental:** 3 - Modo Dinámico vs. Estático  
+**Fase Experimental:** 4 - Modo Dinámico vs. Estático  
 **Estado:** Completado y validado
 
 ---

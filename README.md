@@ -214,18 +214,22 @@ pip install -e ".[all]"
 
 ```bash
 # 1. Fase 1: Hormonas individuales
-python scripts/run_phase1_isolated.py
+python scripts/run_phase1_isolated.py 
+python scripts/isolated_hormone_analysis.py
 
 # 2. Fase 2: Perfiles combinados
 python scripts/run_phase2_combined.py
 
-# 3. Fase 3: Sistema dinámico
+# 3. Fase 3: Sesgo semántico
+python scripts/run_experiment_semantic_comparison.py
+
+# 4. Fase 4: Sistema dinámico
 python scripts/run_dynamic_experiment.py
 
-# 4. Consolidar resultados
+# 5. Consolidar resultados
 python scripts/consolidate_all_experiments.py
 
-# 5. Generar figura maestra
+# 6. Generar figura maestra
 python scripts/create_master_figure.py
 ```
 
@@ -244,7 +248,7 @@ Si usas este sistema en tu investigación, por favor cita:
   author={Korff, Nicola},
   tutor={Nuñez, Matías}
   year={2025},
-  school={Universidad [Nombre]},
+  school={Universidad de la Rioja},
   type={Trabajo Fin de Máster},
   note={Máster en Grandes Modelos de Lenguaje y Lingüística Computacional}
 }
@@ -260,7 +264,8 @@ tfm-endocrine-llm/
 │   ├── core.py             # Sistema base + dinámico
 │   ├── metrics.py          # Métricas de evaluación
 │   ├── experiment.py       # Framework experimental
-│   └── semantic.py         # Sesgos semánticos
+│   ├── semantic.py         # Sesgos semánticos
+│   └── visualization.py    # Visualizaciones
 │
 ├── data/
 │   ├── prompts/            # Dataset de prompts
@@ -319,7 +324,7 @@ Este proyecto está bajo la Licencia MIT - ver el archivo [LICENSE](LICENSE) par
 
 ## Agradecimientos
 
-- **Matías Nuñez** - Supervisor del TFM
+- **Matías Nuñez** - Tutor del TFM
 - **HuggingFace** - Librería Transformers
 - **Sentence-Transformers** - Modelo de embeddings
 - Comunidad open-source de NLP

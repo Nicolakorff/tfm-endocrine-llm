@@ -1,5 +1,5 @@
 """
-Experimento: Comparación de Sesgo Simple vs Sesgo Semántico
+Experimento Fase 3: Comparación de Sesgo Simple vs Sesgo Semántico
 
 Compara directamente el efecto de:
 1. Sesgo simple (lista de tokens)

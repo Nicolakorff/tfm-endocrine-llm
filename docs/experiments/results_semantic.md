@@ -3,7 +3,7 @@
 ## Sistema de Neuromodulación Endocrina para LLMs - Experimento Semántico
 
 **Fecha:** Enero 2025   
-**Fase Experimental:** 4 - Sesgos Semánticos  
+**Fase Experimental:** 3 - Sesgos Semánticos  
 **Versión:** 1.0
 **Estado:** Completado y validado
 

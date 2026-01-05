@@ -1,5 +1,5 @@
 """
-Análisis Estadístico Completo: 
+Análisis Estadístico Completo:
 Compara Sesgo Simple vs Sesgo Semántico
 """
 
@@ -98,8 +98,8 @@ for metric in ['distinct_2', 'sentiment_polarity', 'repetition_rate', 'length']:
 results_df = pd.DataFrame(results_table)
 results_df.to_csv(OUTPUT_DIR / "statistical_tests.csv", index=False)
 
-# 4. CREAR FIGURA PARA TFM
-print("\n4. GENERANDO FIGURA PARA TFM...")
+# 4. CREAR FIGURA COMPARATIVA
+print("\n4. GENERANDO FIGURA COMPARATIVA...")
 print("-"*80)
 
 fig = plt.figure(figsize=(16, 10))

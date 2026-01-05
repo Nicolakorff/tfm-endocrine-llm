@@ -1,5 +1,5 @@
 """
-Genera tablas en formato LaTeX para el TFM
+Genera tablas en formato LaTeX
 """
 
 import pandas as pd

@@ -14,7 +14,7 @@ print("ANÁLISIS DE RESULTADOS DINÁMICOS")
 print("="*80 + "\n")
 
 # Cargar datos
-DATA_FILE = Path("data/results/phase3_dynamic_results.csv")
+DATA_FILE = Path("data/results/phase4_dynamic_results.csv")
 OUTPUT_DIR = Path("data/results/dynamic_analysis")
 OUTPUT_DIR.mkdir(exist_ok=True)
 

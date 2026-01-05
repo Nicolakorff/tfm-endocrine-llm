@@ -1,6 +1,8 @@
-# Diseño Experimental: Sistema Dinámico (Fase 3)
+# Diseño Experimental: Sistema Dinámico
 
-**Versión:** 1.0  
+## Sistema de Neuromodulación Endocrina para LLMs - Fase 4
+
+**Versión:** 4.0  
 **Fecha:** Enero 2025  
 **Estado:** Completado y validado
 
@@ -41,6 +43,10 @@ Evaluar si el **sistema de actualización hormonal dinámica** produce resultado
 **El sistema dinámico reducirá la tasa de repetición al ajustar serotonina.**
 
 - **Criterio:** Diferencia significativa (p < 0.05, d > 0.3)
+
+### Hipótesis Nula (H0)
+
+**No existen diferencias significativas entre sistema de actualización hormonal dinámica y perfiles hormonales estáticos en ninguna de las métricas evaluadas.**
 
 ---
 
@@ -270,23 +276,6 @@ Cambio Hormonal por Categoría:
 - `hormone_change_distribution.png`
 - `hormone_changes_by_category.png`
 - `example_trajectory_*.png`
-
----
-
-## Implicaciones para el TFM
-
-### Contribución Principal
-
-Demuestra que:
-1. Los sistemas dinámicos **adaptan automáticamente** el comportamiento
-2. La adaptación es **contexto-dependiente** y **medible**
-3. Existe **trade-off** entre diversidad y estabilidad controlable
-
-### Integración con Fases Previas
-
-- **Fase 1:** Valida efectos de hormonas individuales
-- **Fase 2:** Perfiles estáticos como baseline
-- **Fase 3:** Sistema dinámico como extensión natural
 
 ---
 

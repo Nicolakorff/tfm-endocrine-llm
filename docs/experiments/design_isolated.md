@@ -1,6 +1,8 @@
-# Diseño Experimental: Hormonas Aisladas (Fase 1)
+# Diseño Experimental: Hormonas Aisladas
 
-**Versión:** 1.0  
+## Sistema de Neuromodulación Endocrina para LLMs - Fase 2
+
+**Versión:** 2.0  
 **Fecha:** Diciembre 2024  
 **Estado:** Completado y validado
 

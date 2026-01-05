@@ -1,6 +1,6 @@
 """
 Crea la figura maestra que resume TODOS los resultados experimentales
-para incluir en el TFM como figura principal.
+como figura principal.
 """
 
 import pandas as pd
@@ -13,7 +13,7 @@ import matplotlib.patches as mpatches
 from scipy import stats
 
 print("="*80)
-print("CREANDO FIGURA MAESTRA PARA TFM")
+print("CREANDO FIGURA MAESTRA")
 print("="*80 + "\n")
 
 # Configuración

@@ -1,5 +1,5 @@
 """
-Experimento dinámico (Fase 3):
+Experimento dinámico (Fase 4):
 Compara sistema estático vs dinámico
 """
 
@@ -9,13 +9,13 @@ from endocrine_llm import EndocrineModulatedLLM, ExperimentRunner
 import torch
 
 print("="*80)
-print("EXPERIMENTO DINÁMICO - FASE 3")
+print("EXPERIMENTO DINÁMICO - FASE 4")
 print("="*80 + "\n")
 
 # Configuración
 DATA_DIR = Path("data")
 PROMPTS_FILE = DATA_DIR / "prompts/prompts_dataset.csv"
-OUTPUT_FILE = DATA_DIR / "results/phase3_dynamic_results.csv"
+OUTPUT_FILE = DATA_DIR / "results/phase4_dynamic_results.csv"
 
 # Parámetros del experimento
 NUM_GENERATIONS = 3          # Repeticiones por combinación

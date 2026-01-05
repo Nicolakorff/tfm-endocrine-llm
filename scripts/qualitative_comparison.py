@@ -1,5 +1,5 @@
 """
-Análisis Cualitativo: 
+Análisis Cualitativo:
 Extrae ejemplos comparativos
 """
 

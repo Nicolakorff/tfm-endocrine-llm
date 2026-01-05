@@ -278,7 +278,7 @@ class EmpathyMetrics:
 
     Usa dos enfoques:
     1. Conteo de palabras empáticas
-    2. (Opcional) Clasificador RoBERTa si está disponible
+    2. Clasificador RoBERTa si está disponible
 
     Ejemplo:
         >>> metrics = EmpathyMetrics()

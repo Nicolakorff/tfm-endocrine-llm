@@ -1230,14 +1230,7 @@ for i, prompt in enumerate(prompts, 1):
     plt.tight_layout()
     plt.savefig(f'trajectory_{i}.png', dpi=300)
     plt.show()
-```
-
----
-
-## Soporte
-
-**Documentación completa:** [GitHub](https://github.com/Nicolakorff/tfm-endocrine-llm)  
-**Issues:** [GitHub Issues](https://github.com/Nicolakorff/tfm-endocrine-llm/issues)  
+```  
 
 ---
 

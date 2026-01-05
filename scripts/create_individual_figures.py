@@ -1,5 +1,5 @@
 """
-Crea figuras individuales de alta calidad para cada sección del TFM
+Crea figuras individuales de alta calidad para cada sección
 """
 
 import pandas as pd
@@ -10,7 +10,7 @@ from pathlib import Path
 from scipy import stats
 
 print("="*80)
-print("CREANDO FIGURAS INDIVIDUALES PARA TFM")
+print("CREANDO FIGURAS INDIVIDUALES")
 print("="*80 + "\n")
 
 DATA_DIR = Path("data/results")

@@ -159,7 +159,7 @@ class ExperimentRunner:
         save_path: str = None
     ) -> pd.DataFrame:
         """
-        NUEVO: Ejecuta experimento con perfiles dinámicos.
+        Ejecuta experimento con perfiles dinámicos.
 
         Args:
             prompts_df: DataFrame con columnas 'prompt' y 'category'
