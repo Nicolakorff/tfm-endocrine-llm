@@ -229,7 +229,28 @@ class HormonalLogitsProcessor(LogitsProcessor):
             smoothing_factor = max(0.0, min(1.0, self.delta * self.H.serotonin))
             scores = mean_scores + (scores - mean_scores) * (1.0 - smoothing_factor)
 
-        # 2b. ADRENALINA: Top-K dinámico
+        # 2b. SEROTONINA: Penalización por repetición
+        if self.H.serotonin > 0.5 and input_ids.shape[1] > 1:
+            # Ventana de tokens recientes para penalizar
+            recent_window = min(10, input_ids.shape[1])
+            recent_tokens = input_ids[:, -recent_window:]
+            
+            # Calcular penalización por token
+            for batch_idx in range(scores.shape[0]):
+                # Contar ocurrencias de cada token en ventana reciente
+                token_counts = torch.bincount(
+                    recent_tokens[batch_idx], 
+                    minlength=scores.shape[-1]
+                ).float()
+                
+                # Penalización logarítmica proporcional a serotonina
+                penalty_strength = (self.H.serotonin - 0.5) * 2.0  # [0, 1] cuando serotonin ∈ [0.5, 1]
+                penalty = penalty_strength * torch.log1p(token_counts)  # log(1 + count)
+                
+                # Aplicar penalización
+                scores[batch_idx] -= penalty[:scores.shape[-1]].to(scores.device)
+
+        # 2c. ADRENALINA: Top-K dinámico
         if self.H.adrenaline > 0.6:
             batch_size, vocab_size = scores.shape
             max_k = min(50, vocab_size)

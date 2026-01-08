@@ -43,7 +43,7 @@ print(f"Categorías: {prompts_df['category'].value_counts().to_dict()}")
 
 # 2. INICIALIZAR MODELO
 print("\n 2. Inicializando modelo...")
-model = EndocrineModulatedLLM("distilgpt2", device=device)
+model = EndocrineModulatedLLM("Gpt2", device=device)
 print("Modelo cargado")
 
 # 3. INICIALIZAR RUNNER

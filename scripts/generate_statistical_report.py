@@ -30,8 +30,8 @@ generación de texto.
 ### Experimentos Incluidos
 - Fase 1: Hormonas individuales
 - Fase 2: Perfiles combinados
-- Comparación semántica: Sesgo simple vs embeddings
-- Comparación sistema dinámico vs estático
+- Fase 3: Comparación semántica: Sesgo simple vs embeddings
+- Fase 4: Comparación sistema dinámico vs estático
 
 ---
 

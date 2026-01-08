@@ -39,27 +39,27 @@ if (DATA_DIR / "phase2_results.csv").exists():
 else:
     print("Fase 2 no encontrada")
 
-# Fase 3: Sistema dinámico (CORREGIDO)
-if (DATA_DIR / "phase3_dynamic_results.csv").exists():
-    df_phase3 = pd.read_csv(DATA_DIR / "phase3_dynamic_results.csv")
-    df_phase3['experiment'] = 'phase3_dynamic'
-    datasets['phase3'] = df_phase3
-    print(f"Fase 3 (Dinámico): {len(df_phase3)} generaciones")
+# Fase 3: Comparación semántica
+if (DATA_DIR / "semantic_comparison/results.csv").exists():
+    df_semantic_v2 = pd.read_csv(DATA_DIR / "semantic_comparison/results.csv")
+    df_semantic_v2['experiment'] = 'semantic_comparison'
+    datasets['phase3'] = df_semantic_v2
+    print(f"Semántico (mejorado): {len(df_semantic_v2)} generaciones")
 else:
     print("Fase 3 no encontrada")
-
-# Comparación semántica
-if (DATA_DIR / "semantic_comparison/comparison_results.csv").exists():
-    df_semantic = pd.read_csv(DATA_DIR / "semantic_comparison/comparison_results.csv")
-    df_semantic['experiment'] = 'semantic_comparison'
-    datasets['semantic'] = df_semantic
-    print(f"Semántico: {len(df_semantic)} generaciones")
-else:
-    print("Experimento semántico no encontrado")
 
 if not datasets:
     print("\n No se encontraron datasets. Ejecuta los experimentos primero.")
     exit(1)
+
+# Fase 4: Sistema dinámico
+if (DATA_DIR / "phase4_dynamic_results.csv").exists():
+    df_phase4 = pd.read_csv(DATA_DIR / "phase4_dynamic_results.csv")
+    df_phase4['experiment'] = 'phase4_dynamic'
+    datasets['phase4'] = df_phase4
+    print(f"Fase 4 (Dinámico): {len(df_phase4)} generaciones")
+else:
+    print("Fase 4 no encontrada")
 
 # 2. ESTANDARIZAR COLUMNAS
 print("\n2. Estandarizando columnas...")
@@ -100,16 +100,28 @@ selected_columns = [
 # Columnas opcionales (pueden no estar en todos)
 optional_columns = [
     'prompt_category',
-    'category',  # Fase 3 usa 'category'
+    'category',  # Fase 4 usa 'category'
     'generation_idx',
-    'repetition',  # Fase 3 usa 'repetition'
+    'repetition',  # Fase 4 usa 'repetition'
     'perplexity',
     'rouge_l',
     'entropy',
     'empathy_word_score',
+    # Columnas específicas de Fase 3
     'semantic_activation_empathy',
     'condition',
-    # Columnas específicas de Fase 3
+    'condition_type',
+    'hormone_profile_name',
+    'semantic_category',
+    'semantic_strength',
+    'semantic_activation_creativity',
+    'semantic_activation_caution',
+    'semantic_activation_factual',
+    'semantic_activation_enthusiasm',
+    'dominant_semantic_category',
+    'dominant_semantic_score',
+    'semantic_coherence',
+    # Columnas específicas de Fase 4
     'is_dynamic',
     'learning_rate',
     'init_dopamine',
@@ -207,7 +219,7 @@ if 'hormone_profile' in df_all.columns:
         # Extraer niveles hormonales (solo si no existen ya)
         for hormone in ['dopamine', 'cortisol', 'oxytocin', 'adrenaline', 'serotonin']:
             col_name = f'hormone_{hormone}'
-            # Solo extraer si la columna no existe (evitar sobrescribir datos de Fase 3)
+            # Solo extraer si la columna no existe (evitar sobrescribir datos de Fase 4)
             if col_name not in df_all.columns:
                 df_all[col_name] = hormone_dicts.apply(
                     lambda x: x.get(hormone, np.nan)
@@ -257,9 +269,23 @@ if 'prompt_category' in df_all.columns:
     for cat in df_all['prompt_category'].value_counts().items():
         print(f"   {cat[0]:20s}: {cat[1]:5d}")
 
-# Estadísticas de Fase 3
+# Estadísticas de Fase 3 - Experimentos Semánticos
+semantic_experiments = df_all[df_all['experiment'].str.contains('semantic', na=False)]
+if len(semantic_experiments) > 0:
+    print("\n Experimentos Semánticos (Fase 3):")
+    for exp in semantic_experiments['experiment'].unique():
+        count = len(semantic_experiments[semantic_experiments['experiment'] == exp])
+        print(f"   {exp}: {count}")
+    
+    if 'semantic_coherence' in df_all.columns:
+        coherence_data = semantic_experiments['semantic_coherence'].dropna()
+        if len(coherence_data) > 0:
+            print(f"   Coherencia semántica promedio: {coherence_data.mean():.3f}")
+            print(f"   Coherencia semántica (rango): {coherence_data.min():.3f} - {coherence_data.max():.3f}")
+
+# Estadísticas de Fase 4 - Sistema Dinámico
 if 'is_dynamic' in df_all.columns:
-    print("\n Sistema Dinámico (Fase 3):")
+    print("\n Sistema Dinámico (Fase 4):")
     dynamic_count = (df_all['is_dynamic'] == True).sum() if df_all['is_dynamic'].notna().any() else 0
     static_count = (df_all['is_dynamic'] == False).sum() if df_all['is_dynamic'].notna().any() else 0
     print(f"Dinámico: {dynamic_count}")
@@ -294,9 +320,9 @@ metadata = {
     'datasets_included': list(datasets.keys()),
 }
 
-# Añadir info de fase 3 si existe
+# Añadir info de fase 4 si existe
 if 'is_dynamic' in df_all.columns:
-    metadata['phase3_info'] = {
+    metadata['phase4_info'] = {
         'dynamic_count': int((df_all['is_dynamic'] == True).sum()) if df_all['is_dynamic'].notna().any() else 0,
         'static_count': int((df_all['is_dynamic'] == False).sum()) if df_all['is_dynamic'].notna().any() else 0,
     }

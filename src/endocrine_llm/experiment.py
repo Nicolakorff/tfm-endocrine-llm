@@ -180,7 +180,7 @@ class ExperimentRunner:
             ... )
         """
         print("\n" + "="*80)
-        print(" FASE 3: SISTEMA HORMONAL DINÁMICO")
+        print(" FASE 4: SISTEMA HORMONAL DINÁMICO")
         print("="*80 + "\n")
 
         # Definir perfiles dinámicos
@@ -315,7 +315,7 @@ class ExperimentRunner:
         # Guardar si se especifica ruta
         if save_path:
             df_dynamic.to_csv(save_path, index=False)
-            print(f"\n Fase 3 completada: {save_path}")
+            print(f"\n Fase 4 completada: {save_path}")
             print(f"Total registros: {len(df_dynamic)}")
 
         return df_dynamic
