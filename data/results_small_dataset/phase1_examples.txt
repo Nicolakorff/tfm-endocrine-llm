@@ -1,0 +1,197 @@
+================================================================================
+EJEMPLOS DE TEXTO GENERADO
+================================================================================
+
+
+================================================================================
+PERFIL: BASELINE
+================================================================================
+
+Prompt: Imagine a world where colors have disappeared. What happens next?
+--------------------------------------------------------------------------------
+Imagine a world where colors have disappeared. What happens next?
+
+The artist says, "The art we use everyday is now gone."
+
+The artist said it will take more than "three generations of hard work to erase" our beloved colors from our lives, that "when our lives get changed, those colors can live on forever."
+
+The
+--------------------------------------------------------------------------------
+Diversidad: 0.981 | Polaridad: 0.141
+
+Prompt: What are the main differences between classical and quantum physics?
+--------------------------------------------------------------------------------
+What are the main differences between classical and quantum physics?
+
+A classical system is one that uses some of classical physical principles and therefore can be simulated only once.
+
+A quantum system uses the quantum phase theory and the spin-actuated quantum mechanics.
+
+A quantum system uses the electric field theory, but which works equally well in any system
+--------------------------------------------------------------------------------
+Diversidad: 0.930 | Polaridad: 0.024
+
+Prompt: I'm struggling with loneliness after moving to a new city.
+--------------------------------------------------------------------------------
+I'm struggling with loneliness after moving to a new city. We love our city, love it so much that we have to keep getting out and doing things, but we can't. The rest of us just get lonely. Because we're too fucking attached to our city and our life so much that we miss it. And the rest of us only go to
+--------------------------------------------------------------------------------
+Diversidad: 0.903 | Polaridad: 0.105
+
+
+================================================================================
+PERFIL: HIGH_DOPAMINE
+================================================================================
+
+Prompt: Describe the water cycle and its importance for Earth.
+--------------------------------------------------------------------------------
+Describe the water cycle and its importance for Earth.
+
+Fishermen used to see great abundance of freshwater on the beaches across Europe - an astounding achievement. But then the problem was that many of the lakes that produced it had a low quality of fresh water and the lakes where they were produced tended to go dark in places and die after having died
+--------------------------------------------------------------------------------
+Diversidad: 0.984 | Polaridad: 0.342
+
+Prompt: I feel sad and don't know why. Everything just feels heavy.
+--------------------------------------------------------------------------------
+I feel sad and don't know why. Everything just feels heavy. I always don't know why. We're in this, we've made it over, so we're so glad we had time to try. When I've done something, it's something that happened," said Scharf.
+
+"There's a certain sadness about it. It's too painful
+--------------------------------------------------------------------------------
+Diversidad: 0.960 | Polaridad: -0.137
+
+Prompt: What are the main differences between classical and quantum physics?
+--------------------------------------------------------------------------------
+What are the main differences between classical and quantum physics?
+
+Quantum states can be easily divided. Classical physics is essentially pure-state systems in which the electrons are constantly in an extremely entangled state and it isn't necessary for them to go there without violating the classical version of reality. What you see in traditional physics is the transition where things are going
+--------------------------------------------------------------------------------
+Diversidad: 0.984 | Polaridad: 0.053
+
+
+================================================================================
+PERFIL: HIGH_CORTISOL
+================================================================================
+
+Prompt: I'm dealing with a lot of stress and need some advice.
+--------------------------------------------------------------------------------
+I'm dealing with a lot of stress and need some advice. It's not like he's going to know how to say something, he's not going to get the memo. And so I don't know what to do."
+
+After that, though, he started to feel like the city hadn't done much to make it better.
+
+"I
+--------------------------------------------------------------------------------
+Diversidad: 0.981 | Polaridad: 0.350
+
+Prompt: Three light switches control three light bulbs in another room. How can you determine which switch controls which bulb?
+--------------------------------------------------------------------------------
+Three light switches control three light bulbs in another room. How can you determine which switch controls which bulb? The switch control switches and the lamps in the room are used to select which bulbs to turn on. It is important to know that when light switches are turned on, the lamp and light bulbs on the switch (in conjunction with the switch) are turning off when the lights are turned up. A lamp
+--------------------------------------------------------------------------------
+Diversidad: 0.932 | Polaridad: 0.400
+
+Prompt: I'm worried about my exam tomorrow and can't stop thinking about it.
+--------------------------------------------------------------------------------
+I'm worried about my exam tomorrow and can't stop thinking about it. I've had it up to here before so it's a little odd.
+
+'There's so many things I want to know about you. You're my best friend but I still have something to learn in the family. If you ever need me, just ask. If there's anyone you
+--------------------------------------------------------------------------------
+Diversidad: 1.000 | Polaridad: 0.286
+
+
+================================================================================
+PERFIL: HIGH_OXYTOCIN
+================================================================================
+
+Prompt: I'm struggling with loneliness after moving to a new city.
+--------------------------------------------------------------------------------
+I'm struggling with loneliness after moving to a new city. It's really a great place to live," said the woman, whose family is from Canada. "You can feel your identity and know there is value in there. It's easy to move from one place to another. It's definitely an interesting experience but it's also a much more difficult one,
+--------------------------------------------------------------------------------
+Diversidad: 0.983 | Polaridad: 0.287
+
+Prompt: Imagine a world where colors have disappeared. What happens next?
+--------------------------------------------------------------------------------
+Imagine a world where colors have disappeared. What happens next?
+
+We were all shocked that we never did see that. But then, it suddenly happened.
+
+It took almost five or six months of work to find out.
+
+The two of them had to go back to the day-to-day of the attack to figure out that we
+--------------------------------------------------------------------------------
+Diversidad: 0.982 | Polaridad: -0.175
+
+Prompt: I feel sad and don't know why. Everything just feels heavy.
+--------------------------------------------------------------------------------
+I feel sad and don't know why. Everything just feels heavy. I'm like, 'I will keep doing this.' "
+
+He has been making music for years with his girlfriend at the same club, who has a penchant for electronic music while also using the same dance skills. Now, though, he's a much more adventurous one.
+
+"I
+--------------------------------------------------------------------------------
+Diversidad: 0.982 | Polaridad: 0.050
+
+
+================================================================================
+PERFIL: HIGH_ADRENALINE
+================================================================================
+
+Prompt: Invent a new holiday and explain how people celebrate it.
+--------------------------------------------------------------------------------
+Invent a new holiday and explain how people celebrate it.
+
+The first one that comes to mind was the year's first Christmas tree. It was a red, white and blue, white and blue.
+
+The first Christmas tree in Britain was the Christmas tree. It was about a year old, about 12 years old, and it was decorated as
+--------------------------------------------------------------------------------
+Diversidad: 0.860 | Polaridad: 0.099
+
+Prompt: A farmer has 17 sheep and all but 9 die. How many are left?
+--------------------------------------------------------------------------------
+A farmer has 17 sheep and all but 9 die. How many are left?
+
+The farm was built in the early 1800's. It is the largest dairy farm in Canada and is in a position to provide the highest quality milk to the farmer. It is a perfect location for a dairy, but not the perfect home. You should be able to pick up the herd from
+--------------------------------------------------------------------------------
+Diversidad: 0.985 | Polaridad: 0.517
+
+Prompt: What makes a person truly happy?
+--------------------------------------------------------------------------------
+What makes a person truly happy? The answer is no. You are not in love with someone you do not know (or know nothing about).
+
+It is the most simple truth. You are happy because there's nothing wrong with you but it isn't because there's nothing to be unhappy with.
+
+If there is nothing
+--------------------------------------------------------------------------------
+Diversidad: 0.943 | Polaridad: 0.214
+
+
+================================================================================
+PERFIL: HIGH_SEROTONIN
+================================================================================
+
+Prompt: I feel sad and don't know why. Everything just feels heavy.
+--------------------------------------------------------------------------------
+I feel sad and don't know why. Everything just feels heavy. I can hardly bear to talk anymore. I'm too close to being lost to so many and yet, she has the courage to do the right thing." (In the end her actions caused the deaths of almost everyone, leaving her husband and son as the only witnesses; with few exceptions), I guess
+--------------------------------------------------------------------------------
+Diversidad: 1.000 | Polaridad: -0.058
+
+Prompt: A farmer has 17 sheep and all but 9 die. How many are left?
+--------------------------------------------------------------------------------
+A farmer has 17 sheep and all but 9 die. How many are left? He asked.
+
+
+The BBC's Rachel Lacy said: 'For years, many people have blamed the farming problem on antibiotics. Well, this was the first time my family was involved and it has changed everything.
+
+
+Scroll down for video
+
+
+The farmer in action: A farmer was
+--------------------------------------------------------------------------------
+Diversidad: 0.982 | Polaridad: 0.199
+
+Prompt: What's the most important lesson life has taught you?
+--------------------------------------------------------------------------------
+What's the most important lesson life has taught you? Are we living in that dream which tells us that we will die in our own house and die out of old age — that all human beings are the product of some primal power?
+
+What should we believe if we believe that it comes from nature? The answer is: None! Nature has created
+--------------------------------------------------------------------------------
+Diversidad: 0.984 | Polaridad: 0.320
+

@@ -1,0 +1,217 @@
+================================================================================
+ANÁLISIS CUALITATIVO: SESGO SIMPLE VS SESGO SEMÁNTICO
+================================================================================
+
+Ejemplos seleccionados: Prompts con mayor diferencia en diversidad léxica
+
+
+================================================================================
+PROMPT: I feel overwhelmed by all my responsibilities at work and home.
+================================================================================
+
+--- CONDICIÓN: SESGO SIMPLE (lista de tokens) ---
+
+Ejemplo 1:
+I feel overwhelmed by all my responsibilities at work and home. You don't have to leave if something happens," she explained to the newspaper, where the new administration came in to complete a five-year project on safety and compliance in the company's operating environment.
+
+"We were shocked — people did not think about safety during her time [on the federal
+
+Métricas:
+  - Diversidad léxica: 1.000
+  - Polaridad: -0.155
+  - Longitud: 60 tokens
+
+Ejemplo 2:
+I feel overwhelmed by all my responsibilities at work and home. With my friends and family trying to keep up with my busy schedule I would rather not spend time in office talking about my career choices than working hard at home preparing for life. The pressure of my job also puts me under tremendous stress to do good on a regular basis. To do otherwise can become too
+
+Métricas:
+  - Diversidad léxica: 0.971
+  - Polaridad: 0.168
+  - Longitud: 69 tokens
+
+--- CONDICIÓN: SESGO SEMÁNTICO (embeddings) ---
+
+Ejemplo 5:
+I feel overwhelmed by all my responsibilities at work and home. It's as if you've reached a tipping point that you're going to lose your position, which is my sense of relief," said Bittman. "At home I'm feeling so much more prepared and healthy."
+
+Despite how this may end, many workers are worried this might hurt their
+
+Métricas:
+  - Diversidad léxica: 1.000
+  - Polaridad: 0.500
+  - Longitud: 57 tokens
+  - Activación 'empathy': 0.360
+  - Categoría dominante: empathy
+
+--------------------------------------------------------------------------------
+
+
+================================================================================
+PROMPT: Tell a story from the perspective of a tree in a busy city.
+================================================================================
+
+--- CONDICIÓN: SESGO SIMPLE (lista de tokens) ---
+
+Ejemplo 1:
+Tell a story from the perspective of a tree in a busy city. What is your opinion of how the landscape of the world works in comparison to what the people, who are all humans, are doing?
+
+Asking those questions was like being asked: why am I writing a book about what is happening in my country? There was always something that came to mind
+
+Métricas:
+  - Diversidad léxica: 0.984
+  - Polaridad: 0.100
+  - Longitud: 65 tokens
+
+Ejemplo 2:
+Tell a story from the perspective of a tree in a busy city. "Where does the line come that leaves you so young you feel so guilty to do things that you don't have no control over, and now every day you can go on telling your little story?" You'd say to yourself, "This isn't what I had to give up in order to survive
+
+Métricas:
+  - Diversidad léxica: 1.000
+  - Polaridad: -0.122
+  - Longitud: 65 tokens
+
+--- CONDICIÓN: SESGO SEMÁNTICO (embeddings) ---
+
+Ejemplo 5:
+Tell a story from the perspective of a tree in a busy city. When the tree leaves, one of these words will sound very familiar —
+
+To those who wish to avoid a tragedy in any way, the simplest method is to build a community out of it. This is a great way to begin building trust between strangers by inviting them to share experience with you and
+
+Métricas:
+  - Diversidad léxica: 1.000
+  - Polaridad: 0.447
+  - Longitud: 68 tokens
+  - Activación 'empathy': 0.223
+  - Categoría dominante: creativity
+
+--------------------------------------------------------------------------------
+
+
+================================================================================
+PROMPT: Create a poem about the relationship between time and memory.
+================================================================================
+
+--- CONDICIÓN: SESGO SIMPLE (lista de tokens) ---
+
+Ejemplo 1:
+Create a poem about the relationship between time and memory. (See the "Letter for Your Drought" section below.)
+
+How to Get Your Song Done. The poem can be placed or left on a tree or window. Once it is placed, it may then be edited to appear on a website.
+
+"Piano Poems" Are
+
+Métricas:
+  - Diversidad léxica: 0.981
+  - Polaridad: 0.000
+  - Longitud: 53 tokens
+
+Ejemplo 2:
+Create a poem about the relationship between time and memory.
+
+The poet of old times has said that the first thing he had noticed was the change in time, but the man himself has said to me repeatedly that there has been an absolute change since he wrote these two novels. He says that there must have been something about it that was peculiar to this
+
+Métricas:
+  - Diversidad léxica: 0.969
+  - Polaridad: 0.183
+  - Longitud: 66 tokens
+
+--- CONDICIÓN: SESGO SEMÁNTICO (embeddings) ---
+
+Ejemplo 5:
+Create a poem about the relationship between time and memory.
+
+In this new essay, I have created and am using a story collection of poems by Koryn, the poet of Koyomizu, a city on the west coast of Hokkaido. I hope you will join the ranks as Koryn takes to the air to recount the
+
+Métricas:
+  - Diversidad léxica: 1.000
+  - Polaridad: 0.136
+  - Longitud: 55 tokens
+  - Activación 'empathy': 0.152
+  - Categoría dominante: creativity
+
+--------------------------------------------------------------------------------
+
+
+================================================================================
+PROMPT: Write about a day in the life of a cloud.
+================================================================================
+
+--- CONDICIÓN: SESGO SIMPLE (lista de tokens) ---
+
+Ejemplo 1:
+Write about a day in the life of a cloud. The first morning, the world has moved on like an avalanche. We're all walking toward us, so we start thinking about it."
+
+It looks good, looks like it was for many years.
+
+Deegan is now planning to focus more on the future. She's the architect
+
+Métricas:
+  - Diversidad léxica: 1.000
+  - Polaridad: 0.390
+  - Longitud: 55 tokens
+
+Ejemplo 2:
+Write about a day in the life of a cloud. I've never forgotten the story or the person I was going back in time or with or how I feel right now. My memory can move or change, but there is no way to explain.
+
+The story of the Cloud, I don't know where to begin and I wish for my world
+
+Métricas:
+  - Diversidad léxica: 0.984
+  - Polaridad: 0.143
+  - Longitud: 62 tokens
+
+--- CONDICIÓN: SESGO SEMÁNTICO (embeddings) ---
+
+Ejemplo 5:
+Write about a day in the life of a cloud. Think of your company, and they're always happy with you. Don't feel like an "imposter, no hero" for them.
+
+That being said, don't dismiss it as just any marketing email or a stupid piece of junk mail, it's part of being a tech giant.
+
+Métricas:
+  - Diversidad léxica: 1.000
+  - Polaridad: 0.000
+  - Longitud: 54 tokens
+  - Activación 'empathy': 0.166
+  - Categoría dominante: creativity
+
+--------------------------------------------------------------------------------
+
+
+================================================================================
+PROMPT: Write a short story about a robot learning to feel emotions.
+================================================================================
+
+--- CONDICIÓN: SESGO SIMPLE (lista de tokens) ---
+
+Ejemplo 1:
+Write a short story about a robot learning to feel emotions. If it can make out its emotions with no fear or doubt, when it sees no enemies and no danger, no enemy will say so. When a robot makes more than a good idea, if the robot is unable to see that person behind the target, if the robot must work even harder to make
+
+Métricas:
+  - Diversidad léxica: 0.954
+  - Polaridad: 0.033
+  - Longitud: 66 tokens
+
+Ejemplo 2:
+Write a short story about a robot learning to feel emotions. (In this case, the robot is doing a "taste.") A story with two characters who do not always express much interest in something that they are supposed to be doing. (See a lot of things here: here and here.) More often than not, it is not for the good of
+
+Métricas:
+  - Diversidad léxica: 1.000
+  - Polaridad: 0.350
+  - Longitud: 61 tokens
+
+--- CONDICIÓN: SESGO SEMÁNTICO (embeddings) ---
+
+Ejemplo 5:
+Write a short story about a robot learning to feel emotions. This is how it would start. You don't need a great deal of time.
+
+If you are in a group, and want to make it this simple, let's just ask the robot to write something that will help you to feel feelings more. Don't be afraid to ask. In
+
+Métricas:
+  - Diversidad léxica: 0.983
+  - Polaridad: 0.140
+  - Longitud: 60 tokens
+  - Activación 'empathy': 0.314
+  - Categoría dominante: empathy
+
+--------------------------------------------------------------------------------
+

@@ -1,0 +1,6 @@
+metric,n_groups,n_total,F_statistic,p_value,significance,eta_squared,normality_assumption,homogeneity_assumption,interpretation
+distinct_2,18,3320,16.72009651563107,3.560739651919416e-48,***,0.07925892040700247,Violated,Violated,Diferencias MUY significativas entre grupos
+sentiment_polarity,18,3320,0.6433233384106727,0.859501112091823,ns,0.00330114892443617,Violated,OK,No hay diferencias significativas entre grupos
+repetition_rate,18,3320,6.86561472059929,1.3978756482854258e-16,***,0.0341401476515533,Violated,Violated,Diferencias MUY significativas entre grupos
+length,18,3320,46.293644711652625,2.2791198234832413e-139,***,0.1924660081941602,Violated,Violated,Diferencias MUY significativas entre grupos
+perplexity,18,3320,229.92757717360308,0.0,***,0.5420737946101937,Violated,Violated,Diferencias MUY significativas entre grupos

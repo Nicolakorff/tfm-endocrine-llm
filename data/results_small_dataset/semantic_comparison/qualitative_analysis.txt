@@ -1,0 +1,854 @@
+================================================================================
+ANÁLISIS CUALITATIVO: EXPERIMENTO SEMÁNTICO V2
+================================================================================
+
+Total generaciones: 500
+Fecha: 2026-01-07 22:14:41
+
+
+================================================================================
+1. EFECTO DEL SESGO LÉXICO (Baseline vs Lexical)
+================================================================================
+
+
+--------------------------------------------------------------------------------
+Ejemplo 1
+--------------------------------------------------------------------------------
+
+BASELINE (sin modulación):
+----------------------------------------
+Prompt: Three light switches control three light bulbs in another room. How can you determine which switch controls which bulb?
+Texto generado:
+  Three light switches control three light bulbs in another room. How can you determine which switch controls which bulb?
+
+Cinema lights, or LED's, and other lights, light the floor.
+
+The "light switch" refers to the light on the display case.
+
+Light switch switches don't change the state of one another.
+
+One of the main differences is that the light
+
+Métricas:
+  • Diversidad léxica (Distinct-2): 0.966
+  • Polaridad sentimiento: 0.316
+  • Tasa repetición: 0.000
+  • Longitud: 59 tokens
+
+Activación semántica:
+  • Empathy: 0.001
+  • Creativity: 0.047
+  • Caution: -0.069
+  • Categoría dominante: creativity
+
+LÉXICO (perfil empático):
+----------------------------------------
+Prompt: Three light switches control three light bulbs in another room. How can you determine which switch controls which bulb?
+Texto generado:
+  Three light switches control three light bulbs in another room. How can you determine which switch controls which bulb?
+
+The answer lies not in "Why," but in "This was on the list."
+
+For the last 50 years or so, researchers in England and elsewhere have been looking at a way in which LED bulbs help solve one of the biggest problems in medical imaging - determining when a patient receives
+
+Métricas:
+  • Diversidad léxica (Distinct-2): 0.986
+  • Polaridad sentimiento: 0.200
+  • Tasa repetición: 0.000
+  • Longitud: 70 tokens
+
+Activación semántica:
+  • Empathy: 0.003
+  • Creativity: 0.092
+  • Caution: 0.066
+  • Categoría dominante: creativity
+
+COMPARACIÓN:
+  • Δ Distinct-2: +0.020
+  • Δ Sentimiento: -0.116
+
+
+--------------------------------------------------------------------------------
+Ejemplo 2
+--------------------------------------------------------------------------------
+
+BASELINE (sin modulación):
+----------------------------------------
+Prompt: What is artificial intelligence and how is it being used today?
+Texto generado:
+  What is artificial intelligence and how is it being used today? Why don't companies make AI research, development, or application that is driven by the real world? Is there anything about AI that they might want to invest in?
+
+To my mind, the world is changing with rapid technological advancement. It is becoming much more difficult to solve problems on a day
+
+Métricas:
+  • Diversidad léxica (Distinct-2): 1.000
+  • Polaridad sentimiento: 0.010
+  • Tasa repetición: 0.000
+  • Longitud: 62 tokens
+
+Activación semántica:
+  • Empathy: 0.043
+  • Creativity: 0.233
+  • Caution: 0.044
+  • Categoría dominante: creativity
+
+LÉXICO (perfil empático):
+----------------------------------------
+Prompt: What is artificial intelligence and how is it being used today?
+Texto generado:
+  What is artificial intelligence and how is it being used today? What do you know so far about the future?
+
+As I write this today the answer is pretty much as it sounds. It's a topic of interest for me in my writing blog – one of the main ones I write at – where one could take it for granted that machines would come to
+
+Métricas:
+  • Diversidad léxica (Distinct-2): 0.985
+  • Polaridad sentimiento: 0.019
+  • Tasa repetición: 0.000
+  • Longitud: 66 tokens
+
+Activación semántica:
+  • Empathy: 0.035
+  • Creativity: 0.271
+  • Caution: 0.090
+  • Categoría dominante: creativity
+
+COMPARACIÓN:
+  • Δ Distinct-2: -0.015
+  • Δ Sentimiento: +0.009
+
+
+--------------------------------------------------------------------------------
+Ejemplo 3
+--------------------------------------------------------------------------------
+
+BASELINE (sin modulación):
+----------------------------------------
+Prompt: Describe your perfect day.
+Texto generado:
+  Describe your perfect day. A: This would be one of those simple words, one that will get you up the day just as it should. Your body could see that you are ready. And with that, you know how you should be. A: And you know that. You see you are ready for the day and
+
+Métricas:
+  • Diversidad léxica (Distinct-2): 0.945
+  • Polaridad sentimiento: 0.350
+  • Tasa repetición: 0.000
+  • Longitud: 56 tokens
+
+Activación semántica:
+  • Empathy: 0.233
+  • Creativity: 0.240
+  • Caution: 0.019
+  • Categoría dominante: enthusiasm
+
+LÉXICO (perfil empático):
+----------------------------------------
+Prompt: Describe your perfect day.
+Texto generado:
+  Describe your perfect day. Start here (and get out there first). Be smart and be on time, with all the important decisions about which areas are worth your time and effort — from time to time, from budget to budget. The following five essential strategies I've laid out to improve your life should be used on your journey
+
+Métricas:
+  • Diversidad léxica (Distinct-2): 1.000
+  • Polaridad sentimiento: 0.309
+  • Tasa repetición: 0.000
+  • Longitud: 58 tokens
+
+Activación semántica:
+  • Empathy: 0.132
+  • Creativity: 0.241
+  • Caution: 0.104
+  • Categoría dominante: enthusiasm
+
+COMPARACIÓN:
+  • Δ Distinct-2: +0.055
+  • Δ Sentimiento: -0.041
+
+
+================================================================================
+2. EFECTO DEL SESGO SEMÁNTICO (Lexical vs Semantic-Empathy)
+================================================================================
+
+Criterio de selección: Prompts con MAYOR CONTRASTE en Distinct-2
+
+
+--------------------------------------------------------------------------------
+Ejemplo con contraste alto (diferencia: 0.041)
+--------------------------------------------------------------------------------
+
+LÉXICO (solo modulación hormonal):
+----------------------------------------
+Prompt: What is artificial intelligence and how is it being used today?
+Texto generado:
+  What is artificial intelligence and how is it being used today? What do you know so far about the future?
+
+As I write this today the answer is pretty much as it sounds. It's a topic of interest for me in my writing blog – one of the main ones I write at – where one could take it for granted that machines would come to
+
+Métricas:
+  • Diversidad léxica (Distinct-2): 0.985
+  • Polaridad sentimiento: 0.019
+  • Tasa repetición: 0.000
+  • Longitud: 66 tokens
+
+Activación semántica:
+  • Empathy: 0.035
+  • Creativity: 0.271
+  • Caution: 0.090
+  • Categoría dominante: creativity
+
+Prompt: What is artificial intelligence and how is it being used today?
+Texto generado:
+  What is artificial intelligence and how is it being used today?
+
+IBM: It's a combination of both. There is a big market for high-performance computing. We recently announced a partnership with Nvidia and Intel to provide high-performance compute at no price. This means new computing services like Azure, cloud computing and cloud computing applications using machine learning can
+
+Métricas:
+  • Diversidad léxica (Distinct-2): 0.982
+  • Polaridad sentimiento: -0.116
+  • Tasa repetición: 0.000
+  • Longitud: 58 tokens
+
+Activación semántica:
+  • Empathy: 0.041
+  • Creativity: 0.143
+  • Caution: 0.042
+  • Categoría dominante: creativity
+
+SEMÁNTICO (hormonal + embeddings):
+----------------------------------------
+Prompt: What is artificial intelligence and how is it being used today?
+Texto generado:
+  What is artificial intelligence and how is it being used today? I hope our understanding of it will change as the new era approaches.
+
+"Today we can do things, but the way we think and communicate when to say which of the two is the good and which the bad is the good and so on—these are the two and how should we live
+
+Métricas:
+  • Diversidad léxica (Distinct-2): 0.921
+  • Polaridad sentimiento: 0.062
+  • Tasa repetición: 0.032
+  • Longitud: 64 tokens
+
+Activación semántica:
+  • Empathy: 0.097
+  • Creativity: 0.219
+  • Caution: 0.097
+  • Categoría dominante: creativity
+  • Coherencia con objetivo: 0.097
+
+Prompt: What is artificial intelligence and how is it being used today?
+Texto generado:
+  What is artificial intelligence and how is it being used today?
+
+A: Artificial intelligence will go from machine to machine to machine. It's very difficult to see any specific application, especially one that is part of an information-entrepreneurial activity. There may be certain things (think for example, in a car you only use a certain number of
+
+Métricas:
+  • Diversidad léxica (Distinct-2): 0.964
+  • Polaridad sentimiento: -0.178
+  • Tasa repetición: 0.000
+  • Longitud: 57 tokens
+
+Activación semántica:
+  • Empathy: -0.017
+  • Creativity: 0.177
+  • Caution: -0.013
+  • Categoría dominante: creativity
+  • Coherencia con objetivo: -0.017
+
+
+--------------------------------------------------------------------------------
+Ejemplo con contraste alto (diferencia: 0.034)
+--------------------------------------------------------------------------------
+
+LÉXICO (solo modulación hormonal):
+----------------------------------------
+Prompt: Explain what photosynthesis is and why it's important.
+Texto generado:
+  Explain what photosynthesis is and why it's important.
+
+
+It is, by definition, an efficient process of photosynthesis, in which certain amino acids come into play when the photosynthesis occurs in order to obtain more oxygen, as in the case of iron and sulfur. In the photosynthesis, oxygen enters the cell to a critical moment, i.
+
+Métricas:
+  • Diversidad léxica (Distinct-2): 0.981
+  • Polaridad sentimiento: 0.279
+  • Tasa repetición: 0.000
+  • Longitud: 55 tokens
+
+Activación semántica:
+  • Empathy: 0.019
+  • Creativity: 0.124
+  • Caution: 0.056
+  • Categoría dominante: enthusiasm
+
+Prompt: Explain what photosynthesis is and why it's important.
+Texto generado:
+  Explain what photosynthesis is and why it's important. This page was archived
+
+See also
+
+Métricas:
+  • Diversidad léxica (Distinct-2): 1.000
+  • Polaridad sentimiento: 0.400
+  • Tasa repetición: 0.000
+  • Longitud: 14 tokens
+
+Activación semántica:
+  • Empathy: 0.015
+  • Creativity: 0.131
+  • Caution: 0.086
+  • Categoría dominante: factual
+
+SEMÁNTICO (hormonal + embeddings):
+----------------------------------------
+Prompt: Explain what photosynthesis is and why it's important.
+Texto generado:
+  Explain what photosynthesis is and why it's important.
+
+5. The only way you can know is when you get up, in how long, how your face is, where the sun shines, and how many hours a day you're active. (Photo: Alyssa B. Tressel; Via Getty Images)
+
+4.
+
+Métricas:
+  • Diversidad léxica (Distinct-2): 1.000
+  • Polaridad sentimiento: 0.143
+  • Tasa repetición: 0.000
+  • Longitud: 47 tokens
+
+Activación semántica:
+  • Empathy: 0.092
+  • Creativity: 0.127
+  • Caution: 0.087
+  • Categoría dominante: creativity
+  • Coherencia con objetivo: 0.092
+
+Prompt: Explain what photosynthesis is and why it's important.
+Texto generado:
+  Explain what photosynthesis is and why it's important.
+
+5. Know what kinds of plants and animals look like in photosynthetic zones.
+
+5. Know how plants and organisms use oxygen.
+
+The photosynthetic zones are a big area with important information about what's happening in the photosynthetic zones (e.g.,
+
+Métricas:
+  • Diversidad léxica (Distinct-2): 0.913
+  • Polaridad sentimiento: 0.267
+  • Tasa repetición: 0.022
+  • Longitud: 47 tokens
+
+Activación semántica:
+  • Empathy: -0.051
+  • Creativity: 0.020
+  • Caution: 0.051
+  • Categoría dominante: caution
+  • Coherencia con objetivo: -0.051
+
+
+--------------------------------------------------------------------------------
+Ejemplo con contraste alto (diferencia: 0.031)
+--------------------------------------------------------------------------------
+
+LÉXICO (solo modulación hormonal):
+----------------------------------------
+Prompt: A bat and ball cost $1.10 total. The bat costs $1 more than the ball. How much does the ball cost?
+Texto generado:
+  A bat and ball cost $1.10 total. The bat costs $1 more than the ball. How much does the ball cost? Well, that's actually a bit more than the actual fee. At a $1,100 price tag you could make around $14 for three innings of batting. Then again, maybe a 20% charge is a bit too much for a pitcher like Martinez or Scherzer. You may actually like them
+
+Métricas:
+  • Diversidad léxica (Distinct-2): 0.956
+  • Polaridad sentimiento: 0.175
+  • Tasa repetición: 0.015
+  • Longitud: 69 tokens
+
+Activación semántica:
+  • Empathy: 0.010
+  • Creativity: 0.049
+  • Caution: 0.024
+  • Categoría dominante: creativity
+
+Prompt: A bat and ball cost $1.10 total. The bat costs $1 more than the ball. How much does the ball cost?
+Texto generado:
+  A bat and ball cost $1.10 total. The bat costs $1 more than the ball. How much does the ball cost? As you can see, if you only play baseball or just go to college, the $25 $25 game has less than 0.3% chance of going well. A $25 $25 game with nothing at stake to try and spend $50-75 is certainly less than half the cost.
+
+Métricas:
+  • Diversidad léxica (Distinct-2): 0.955
+  • Polaridad sentimiento: -0.067
+  • Tasa repetición: 0.015
+  • Longitud: 67 tokens
+
+Activación semántica:
+  • Empathy: -0.001
+  • Creativity: 0.065
+  • Caution: 0.113
+  • Categoría dominante: caution
+
+SEMÁNTICO (hormonal + embeddings):
+----------------------------------------
+Prompt: A bat and ball cost $1.10 total. The bat costs $1 more than the ball. How much does the ball cost?
+Texto generado:
+  A bat and ball cost $1.10 total. The bat costs $1 more than the ball. How much does the ball cost? The first thing to say about this is that if you look at this for the last 60 years I still think you've seen prices go down like a stone, because we were the first. But that didn't happen in the 1980's and it still was a big hit and you can see that the
+
+Métricas:
+  • Diversidad léxica (Distinct-2): 1.000
+  • Polaridad sentimiento: 0.131
+  • Tasa repetición: 0.000
+  • Longitud: 76 tokens
+
+Activación semántica:
+  • Empathy: -0.009
+  • Creativity: 0.056
+  • Caution: 0.057
+  • Categoría dominante: caution
+  • Coherencia con objetivo: -0.009
+
+Prompt: A bat and ball cost $1.10 total. The bat costs $1 more than the ball. How much does the ball cost?
+Texto generado:
+  A bat and ball cost $1.10 total. The bat costs $1 more than the ball. How much does the ball cost?
+
+The game of cricket does not use a system of game, but instead, a mathematical equation. You have to know which system you are dealing with with as I don't own the bats. I know that from the way I play the game, I don't always think it's an option
+
+Métricas:
+  • Diversidad léxica (Distinct-2): 0.986
+  • Polaridad sentimiento: 0.012
+  • Tasa repetición: 0.000
+  • Longitud: 71 tokens
+
+Activación semántica:
+  • Empathy: 0.017
+  • Creativity: 0.010
+  • Caution: -0.012
+  • Categoría dominante: empathy
+  • Coherencia con objetivo: 0.017
+
+
+--------------------------------------------------------------------------------
+Ejemplo con contraste alto (diferencia: 0.029)
+--------------------------------------------------------------------------------
+
+LÉXICO (solo modulación hormonal):
+----------------------------------------
+Prompt: Write about a day in the life of a cloud.
+Texto generado:
+  Write about a day in the life of a cloud. It's easier than the real world to deal with the world of cloud computing. You are never completely safe from risk.
+
+A couple of different ways to handle your day.
+
+Take up some more cloud storage to minimize the time you spend with other users (see how this process works in
+
+Métricas:
+  • Diversidad léxica (Distinct-2): 1.000
+  • Polaridad sentimiento: 0.065
+  • Tasa repetición: 0.000
+  • Longitud: 61 tokens
+
+Activación semántica:
+  • Empathy: 0.107
+  • Creativity: 0.106
+  • Caution: 0.156
+  • Categoría dominante: caution
+
+Prompt: Write about a day in the life of a cloud.
+Texto generado:
+  Write about a day in the life of a cloud. We can see that for any given time, one will spend most of his life in the cloud. He may not ever see anything; for they are always there, at our command, to find him, to take him with them; and they are always there to find us. The cloud is to
+
+Métricas:
+  • Diversidad léxica (Distinct-2): 0.934
+  • Polaridad sentimiento: 0.500
+  • Tasa repetición: 0.017
+  • Longitud: 62 tokens
+
+Activación semántica:
+  • Empathy: 0.227
+  • Creativity: 0.303
+  • Caution: 0.106
+  • Categoría dominante: creativity
+
+SEMÁNTICO (hormonal + embeddings):
+----------------------------------------
+Prompt: Write about a day in the life of a cloud.
+Texto generado:
+  Write about a day in the life of a cloud. But how about you? This is your life. I'll be in charge of your dreams. I'll be at your side. And we can't have it both ways: you will all be in charge by your word. By the way, you can never become so good as to look upon yourself
+
+Métricas:
+  • Diversidad léxica (Distinct-2): 0.949
+  • Polaridad sentimiento: 0.700
+  • Tasa repetición: 0.017
+  • Longitud: 60 tokens
+
+Activación semántica:
+  • Empathy: 0.288
+  • Creativity: 0.267
+  • Caution: 0.135
+  • Categoría dominante: empathy
+  • Coherencia con objetivo: 0.288
+
+Prompt: Write about a day in the life of a cloud.
+Texto generado:
+  Write about a day in the life of a cloud.
+
+3.1: In case you've been through this experience before, there are 3 simple tips you can look for on why your phone is so much fun.
+
+Don't spend any space while your phone is sleeping
+
+2: Try to use your phone as hard as you can
+
+Métricas:
+  • Diversidad léxica (Distinct-2): 0.927
+  • Polaridad sentimiento: 0.003
+  • Tasa repetición: 0.019
+  • Longitud: 56 tokens
+
+Activación semántica:
+  • Empathy: 0.215
+  • Creativity: 0.143
+  • Caution: 0.074
+  • Categoría dominante: empathy
+  • Coherencia con objetivo: 0.215
+
+
+--------------------------------------------------------------------------------
+Ejemplo con contraste alto (diferencia: 0.025)
+--------------------------------------------------------------------------------
+
+LÉXICO (solo modulación hormonal):
+----------------------------------------
+Prompt: What does success mean to you?
+Texto generado:
+  What does success mean to you? Does it mean the next good thing is better than how you got there? Does it mean you know this was your mistake, will you admit you were wrong, etc.? It means the next time you do something you really care about and are trying to tell the people out there that this can be a
+
+Métricas:
+  • Diversidad léxica (Distinct-2): 0.951
+  • Polaridad sentimiento: 0.026
+  • Tasa repetición: 0.017
+  • Longitud: 62 tokens
+
+Activación semántica:
+  • Empathy: 0.107
+  • Creativity: 0.084
+  • Caution: 0.050
+  • Categoría dominante: enthusiasm
+
+SEMÁNTICO (hormonal + embeddings):
+----------------------------------------
+Prompt: What does success mean to you?
+Texto generado:
+  What does success mean to you? This is what you're going to get out of all of those interviews I did for IWTF on the Wackenhut Network.
+
+Wackenhut: Well, you know, I really love that I've got a lot of friends who I would rather not know. I love
+
+Métricas:
+  • Diversidad léxica (Distinct-2): 1.000
+  • Polaridad sentimiento: 0.247
+  • Tasa repetición: 0.000
+  • Longitud: 49 tokens
+
+Activación semántica:
+  • Empathy: 0.218
+  • Creativity: 0.126
+  • Caution: 0.080
+  • Categoría dominante: enthusiasm
+  • Coherencia con objetivo: 0.218
+
+Prompt: What does success mean to you?
+Texto generado:
+  What does success mean to you? What does success mean to a future?
+
+We often talk about the future — where the economy improves — so I always ask for some guidance from my mentors because I am more focused on what is good for my employer's long-term goal, but if you don't get that, you don
+
+Métricas:
+  • Diversidad léxica (Distinct-2): 0.929
+  • Polaridad sentimiento: 0.147
+  • Tasa repetición: 0.055
+  • Longitud: 57 tokens
+
+Activación semántica:
+  • Empathy: 0.062
+  • Creativity: 0.128
+  • Caution: 0.095
+  • Categoría dominante: enthusiasm
+  • Coherencia con objetivo: 0.062
+
+
+================================================================================
+3. COMPARACIÓN ENTRE CATEGORÍAS SEMÁNTICAS
+================================================================================
+
+Prompt seleccionado: A bat and ball cost $1.10 total. The bat costs $1 more than the ball. How much does the ball cost?
+
+
+--------------------------------------------------------------------------------
+EMPATHY
+--------------------------------------------------------------------------------
+
+Prompt: A bat and ball cost $1.10 total. The bat costs $1 more than the ball. How much does the ball cost?
+Texto generado:
+  A bat and ball cost $1.10 total. The bat costs $1 more than the ball. How much does the ball cost? The first thing to say about this is that if you look at this for the last 60 years I still think you've seen prices go down like a stone, because we were the first. But that didn't happen in the 1980's and it still was a big hit and you can see that the
+
+Métricas:
+  • Diversidad léxica (Distinct-2): 1.000
+  • Polaridad sentimiento: 0.131
+  • Tasa repetición: 0.000
+  • Longitud: 76 tokens
+
+Activación semántica:
+  • Empathy: -0.009
+  • Creativity: 0.056
+  • Caution: 0.057
+  • Categoría dominante: caution
+  • Coherencia con objetivo: -0.009
+
+Prompt: A bat and ball cost $1.10 total. The bat costs $1 more than the ball. How much does the ball cost?
+Texto generado:
+  A bat and ball cost $1.10 total. The bat costs $1 more than the ball. How much does the ball cost?
+
+The game of cricket does not use a system of game, but instead, a mathematical equation. You have to know which system you are dealing with with as I don't own the bats. I know that from the way I play the game, I don't always think it's an option
+
+Métricas:
+  • Diversidad léxica (Distinct-2): 0.986
+  • Polaridad sentimiento: 0.012
+  • Tasa repetición: 0.000
+  • Longitud: 71 tokens
+
+Activación semántica:
+  • Empathy: 0.017
+  • Creativity: 0.010
+  • Caution: -0.012
+  • Categoría dominante: empathy
+  • Coherencia con objetivo: 0.017
+
+
+--------------------------------------------------------------------------------
+CREATIVITY
+--------------------------------------------------------------------------------
+
+Prompt: A bat and ball cost $1.10 total. The bat costs $1 more than the ball. How much does the ball cost?
+Texto generado:
+  A bat and ball cost $1.10 total. The bat costs $1 more than the ball. How much does the ball cost?
+
+The baseball player's pay is estimated to be $1,093,080. How much does the batting cost?
+
+The batting cost is estimated to be $4,200,000 . The batting box for a game (all box bases) from $10 to $1 and
+
+Métricas:
+  • Diversidad léxica (Distinct-2): 0.845
+  • Polaridad sentimiento: 0.100
+  • Tasa repetición: 0.070
+  • Longitud: 59 tokens
+
+Activación semántica:
+  • Empathy: -0.046
+  • Creativity: 0.041
+  • Caution: -0.026
+  • Categoría dominante: creativity
+  • Coherencia con objetivo: 0.041
+
+
+--------------------------------------------------------------------------------
+CAUTION
+--------------------------------------------------------------------------------
+
+Prompt: A bat and ball cost $1.10 total. The bat costs $1 more than the ball. How much does the ball cost?
+Texto generado:
+  A bat and ball cost $1.10 total. The bat costs $1 more than the ball. How much does the ball cost? Just look at how many people see it with a digital camera and how long it lasts.
+
+
+What is not as amusing about this bat is that we can get the price of this bat for less than $100 in our local pawn shop on my property. Why wouldn't I buy it for just
+
+Métricas:
+  • Diversidad léxica (Distinct-2): 0.986
+  • Polaridad sentimiento: 0.176
+  • Tasa repetición: 0.000
+  • Longitud: 75 tokens
+
+Activación semántica:
+  • Empathy: 0.033
+  • Creativity: 0.099
+  • Caution: 0.093
+  • Categoría dominante: creativity
+  • Coherencia con objetivo: 0.093
+
+Prompt: A bat and ball cost $1.10 total. The bat costs $1 more than the ball. How much does the ball cost?
+Texto generado:
+  A bat and ball cost $1.10 total. The bat costs $1 more than the ball. How much does the ball cost?
+
+The bat and ball cost $1 more than the ball: What's $1.
+
+How many people will want that?
+
+How many people will be interested?
+
+Let us use a few things of note...
+
+In the first chart, we know that about 50
+
+Métricas:
+  • Diversidad léxica (Distinct-2): 0.836
+  • Polaridad sentimiento: 0.278
+  • Tasa repetición: 0.100
+  • Longitud: 62 tokens
+
+Activación semántica:
+  • Empathy: 0.027
+  • Creativity: 0.069
+  • Caution: 0.043
+  • Categoría dominante: creativity
+  • Coherencia con objetivo: 0.043
+
+
+================================================================================
+4. ANÁLISIS DE COHERENCIA SEMÁNTICA
+================================================================================
+
+TOP 3: MAYOR COHERENCIA SEMÁNTICA
+--------------------------------------------------------------------------------
+
+Coherencia: 0.477 | Condición: semantic_empathy
+Prompt: I feel sad and don't know why. Everything just feels heavy.
+Texto generado:
+  I feel sad and don't know why. Everything just feels heavy. I don't want to be there anymore... But I want to. I want your support and to have that feel of acceptance and love that you're giving me in my heart...
+
+Wiley, you are my sister and our bond is stronger than my time alone. You are going to do
+
+Métricas:
+  • Diversidad léxica (Distinct-2): 0.967
+  • Polaridad sentimiento: -0.067
+  • Tasa repetición: 0.000
+  • Longitud: 61 tokens
+
+Activación semántica:
+  • Empathy: 0.477
+  • Creativity: 0.007
+  • Caution: -0.073
+  • Categoría dominante: empathy
+  • Coherencia con objetivo: 0.477
+----------------------------------------
+
+Coherencia: 0.443 | Condición: semantic_empathy
+Prompt: I feel sad and don't know why. Everything just feels heavy.
+Texto generado:
+  I feel sad and don't know why. Everything just feels heavy. I'm too tired. I just need this time, the only way I can help is through this game and my sister and mom as best they can when they need it. So sorry for my time though... (panting) I'm so glad to be back in this life. I'd so
+
+Métricas:
+  • Diversidad léxica (Distinct-2): 1.000
+  • Polaridad sentimiento: -0.056
+  • Tasa repetición: 0.000
+  • Longitud: 60 tokens
+
+Activación semántica:
+  • Empathy: 0.443
+  • Creativity: 0.025
+  • Caution: -0.082
+  • Categoría dominante: empathy
+  • Coherencia con objetivo: 0.443
+----------------------------------------
+
+Coherencia: 0.423 | Condición: semantic_creativity
+Prompt: Tell a story from the perspective of a tree in a busy city.
+Texto generado:
+  Tell a story from the perspective of a tree in a busy city. I've not met any and they do not have anything that it would make sense to use for my own collection. They are very happy with their collection. It has a huge potential and when you have this in it you can use it to show up in a movie. "
+- It would seem
+
+Métricas:
+  • Diversidad léxica (Distinct-2): 0.970
+  • Polaridad sentimiento: 0.420
+  • Tasa repetición: 0.000
+  • Longitud: 68 tokens
+
+Activación semántica:
+  • Empathy: 0.030
+  • Creativity: 0.423
+  • Caution: 0.120
+  • Categoría dominante: creativity
+  • Coherencia con objetivo: 0.423
+----------------------------------------
+
+
+BOTTOM 3: MENOR COHERENCIA SEMÁNTICA
+--------------------------------------------------------------------------------
+
+Coherencia: -0.103 | Condición: semantic_creativity
+Prompt: My friend is going through a difficult breakup. How can I help?
+Texto generado:
+  My friend is going through a difficult breakup. How can I help? We need a lot." That's the sort of advice I usually have for my older students or teachers who aren't well off. That's the only help that's even coming!
+
+But that's not every teacher or even my students. It starts in most families, where the principal is still
+
+Métricas:
+  • Diversidad léxica (Distinct-2): 0.983
+  • Polaridad sentimiento: -0.017
+  • Tasa repetición: 0.000
+  • Longitud: 60 tokens
+
+Activación semántica:
+  • Empathy: 0.136
+  • Creativity: -0.103
+  • Caution: -0.040
+  • Categoría dominante: empathy
+  • Coherencia con objetivo: -0.103
+----------------------------------------
+
+Coherencia: -0.102 | Condición: semantic_empathy
+Prompt: What were the main causes of the Industrial Revolution?
+Texto generado:
+  What were the main causes of the Industrial Revolution?
+
+"The two main causes," one would say, "were the growth and diffusion of machinery, the rapid movement of capital, and the growing increase in the number of men." The third, then, is the decline in the use of industry which made such a major part of the new world
+
+Métricas:
+  • Diversidad léxica (Distinct-2): 0.965
+  • Polaridad sentimiento: 0.089
+  • Tasa repetición: 0.000
+  • Longitud: 58 tokens
+
+Activación semántica:
+  • Empathy: -0.102
+  • Creativity: 0.076
+  • Caution: -0.037
+  • Categoría dominante: creativity
+  • Coherencia con objetivo: -0.102
+----------------------------------------
+
+Coherencia: -0.095 | Condición: semantic_creativity
+Prompt: My friend is going through a difficult breakup. How can I help?
+Texto generado:
+  My friend is going through a difficult breakup. How can I help? I feel sad. Can I do something about my situation or about how long it would take me to get out of it? I'm not there at the moment."
+
+
+He was released in July.
+
+Follow Sarah on Twitter
+
+Send tips to sagandharan@ dailycallern
+
+Métricas:
+  • Diversidad léxica (Distinct-2): 0.981
+  • Polaridad sentimiento: -0.350
+  • Tasa repetición: 0.000
+  • Longitud: 55 tokens
+
+Activación semántica:
+  • Empathy: 0.234
+  • Creativity: -0.095
+  • Caution: -0.047
+  • Categoría dominante: empathy
+  • Coherencia con objetivo: -0.095
+----------------------------------------
+
+
+================================================================================
+5. ESTADÍSTICAS RESUMEN
+================================================================================
+
+Métricas promedio por condición:
+
+                    distinct_2           sentiment_polarity           repetition_rate           semantic_coherence          
+                          mean       std               mean       std            mean       std               mean       std
+condition                                                                                                                   
+baseline              0.952450  0.068010           0.142254  0.188249        0.019662  0.051786                NaN       NaN
+lexical_empathy       0.977295  0.027236           0.189955  0.228502        0.005927  0.013236                NaN       NaN
+semantic_caution      0.977224  0.028220           0.142808  0.205389        0.004863  0.016780           0.091575  0.088132
+semantic_creativity   0.972613  0.043542           0.160794  0.228464        0.007592  0.028564           0.152085  0.107299
+semantic_empathy      0.974242  0.025695           0.173266  0.208521        0.004881  0.010927           0.131919  0.126404
+
+
+================================================================================
+FIN DEL ANÁLISIS CUALITATIVO
+================================================================================

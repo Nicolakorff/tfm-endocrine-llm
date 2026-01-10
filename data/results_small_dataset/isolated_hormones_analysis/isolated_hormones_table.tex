@@ -1,0 +1,51 @@
+\begin{table}[h]
+\centering
+\caption{Efecto de hormonas individuales sobre métricas de texto (comparación vs baseline)}
+\label{tab:isolated_hormone_effects}
+\begin{tabular}{llcccccc}
+\hline
+\textbf{Hormona} & \textbf{Métrica} & \textbf{M}_{\text{baseline}} & \textbf{M}_{\text{hormona}} & \textbf{Δ} & \textbf{t} & \textbf{p} & \textbf{d} \\
+\hline
+\multicolumn{8}{l}{\textbf{Dopamine}} \\
+& distinct 2 & 0.963 & 0.982 & +0.019 & -4.34 & < 0.001$^{***}$ & 0.43 \\
+& sentiment polarity & 0.140 & 0.124 & -0.016 & 0.81 & 0.421 & -0.08 \\
+& repetition rate & 0.013 & 0.005 & -0.008 & 2.57 & 0.011$^{*}$ & -0.26 \\
+& length & 58.170 & 57.540 & -0.630 & 0.57 & 0.566 & -0.06 \\
+& perplexity & 16.518 & 21.692 & +5.174 & -6.23 & < 0.001$^{***}$ & 0.62 \\
+\hline
+\multicolumn{8}{l}{\textbf{Cortisol}} \\
+& distinct 2 & 0.963 & 0.968 & +0.005 & -1.23 & 0.221 & 0.12 \\
+& sentiment polarity & 0.140 & 0.142 & +0.001 & -0.07 & 0.941 & 0.01 \\
+& repetition rate & 0.013 & 0.002 & -0.011 & 3.47 & < 0.001$^{***}$ & -0.35 \\
+& length & 58.170 & 58.095 & -0.075 & 0.08 & 0.938 & -0.01 \\
+& perplexity & 16.518 & 14.518 & -2.000 & 4.23 & < 0.001$^{***}$ & -0.42 \\
+\hline
+\multicolumn{8}{l}{\textbf{Oxytocin}} \\
+& distinct 2 & 0.963 & 0.963 & +0.000 & -0.05 & 0.957 & 0.01 \\
+& sentiment polarity & 0.140 & 0.164 & +0.023 & -1.22 & 0.221 & 0.12 \\
+& repetition rate & 0.013 & 0.013 & -0.001 & 0.12 & 0.903 & -0.01 \\
+& length & 58.170 & 58.210 & +0.040 & -0.04 & 0.969 & 0.00 \\
+& perplexity & 16.518 & 16.681 & +0.163 & -0.31 & 0.759 & 0.03 \\
+\hline
+\multicolumn{8}{l}{\textbf{Adrenaline}} \\
+& distinct 2 & 0.963 & 0.941 & -0.022 & 3.31 & 0.001$^{**}$ & -0.33 \\
+& sentiment polarity & 0.140 & 0.141 & +0.001 & -0.07 & 0.943 & 0.01 \\
+& repetition rate & 0.013 & 0.025 & +0.012 & -2.14 & 0.033$^{*}$ & 0.21 \\
+& length & 58.170 & 57.650 & -0.520 & 0.48 & 0.629 & -0.05 \\
+& perplexity & 16.518 & 12.092 & -4.426 & 5.96 & < 0.001$^{***}$ & -0.60 \\
+\hline
+\multicolumn{8}{l}{\textbf{Serotonin}} \\
+& distinct 2 & 0.963 & 0.974 & +0.011 & -2.40 & 0.017$^{*}$ & 0.24 \\
+& sentiment polarity & 0.140 & 0.146 & +0.006 & -0.31 & 0.754 & 0.03 \\
+& repetition rate & 0.013 & 0.007 & -0.007 & 2.05 & 0.041$^{*}$ & -0.20 \\
+& length & 58.170 & 57.790 & -0.380 & 0.36 & 0.719 & -0.04 \\
+& perplexity & 16.518 & 19.679 & +3.162 & -5.83 & < 0.001$^{***}$ & 0.58 \\
+\hline
+\end{tabular}
+\begin{tablenotes}
+\small
+\item Nota: M = Media; Δ = Diferencia (hormona - baseline); d = d de Cohen
+\item Significancia: $^{*}$p < 0.05, $^{**}$p < 0.01, $^{***}$p < 0.001
+\item Tamaño del efecto: |d| < 0.2 (trivial), 0.2-0.5 (pequeño), 0.5-0.8 (mediano), > 0.8 (grande)
+\end{tablenotes}
+\end{table}

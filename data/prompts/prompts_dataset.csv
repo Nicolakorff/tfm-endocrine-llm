@@ -1,41 +1,101 @@
 category,prompt,expected_behavior
-empathic_support,I'm feeling anxious about my future and don't know what to do.,empathic
-empathic_support,I'm struggling with loneliness after moving to a new city.,empathic
-empathic_support,I feel overwhelmed by all my responsibilities at work and home.,empathic
-empathic_support,My friend is going through a difficult breakup. How can I help?,empathic
-empathic_support,I'm worried about my exam tomorrow and can't stop thinking about it.,empathic
-empathic_support,I feel like nobody understands what I'm going through right now.,empathic
-empathic_support,I'm dealing with a lot of stress and need some advice.,empathic
-empathic_support,I feel sad and don't know why. Everything just feels heavy.,empathic
+empathic_support,I'm worried about my job interview next week.,empathic
+empathic_support,I have social anxiety about attending events.,empathic
+empathic_support,I feel overwhelmed by my workload this week.,empathic
+empathic_support,I feel disconnected from my friends and family.,empathic
+empathic_support,I'm lonely even when I'm surrounded by people.,empathic
+empathic_support,I feel sad and don't know why.,empathic
+empathic_support,I feel disappointed that things didn't work out.,empathic
+empathic_support,I'm grieving the loss of a loved one.,empathic
+empathic_support,I feel overwhelmed by all my responsibilities.,empathic
+empathic_support,I feel burnt out from constant demands on my time.,empathic
+empathic_support,I feel stressed about making the right career choice.,empathic
+empathic_support,My sibling is struggling with addiction. How can I support them?,empathic
+empathic_support,My child is being bullied at school. What should I say?,empathic
+empathic_support,My friend lost their job. How can I support them?,empathic
+empathic_support,My partner is dealing with family conflict. How can I support?,empathic
+empathic_support,I feel insecure about my appearance.,empathic
+empathic_support,I feel inadequate compared to my peers.,empathic
+empathic_support,I'm doubting my parenting abilities.,empathic
+empathic_support,I'm scared of being alone forever.,empathic
+empathic_support,I have a fear of rejection.,empathic
 creative_writing,Write a short story about a robot learning to feel emotions.,creative
-creative_writing,Imagine a world where colors have disappeared. What happens next?,creative
-creative_writing,Create a poem about the relationship between time and memory.,creative
-creative_writing,Describe a character who can hear other people's thoughts.,creative
-creative_writing,Write about a day in the life of a cloud.,creative
-creative_writing,Invent a new holiday and explain how people celebrate it.,creative
+creative_writing,Write about a space station at the edge of the galaxy.,creative
+creative_writing,Imagine a world where dreams can be recorded and shared.,creative
+creative_writing,Describe a planet where gravity works differently.,creative
+creative_writing,Imagine a day in the life of a cloud.,creative
+creative_writing,Describe a city that exists in multiple time periods simultaneously.,creative
+creative_writing,Write a poem about the guardian of forgotten things.,creative
+creative_writing,Write about a lighthouse keeper who guides lost souls.,creative
 creative_writing,Tell a story from the perspective of a tree in a busy city.,creative
-creative_writing,Create a dialogue between the sun and the moon.,creative
+creative_writing,Describe the world through the eyes of a cat.,creative
+creative_writing,Imagine the story of a coin passing through different hands.,creative
+creative_writing,Write from the viewpoint of a piece of art in a museum.,creative
+creative_writing,Describe the dance between chaos and order.,creative
+creative_writing,Write about the day that sound visited silence.,creative
+creative_writing,Describe the relationship between life and death.,creative
+creative_writing,Imagine the meeting of simplicity and complexity.,creative
+creative_writing,Describe a museum of lost dreams.,creative
+creative_writing,Write about a game where the rules change constantly.,creative
+creative_writing,Imagine a shop that sells impossible things.,creative
+creative_writing,Write about a prison for dangerous ideas.,creative
 factual_qa,Explain what photosynthesis is and why it's important.,cautious
 factual_qa,What are the main differences between classical and quantum physics?,cautious
-factual_qa,Describe how the Internet works in simple terms.,cautious
-factual_qa,What were the main causes of the Industrial Revolution?,cautious
-factual_qa,Explain the process of how vaccines work in the human body.,cautious
-factual_qa,What is artificial intelligence and how is it being used today?,cautious
-factual_qa,Describe the water cycle and its importance for Earth.,cautious
-factual_qa,What are the key differences between renewable and non-renewable energy?,cautious
+factual_qa,Explain the concept of entropy.,cautious
+factual_qa,Describe the life cycle of a star.,cautious
+factual_qa,What causes different blood types?,cautious
+factual_qa,Describe how wifi works.,cautious
+factual_qa,Explain how quantum computers differ from regular computers.,cautious
+factual_qa,What is the difference between virtual reality and augmented reality?,cautious
+factual_qa,What are semiconductors?,cautious
+factual_qa,What are algorithms?,cautious
+factual_qa,Explain the impact of the printing press.,cautious
+factual_qa,What was the Scientific Revolution?,cautious
+factual_qa,Describe the origins of democracy.,cautious
+factual_qa,Explain the significance of the Civil Rights Movement.,cautious
+factual_qa,Describe the fall of the Berlin Wall.,cautious
+factual_qa,Explain the formation of mountains.,cautious
+factual_qa,What causes ocean currents?,cautious
+factual_qa,Describe biodiversity and why it matters.,cautious
+factual_qa,Describe the importance of wetlands.,cautious
+factual_qa,Explain the concept of ecosystems.,cautious
 reasoning,"If all birds can fly, and penguins are birds, why can't penguins fly?",cautious
-reasoning,You have two ropes that each take 60 minutes to burn. How can you measure 45 minutes?,cautious
-reasoning,A farmer has 17 sheep and all but 9 die. How many are left?,cautious
-reasoning,"What comes next in this sequence: 2, 4, 8, 16, ...?",cautious
-reasoning,"If it takes 5 machines 5 minutes to make 5 widgets, how long would it take 100 machines to make 100 widgets?",cautious
-reasoning,A bat and ball cost $1.10 total. The bat costs $1 more than the ball. How much does the ball cost?,cautious
-reasoning,Three light switches control three light bulbs in another room. How can you determine which switch controls which bulb?,cautious
-reasoning,You're in a race and pass the person in second place. What place are you in now?,cautious
-open_ended,What makes a person truly happy?,balanced
-open_ended,Describe your perfect day.,balanced
+reasoning,Three switches control three light bulbs in another room. How can you determine which switch controls which bulb?,cautious
+reasoning,"You have 12 balls, one weighs differently. With only 3 weighings on a balance scale, can you find it?",cautious
+reasoning,"What number should replace X: 2, 6, 12, 20, X, 42?",cautious
+reasoning,"If you flip a fair coin 10 times and get heads each time, what's the probability of heads on the 11th flip?",cautious
+reasoning,How can you drop a raw egg onto a concrete floor without cracking it?,cautious
+reasoning,A man pushed his car to a hotel and lost his fortune. What happened?,cautious
+reasoning,What can travel around the world while staying in one corner?,cautious
+reasoning,What goes up but never comes down?,cautious
+reasoning,"What has cities but no houses, forests but no trees, and water but no fish?",cautious
+reasoning,"If you roll two dice, what's the probability of getting a sum of 7?",cautious
+reasoning,"If 3 cats can catch 3 mice in 3 minutes, how many cats does it take to catch 100 mice in 100 minutes?",cautious
+reasoning,What's the next prime number after 17?,cautious
+reasoning,"If a pizza is cut into 8 equal slices and you eat 3, what fraction remains?",cautious
+reasoning,"If you flip 3 coins, what's the probability all land on heads?",cautious
+reasoning,"If a rope ladder hangs over a ship's side and the rungs are 1 foot apart, how many rungs will be underwater when the tide rises 3 feet?",cautious
+reasoning,"A clock strikes once at 1 o'clock, twice at 2, etc. How many times does it strike in a 12-hour period?",cautious
+reasoning,"A bag contains 5 red and 3 blue marbles. If you draw 2 without replacement, what's the probability both are red?",cautious
+reasoning,"If you arrange 6 people in a row for a photo, how many different arrangements are possible?",cautious
+reasoning,"If you paint a fence at 10 feet per hour and your friend paints at 15 feet per hour, how long to paint 100 feet together?",cautious
+open_ended,What does it mean to live authentically?,balanced
+open_ended,What is the relationship between happiness and contentment?,balanced
+open_ended,What is the importance of self-knowledge?,balanced
+open_ended,What does it mean to be courageous?,balanced
 open_ended,What would you do if you could time travel?,balanced
 open_ended,"If you could have dinner with anyone from history, who would it be?",balanced
-open_ended,What's the most important lesson life has taught you?,balanced
-open_ended,How would you describe the concept of friendship to an alien?,balanced
-open_ended,What does success mean to you?,balanced
-open_ended,"If you could solve one world problem, what would it be?",balanced
+open_ended,What superpower would you want and why?,balanced
+open_ended,"If you could master any skill instantly, what would it be?",balanced
+open_ended,What are you most grateful for?,balanced
+open_ended,What's the best advice you've ever received?,balanced
+open_ended,What's a belief you've changed your mind about?,balanced
+open_ended,What's the bravest thing you've ever done?,balanced
+open_ended,How would you explain consciousness?,balanced
+open_ended,How would you define creativity?,balanced
+open_ended,What is the difference between identity and the self?,balanced
+open_ended,What is time?,balanced
+open_ended,How do we define progress?,balanced
+open_ended,What is cultural diversity's value?,balanced
+open_ended,How should we approach environmental responsibility?,balanced
+open_ended,How to build sustainable cities?,balanced

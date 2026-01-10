@@ -9,7 +9,25 @@ OUTPUT_DIR = Path("data/results/semantic_comparison/latex")
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
 # Cargar datos
-stats_df = pd.read_csv("data/results/semantic_comparison/analysis/statistical_tests.csv")
+pairwise_df = pd.read_csv("data/results/semantic_comparison/analysis/pairwise_comparisons.csv")
+
+# Filtrar para obtener la comparación léxico vs semántico (lexical_empathy vs semantic_empathy)
+semantic_comparison = pairwise_df[
+    (pairwise_df['comparison'] == 'Efecto del sesgo semántico') &
+    (pairwise_df['cond1'] == 'lexical_empathy') &
+    (pairwise_df['cond2'] == 'semantic_empathy')
+]
+
+# Crear estructura compatible con el formato esperado
+stats_df = pd.DataFrame({
+    'metric': semantic_comparison['metric'],
+    'M_simple': semantic_comparison['mean1'],
+    'M_semantic': semantic_comparison['mean2'],
+    'difference': semantic_comparison['diff'],
+    't_statistic': semantic_comparison['t'],
+    'p_value': semantic_comparison['p'],
+    'cohens_d': semantic_comparison['cohens_d']
+})
 
 # Tabla 1: Resultados de tests estadísticos
 latex_table1 = r"""\begin{table}[h]

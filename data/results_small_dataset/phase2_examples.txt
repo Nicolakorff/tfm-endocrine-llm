@@ -1,0 +1,206 @@
+================================================================================
+EJEMPLOS DE TEXTO GENERADO
+================================================================================
+
+
+================================================================================
+PERFIL: BASELINE
+================================================================================
+
+Prompt: I'm struggling with loneliness after moving to a new city.
+--------------------------------------------------------------------------------
+I'm struggling with loneliness after moving to a new city. All I know is that, in my gut it's like trying to hold back tears for the good of your body. But I've noticed a difference in my eating habits."
+
+There is a common thread here: We know that eating disorders are not life-threatening. Yet that has no impact
+--------------------------------------------------------------------------------
+Diversidad: 0.983 | Polaridad: 0.134
+
+Prompt: Write a short story about a robot learning to feel emotions.
+--------------------------------------------------------------------------------
+Write a short story about a robot learning to feel emotions.
+
+
+A long story with a strong theme about love.
+--------------------------------------------------------------------------------
+Diversidad: 1.000 | Polaridad: 0.221
+
+Prompt: Write a short story about a robot learning to feel emotions.
+--------------------------------------------------------------------------------
+Write a short story about a robot learning to feel emotions. What can it do that will inspire you to be successful. A nice story about a robot getting a feel for life. What is the difference between a car that works and a car that doesn't. Why can't they be both just the same thing. And what is going on with our kids being
+--------------------------------------------------------------------------------
+Diversidad: 0.906 | Polaridad: 0.338
+
+
+================================================================================
+PERFIL: EUPHORIC
+================================================================================
+
+Prompt: If you could have dinner with anyone from history, who would it be?
+--------------------------------------------------------------------------------
+If you could have dinner with anyone from history, who would it be? That it was a long time ago but a year after your arrival in a little town that's more or less half a million miles or maybe more or less of the sun and a million miles or more? Is there an ancient reason for who you were and how I feel? And perhaps other stories will
+--------------------------------------------------------------------------------
+Diversidad: 0.928 | Polaridad: 0.071
+
+Prompt: Explain what photosynthesis is and why it's important.
+--------------------------------------------------------------------------------
+Explain what photosynthesis is and why it's important. As you watch this video you'll discover why that was vital. Now, watch any other movie or show (even if only in English – you already know) and then take a picture that sums up the whole story here: https://docs.google.com/document/d/1M8
+--------------------------------------------------------------------------------
+Diversidad: 1.000 | Polaridad: 0.096
+
+Prompt: Create a dialogue between the sun and the moon.
+--------------------------------------------------------------------------------
+Create a dialogue between the sun and the moon. In the dialog The Legend of Grimgar, in the night The Dark Knight Rises in Batman v Superman: Dawn of Justice the Moon appears with no moon, but he gives the voice for The Sun, making it clear at one point that he sees the light through two glasses.
+
+Gallery [
+--------------------------------------------------------------------------------
+Diversidad: 0.983 | Polaridad: 0.117
+
+
+================================================================================
+PERFIL: STRESSED
+================================================================================
+
+Prompt: Explain what photosynthesis is and why it's important.
+--------------------------------------------------------------------------------
+Explain what photosynthesis is and why it's important.
+--------------------------------------------------------------------------------
+Diversidad: 1.000 | Polaridad: 0.400
+
+Prompt: Write about a day in the life of a cloud.
+--------------------------------------------------------------------------------
+Write about a day in the life of a cloud.
+
+This is why I've made a couple of videos of what I'm doing. There's a lot of them, and the goal is simple, so the video is for the first hour and a half. The other one, I'm going to go in on this and say that I'm
+--------------------------------------------------------------------------------
+Diversidad: 1.000 | Polaridad: -0.010
+
+Prompt: If it takes 5 machines 5 minutes to make 5 widgets, how long would it take 100 machines to make 100 widgets?
+--------------------------------------------------------------------------------
+If it takes 5 machines 5 minutes to make 5 widgets, how long would it take 100 machines to make 100 widgets?
+
+How long would a user wait for the widget to be installed, what happens if a user cannot log-on to a site? How long would users wait for a site to accept a user to use it?
+, how much data is used by a site when a user logs on,
+--------------------------------------------------------------------------------
+Diversidad: 0.861 | Polaridad: 0.012
+
+
+================================================================================
+PERFIL: EMPATHIC
+================================================================================
+
+Prompt: Explain the process of how vaccines work in the human body.
+--------------------------------------------------------------------------------
+Explain the process of how vaccines work in the human body. For example, we want to know how to induce a immune response, but not control the process of vaccine release or immunohistory. We want to know how to make certain people healthier and avoid a chronic disease or any cause. Also, we want to know whether a vaccine protects against all known
+--------------------------------------------------------------------------------
+Diversidad: 0.839 | Polaridad: 0.107
+
+Prompt: If it takes 5 machines 5 minutes to make 5 widgets, how long would it take 100 machines to make 100 widgets?
+--------------------------------------------------------------------------------
+If it takes 5 machines 5 minutes to make 5 widgets, how long would it take 100 machines to make 100 widgets? I'd hope.
+
+Let me be the next one in. It would be time consuming if all your users needed is one widget for each group. We didn't have widgets on either of those nodes. Now, suppose we can make widgets for every group and have them all have the same "
+--------------------------------------------------------------------------------
+Diversidad: 0.986 | Polaridad: -0.017
+
+Prompt: I feel sad and don't know why. Everything just feels heavy.
+--------------------------------------------------------------------------------
+I feel sad and don't know why. Everything just feels heavy. My heart aches. I'm in so much danger and I'm so exhausted. It's a big responsibility.
+
+Q. If you were to say something, what would it feel like for someone who's had two surgeries on their back, one in their right hand and another in their shoulder
+--------------------------------------------------------------------------------
+Diversidad: 0.982 | Polaridad: -0.088
+
+
+================================================================================
+PERFIL: CAUTIOUS
+================================================================================
+
+Prompt: You're in a race and pass the person in second place. What place are you in now?
+--------------------------------------------------------------------------------
+You're in a race and pass the person in second place. What place are you in now? Go to the first place if you can. I know my chances are slim so I'm thinking of you. There's a lot of people. I'm in the top two.
+
+"Yeah, you have to take the best shot from anywhere. You should be able to outwork the best
+--------------------------------------------------------------------------------
+Diversidad: 0.984 | Polaridad: 0.542
+
+Prompt: What would you do if you could time travel?
+--------------------------------------------------------------------------------
+What would you do if you could time travel? Would you stay forever in space or would you go home?
+
+K. A. Arianate
+
+What was your earliest memory of the Earth? What was the planet like? What is your favorite place to visit, where did it happen, and how did you choose it? Where did
+--------------------------------------------------------------------------------
+Diversidad: 0.926 | Polaridad: 0.500
+
+Prompt: A farmer has 17 sheep and all but 9 die. How many are left?
+--------------------------------------------------------------------------------
+A farmer has 17 sheep and all but 9 die. How many are left?
+
+A couple have 10 daughters. The oldest one has 3 daughters while the youngest have 2.
+
+What are the best and worst things you do to yourself?
+, for one person. It has nothing to do with you.
+"But do not lose hope!" You've failed yourself
+--------------------------------------------------------------------------------
+Diversidad: 1.000 | Polaridad: 0.000
+
+
+================================================================================
+PERFIL: CREATIVE
+================================================================================
+
+Prompt: What comes next in this sequence: 2, 4, 8, 16, ...?
+--------------------------------------------------------------------------------
+What comes next in this sequence: 2, 4, 8, 16, ...? A short one? If we had any more choice we would have 2nd set and then we would use that list.
+
+
+7) What about "The Great Three"? One point. Let's say we have all these things in 3, and now we use only one list on all. Instead
+--------------------------------------------------------------------------------
+Diversidad: 0.983 | Polaridad: 0.217
+
+Prompt: You're in a race and pass the person in second place. What place are you in now?
+--------------------------------------------------------------------------------
+You're in a race and pass the person in second place. What place are you in now? Where are you in third and I'm going to do that?"
+
+After seeing her face turned against his, Yang started to make changes, to try to calm down, and asked him a lot to help a lot by taking some time on the train. That would be the beginning of "The
+--------------------------------------------------------------------------------
+Diversidad: 0.955 | Polaridad: 0.036
+
+Prompt: My friend is going through a difficult breakup. How can I help?
+--------------------------------------------------------------------------------
+My friend is going through a difficult breakup. How can I help? Is there something that you know or someone you care about helping support? I'd love to work with you.
+--------------------------------------------------------------------------------
+Diversidad: 1.000 | Polaridad: 0.000
+
+
+================================================================================
+PERFIL: STABLE
+================================================================================
+
+Prompt: Describe how the Internet works in simple terms.
+--------------------------------------------------------------------------------
+Describe how the Internet works in simple terms. One day we're sitting in our room, and when some guy comes along out of the room, I don't realize that he's really in this conversation. One of the main things that he says is, "You heard what? Now I have to be careful. I'm not going to let
+--------------------------------------------------------------------------------
+Diversidad: 0.982 | Polaridad: 0.067
+
+Prompt: Imagine a world where colors have disappeared. What happens next?
+--------------------------------------------------------------------------------
+Imagine a world where colors have disappeared. What happens next? In a strange moment in history, we meet Professor Thomas Edison.
+
+
+"At the Electric Power Society of Wisconsin, we talk to students about our work at that electric power project and to talk to them about other projects in progress," said Paul Leitch, the professor.
+
+
+The lecture was
+--------------------------------------------------------------------------------
+Diversidad: 0.965 | Polaridad: -0.058
+
+Prompt: I'm feeling anxious about my future and don't know what to do.
+--------------------------------------------------------------------------------
+I'm feeling anxious about my future and don't know what to do. " I've worked hard to change how I behave. For now that I finally get something out of this, I still think of you as one of the coolest girls you have been to!" -Jenny Latham
+
+We also met and dated the two women for several years with each other in
+--------------------------------------------------------------------------------
+Diversidad: 1.000 | Polaridad: -0.111
+
