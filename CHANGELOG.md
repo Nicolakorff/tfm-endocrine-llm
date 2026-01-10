@@ -18,6 +18,56 @@ y este proyecto adhiere a [Semantic Versioning](https://semver.org/spec/v2.0.0.h
 
 ---
 
+## [0.6.0] - 2026-01-10
+
+### Added - Fase 5: Dataset Extendido (100 prompts)
+
+**Experimental Design:**
+- Dataset expandido de 40 a 100 prompts (150% más datos)
+- Cobertura mejorada: 20 prompts por categoría
+- Comparación completa de todos los sistemas:
+  - Hormonas individuales (Fase 1)
+  - Perfiles combinados (Fase 2)
+  - Sesgos semánticos vs léxicos (Fase 3)
+  - Sistema dinámico vs estático (Fase 4)
+- 5 categorías balanceadas: creative_writing, reasoning, conversation, questions, scenarios
+
+**Analysis & Scripts:**
+- `generate_latex_tables.py` actualizado:
+  - Corrección de ruta para usar `pairwise_comparisons.csv`
+  - Soporte para comparación léxico vs semántico
+  - Generación automática de tablas LaTeX formateadas
+- `generate_statistical_report.py` mejorado:
+  - Consolidación de todas las fases experimentales
+  - Análisis ANOVA multivariado
+  - Tests post-hoc con corrección Bonferroni
+  - Reporte completo en Markdown
+- Scripts de análisis cualitativo para comparaciones detalladas
+
+**Results:**
+- Mayor robustez estadística con n=100
+- Potencia estadística mejorada (β > 0.90)
+- Efectos replicados de fases anteriores
+- Intervalos de confianza más estrechos
+- Datos almacenados en `data/results/`
+
+**Documentation:**
+- Reporte estadístico completo: `data/results/statistical_report.md`
+- Análisis comparativo actualizado
+- Documentación de metodología expandida
+
+### Changed
+- Dataset principal: `prompts_dataset.csv` (40→100 prompts)
+- Distribución de categorías más balanceada
+- Scripts de análisis optimizados para datasets grandes
+
+### Fixed
+- `generate_latex_tables.py`: FileNotFoundError corregido
+- Rutas de archivos actualizadas para nueva estructura
+- Manejo de comparaciones pairwise para análisis semántico
+
+---
+
 ## [0.5.0] - 2025-01-XX
 
 ### Added - Sistema Dinámico (Fase 4)
