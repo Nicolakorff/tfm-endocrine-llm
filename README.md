@@ -271,7 +271,12 @@ tfm-endocrine-llm/
 │   ├── prompts/            # Dataset de prompts
 │   └── results/            # Resultados experimentales
 │
-├── scripts/                # Scripts de análisis
+├── scripts/                # Scripts de análisis y experimentos
+    ├── run_experiment_phase1.py
+    ├── run_experiment_phase2.py
+    ├── run_experiment_semantic_comparison.py
+    ├── run_dynamic_experiment.py
+    └── consolidate_all_experiments.py               
 ├── examples/               # Notebooks de ejemplo
 ├── tests/                  # Tests unitarios
 └── docs/                   # Documentación
