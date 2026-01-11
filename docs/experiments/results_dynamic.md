@@ -2,9 +2,9 @@
 
 ## Sistema de Neuromodulación Endocrina para LLMs - Fase 4
 
-**Versión:** 1.0  
-**Fecha:** Enero 2025  
-**Fase Experimental:** 4 - Modo Dinámico vs. Estático  
+**Versión:** 2.0  
+**Fecha:** Enero 2026  
+**Fase Experimental:** 4-5 - Modo Dinámico vs. Estático (Dataset Expandido)  
 **Estado:** Completado y validado
 
 ---
@@ -24,17 +24,17 @@ El sistema endocrino biológico es fundamentalmente **dinámico**: los niveles h
 ### Configuración Experimental
 
 - **Modelo Base:** DistilGPT2 (82M parámetros)
-- **Prompts:** 30 prompts (6 por categoría: creative, empathetic, factual, reasoning, open-ended)
+- **Prompts:** 100 prompts (20 por categoría: creative, empathetic, factual, reasoning, questions, scenarios, conversations, open-ended)
 - **Perfiles Evaluados:** 6 configuraciones (3 pares estático/dinámico)
   - Par 1: Neutral (static) vs. Neutral (dynamic)
   - Par 2: Creative (static) vs. Creative (dynamic)
   - Par 3: Empathic (static) vs. Empathic (dynamic)
 - **Repeticiones:** 4 por combinación (prompt × configuración)
-- **Total Generaciones:** 720 (360 estáticas + 360 dinámicas)
+- **Total Generaciones:** 2,400 (1,200 estáticas + 1,200 dinámicas)
 - **Parámetros de generación:**
-  - `max_new_tokens`: 100 tokens (más largo que Fases 1-2 para observar dinámica)
-  - `update_interval`: 10 tokens
-  - `learning_rates`: [0.10, 0.05, 0.10, 0.00, 0.08] para [adrenaline, cortisol, dopamine, oxytocin, serotonin]
+  - `max_new_tokens`: 100 tokens (mayor que Fases 1-2 para observar dinámica completa)
+  - `update_interval`: 10 tokens (mejorado vs. 5 en Fase 4)
+  - `learning_rates`: [0.00, 0.05, 0.00, 0.00, 0.08] para [adrenaline, cortisol, dopamine, oxytocin, serotonin]
   - `metrics_window`: 20 tokens (para cálculo de métricas locales)
 
 ### Configuraciones Hormonales Iniciales

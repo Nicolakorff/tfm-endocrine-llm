@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "endocrine-llm"
-version = "0.5.0"
-description = "Sistema de Neuromodulación Endocrina para LLMs con Modulación Dinámica"
+version = "0.6.0"
+description = "Sistema de Neuromodulación Endocrina para LLMs con Modulación Dinámica y Dataset Expandido"
 readme = "README.md"
 requires-python = ">=3.8"
 license = {text = "MIT"}

@@ -1,8 +1,8 @@
 # Guía de Instalación
 
 **Sistema de Neuromodulación Endocrina para LLMs**  
-**Versión:** 0.5.0  
-**Última actualización:** Enero 2025
+**Versión:** 0.6.0  
+**Última actualización:** Enero 2026
 
 ---
 
@@ -744,7 +744,7 @@ python -c "from endocrine_llm import EndocrineModulatedLLM; print('✓ OK')"
 ```
 ---
 
-**Última actualización:** Enero 2025  
-**Versión del sistema:** 0.5.0
+**Última actualización:** Enero 2026  
+**Versión del sistema:** 0.6.0
 
 **FIN DE DOCUMENTO**

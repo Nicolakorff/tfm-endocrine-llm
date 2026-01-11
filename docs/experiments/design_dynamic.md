@@ -3,8 +3,8 @@
 ## Sistema de Neuromodulación Endocrina para LLMs - Fase 4
 
 **Versión:** 4.0  
-**Fecha:** Enero 2025  
-**Estado:** Completado y validado
+**Fecha:** Enero 2026  
+**Estado:** Completado y validado (Fase 5 - Dataset expandido)
 
 ---
 
@@ -201,35 +201,50 @@ F_stat, p_value = stats.f_oneway(*groups)
 
 ## Resultados Esperados
 
-### H1: Diversidad Léxica
+### H1: Diversidad Léxica (VALIDADA - Fase 5)
 
 ```
 Distinct-2:
-  Estático:  M = 0.58, SD = 0.09
-  Dinámico:  M = 0.61, SD = 0.09
-  Δ = +0.03 (+5.2%)
-  t > 2.5, p < 0.05, d ≈ 0.33
+  Estático:  M = 0.964, SD = 0.052
+  Dinámico:  M = 0.983, SD = 0.028
+  Δ = +0.019 (+1.97%)
+  t(718) = 5.89, p < 0.001***, d = 0.57
+  IC 95%: [0.013, 0.025]
 ```
 
-### H2: Cambios Hormonales
+### H2: Cambios Hormonales (VALIDADA - Fase 5)
 
 ```
 Total Change (solo dinámico):
   M = 0.18, SD = 0.09
-  Rango: [0.05, 0.40]
-  % con cambio > 0.10: ~70%
+  Rango: [0.02, 0.52]
+  % con cambio > 0.10: ~78%
+  Update interval: 10 tokens
+  Max tokens: 100
 ```
 
-### H3: Por Categoría
+### H3: Reducción de Repetición (VALIDADA - Fase 5)
+
+```
+Tasa de Repetición:
+  Estático:  M = 0.015, SD = 0.043
+  Dinámico:  M = 0.002, SD = 0.007
+  Δ = -0.013 (-86.7%)
+  t(718) = -5.12, p < 0.001***, d = 0.49
+  IC 95%: [-0.018, -0.008]
+```
+
+### H4: Por Categoría (Fase 5)
 
 ```
 Cambio Hormonal por Categoría:
-  Empathetic:  M = 0.20 (mayor oxitocina)
-  Creative:    M = 0.19 (mayor dopamina)
-  Factual:     M = 0.15 (más estable)
+  Creative:    M = 0.21 (mayor dopamina/serotonina)
+  Empathetic:  M = 0.19 (mayor oxitocina)
   Reasoning:   M = 0.17 (moderado)
+  Scenarios:   M = 0.18 (balanceado)
+  Questions:   M = 0.17 (menor actividad)
   
-  F(3, 356) ≈ 4.5, p < 0.01
+  F(4, 355) ≈ 3.8, p < 0.01
 ```
 
 ---
@@ -237,10 +252,10 @@ Cambio Hormonal por Categoría:
 ## Limitaciones
 
 1. **Modelo pequeño:** DistilGPT2 (82M) - resultados pueden variar en modelos grandes
-2. **Learning rate fijo:** 0.15 no optimizado experimentalmente
-3. **Update interval fijo:** 5 tokens (no explorado rango 3-10)
+2. **Learning rates fijos:** Optimizados empíricamente pero sin grid search exhaustivo
+3. **Update interval:** 10 tokens (Fase 5) vs 5 tokens (Fase 4)
 4. **Sin evaluación humana:** Solo métricas automáticas
-5. **Muestra de prompts:** 40 de 200 (20% del dataset)
+5. **Muestra de prompts:** 100 prompts (todas las 5 categorías, Fase 5)
 
 ---
 

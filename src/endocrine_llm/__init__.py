@@ -12,7 +12,7 @@ Componentes principales:
 - semantic: Sesgos semánticos con embeddings
 """
 
-__version__ = "0.5.0"
+__version__ = "0.6.0"
 
 # Imports principales
 from .core import (

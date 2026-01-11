@@ -1,9 +1,9 @@
 # Guía Completa de Uso
 
 **Sistema de Neuromodulación Endocrina para LLMs**  
-**Versión:** 0.5.0  
-**Última actualización:** Enero 2025
-**Estado:** Completado y validado
+**Versión:** 0.6.0  
+**Última actualización:** Enero 2026
+**Estado:** Completado y validado (Dataset expandido a 100 prompts)
 
 ---
 
@@ -66,13 +66,14 @@ endocrine_llm.print_info()
 
 # Salida esperada:
 # ============================================================
-# Sistema de Neuromodulación Endocrina v0.5.0
+# Sistema de Neuromodulación Endocrina v0.6.0
 # ============================================================
 # Componentes disponibles:
 #   ✓ Core (perfiles hormonales)
 #   ✓ Metrics (evaluación)
 #   ✓ Experiment (framework)
 #   ✓ Semantic (sesgos semánticos)
+#   ✓ Dynamic (sistema dinámico)
 # ============================================================
 ```
 
@@ -1240,7 +1241,7 @@ MIT License - Ver [LICENSE](../LICENSE) para detalles
 
 ---
 
-**Última actualización:** Enero 2025  
-**Versión del sistema:** 0.5.0
+**Última actualización:** Enero 2026  
+**Versión del sistema:** 0.6.0
 
 **FIN DEL DOCUMENTO**

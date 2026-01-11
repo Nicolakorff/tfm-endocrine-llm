@@ -68,7 +68,7 @@ y este proyecto adhiere a [Semantic Versioning](https://semver.org/spec/v2.0.0.h
 
 ---
 
-## [0.5.0] - 2025-01-XX
+## [0.5.0] - 2025-01-09
 
 ### Added - Sistema Dinámico (Fase 4)
 

@@ -2,11 +2,11 @@
 
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Version](https://img.shields.io/badge/version-0.5.0-green.svg)](https://github.com/Nicolakorff/tfm-endocrine-llm/releases)
+[![Version](https://img.shields.io/badge/version-0.6.0-green.svg)](https://github.com/Nicolakorff/tfm-endocrine-llm/releases)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 
 > **TFM - Máster en Grandes Modelos de Lenguaje y Lingüística Computacional**
-> **Universidad:** Universidad de la Rioja | **Fecha:** Enero 2025
+> **Universidad:** Universidad de la Rioja | **Fecha:** Enero 2026
 > **Autor:** Nicola Korff | **Tutor:** Matías Nuñez 
 
 Sistema biológicamente inspirado que modula la generación de texto en LLMs mediante un **sistema hormonal artificial** con 5 hormonas sintéticas que ajustan dinámicamente el comportamiento del modelo.
@@ -65,24 +65,35 @@ print(texts[0])
 
 ---
 
-## Resultados Principales (TFM)
+## Resultados Principales (TFM - v0.6.0)
+
+### Dataset Expandido: Fase 5 (100 prompts)
+
+| Componente | v0.5.0 | v0.6.0 | Cambio |
+|-----------|--------|--------|--------|
+| **Prompts** | 40 | 100 | +150% |
+| **Prompts por categoría** | 8 | 20 | +150% |
+| **Potencia estadística (β)** | ~0.85 | >0.90 | Mejorada |
+| **IC 95% anchura** | ±0.012 | ±0.008 | -33% más preciso |
 
 ### Sistema Dinámico vs Estático
 
-| Métrica | Dinámico | Estático | Diferencia | p-value |
-|---------|----------|----------|------------|---------|
-| **Diversidad Léxica** | 0.61 | 0.58 | **+5.2%** | <0.05 |
-| **Cambio Hormonal** | 0.18 ± 0.09 | 0.00 | - | - |
+| Métrica | Dinámico | Estático | Diferencia | p-value | Cohen's d |
+|---------|----------|----------|------------|---------|-----------|
+| **Diversidad Léxica** | 0.983 | 0.964 | **+1.97%** | <0.001 | 0.57 |
+| **Repetición** | 0.002 | 0.015 | **-86.7%** | <0.001 | 0.49 |
+| **Perplejidad** | 28.95 | 17.24 | +67.9% | <0.001 | 1.05 |
+| **Cambio Hormonal** | 0.18 ± 0.09 | 0.00 | - | - | - |
 
 ### Sesgos Semánticos vs Léxicos
 
-| Característica | Léxico | Semántico | Ratio |
-|----------------|--------|-----------|-------|
-| **Cobertura** | 15 tokens | 1,042 tokens | **67×** |
-| **Diversidad** | 0.547 | 0.623 | +13.9% |
-| **p-value** | - | - | <0.001 |
+| Característica | Léxico | Semántico | Diferencia | p-value | Cohen's d |
+|----------------|--------|-----------|------------|---------|-----------|
+| **Cobertura** | 15 tokens | ~1,042 tokens | **67× más** | - | - |
+| **Diversidad (Distinct-2)** | 0.547 | 0.623 | **+13.9%** | <0.001 | 0.86 |
+| **Repetición** | 0.234 | 0.198 | **-15.4%** | <0.001 | 0.58 |
 
-****[Resultados completos](docs/results/) | ****[Figuras](docs/figures/figures_guide.md)
+**[Resultados completos](docs/experiments/) | [Figuras](docs/figures/figures_guide.md) | [Análisis estadístico](data/results/statistical_report.md)**
 
 ---
 
@@ -117,14 +128,14 @@ HORMONE_PROFILES["creative"]  # Alta dopamina, baja cautela
 HORMONE_PROFILES["cautious"]  # Alto cortisol, baja dopamina
 ```
 
-### Sistema Dinámico (v0.5.0)
+### Sistema Dinámico (v0.6.0)
 
 ```python
 from endocrine_llm import HormoneProfile
 
 # Perfil que aprende en tiempo real
 dynamic_profile = HormoneProfile(
-    0.5, 0.5, 0.5, 0.5, 0.5,
+    1.0, 1.0, 1.0, 1.0, 1.0,
     dynamic=True,
     learning_rate=0.15
 )
@@ -132,11 +143,13 @@ dynamic_profile = HormoneProfile(
 result = model.generate_with_dynamic_hormones(
     "I'm feeling stressed.",
     dynamic_profile,
-    max_new_tokens=50
+    max_new_tokens=100,
+    update_interval=10
 )
 
 print(result['generated_text'])
 print(result['final_hormone_profile'])  # Hormonas actualizadas
+print(result['hormone_trajectory'])     # Cambios en cada token
 ```
 
 ### Sesgos Semánticos

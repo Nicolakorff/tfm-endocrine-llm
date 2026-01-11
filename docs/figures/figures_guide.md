@@ -1,8 +1,8 @@
 # Guía de Figuras para TFM
 
 **Sistema de Neuromodulación Endocrina para LLMs**  
-**Versión:** 2.0 (con Sistema Dinámico)  
-**Fecha:** Enero 2025
+**Versión:** 3.0 (con Dataset Expandido a 100 prompts)  
+**Fecha:** Enero 2026
 **Estado:** Completado y validado
 
 ---
@@ -18,11 +18,17 @@
 5. **Tamaño de Efecto** - Capítulo 5
 6. **Figura Maestra** - Capítulo 5 (Inicio) o Apéndice
 
-### Figuras Fase 3 - Sistema Dinámico (NUEVO)
+### Figuras Fase 4 - Sistema Dinámico
 
 11. **Trayectorias Hormonales** - Capítulo 5.8
 12. **Estático vs Dinámico** - Capítulo 5.8
 13. **Cambios por Categoría** - Capítulo 5.8
+
+### Figuras Fase 5 - Dataset Expandido (100 prompts) (NUEVO)
+
+14. **Comparación Statistical Power** - Capítulo 5
+15. **IC 95% por Métrica** - Capítulo 5
+16. **Replicación de Efectos** - Capítulo 5
 
 ---
 
@@ -36,31 +42,31 @@
 \begin{figure}[p]
 \centering
 \includegraphics[width=\textwidth]{figures/master_figure.pdf}
-\caption{Resumen integrado de resultados experimentales. 
+\caption{Resumen integrado de resultados experimentales (Fase 1-5). 
 (A) Diversidad léxica por perfil hormonal, 
 (B) Resultados ANOVA, 
 (C) Tamaño del efecto (η²), 
 (D) Efectos de hormonas individuales, 
 (E) Comparación sesgo simple vs semántico, 
-(F) Distribución general de métricas.
-Si incluye Fase 3:
+(F) Distribución general de métricas,
 (G1) Comparación sistema estático vs dinámico,
-(G2) Distribución de cambios hormonales.}
+(G2) Distribución de cambios hormonales,
+(H) Mejora estadística con dataset expandido (n=100).}
 \label{fig:master}
 \end{figure}
 ```
 
 **Layout:**
-- 4×4 (sin datos dinámicos)
-- 5×4 (con datos dinámicos - Fase 3)
+- 5×4 (con datos dinámicos y dataset expandido - Fases 4-5)
+- Mejora en precisión estadística con n=100 vs n=40
 
 ---
 
-## Figuras Sistema Dinámico
+## Figuras Sistema Dinámico (Fases 4-5)
 
 ### Figura 11: Ejemplo de Trayectoria Hormonal
 
-**Archivo:** `data/results/dynamic_experiment/trajectories/example_trajectory.pdf`
+**Archivo:** `data/results/dynamic_analysis/trajectories/example_trajectory.pdf`
 
 ```latex
 \begin{figure}[ht]
@@ -69,27 +75,45 @@ Si incluye Fase 3:
 \caption{Ejemplo de trayectoria hormonal durante generación dinámica. 
 Se observa aumento progresivo de oxitocina (+0.12) y disminución de 
 cortisol (-0.08) en respuesta a contenido empático generado. 
-Learning rate: 0.15, Update interval: 5 tokens.}
+Learning rate: 0.15, Update interval: 10 tokens (Fase 5).}
 \label{fig:dynamic_trajectory}
 \end{figure}
 ```
 
 ---
 
-### Figura 12: Comparación Estático vs Dinámico
+### Figura 12: Comparación Estático vs Dinámico (Actualizada - Fase 5)
 
-**Archivo:** `data/results/dynamic_experiment/analysis/static_vs_dynamic_comparison.pdf`
+**Archivo:** `data/results/consolidated/static_vs_dynamic_comparison.pdf`
 
 ```latex
 \begin{figure}[ht]
 \centering
 \includegraphics[width=\textwidth]{figures/dynamic_comparison.pdf}
-\caption{Comparación entre sistema estático y dinámico. 
+\caption{Comparación entre sistema estático y dinámico con dataset expandido (n=100). 
 (A) El sistema dinámico muestra mayor diversidad léxica promedio 
-(0.61 vs 0.58, p<0.05). 
+(0.983 vs 0.964, p<0.001, d=0.57). 
 (B) Distribución de cambios hormonales totales (media: 0.18±0.09). 
-(C) Relación entre magnitud de cambio hormonal y diversidad resultante.}
+(C) Relación entre magnitud de cambio hormonal y diversidad resultante.
+(D) Reducción significativa de repetición (-86.7%, p<0.001).}
 \label{fig:dynamic_comparison}
+\end{figure}
+```
+
+---
+
+### Figura 13: Cambios Hormonales por Categoría de Prompt (Fase 5)
+
+**Archivo:** `data/results/consolidated/hormone_changes_by_category.pdf`
+
+```latex
+\begin{figure}[ht]
+\centering
+\includegraphics[width=\textwidth]{figures/hormone_changes_category.pdf}
+\caption{Análisis de cambios hormonales dinámicos según categoría de prompt. 
+Los cambios de dopamina y serotonina son más pronunciados en tareas creativas,
+mientras que los cambios de cortisol y oxitocina dominan en tareas empáticas.}
+\label{fig:hormone_changes_category}
 \end{figure}
 ```
 
@@ -140,6 +164,6 @@ echo "✓ Figuras copiadas a tfm_latex/figures/"
 
 ---
 
-**Total figuras:** 13-15 (aun en proceso)  
-
-**FIN DEL DOCUMENTO**
+**Total figuras:** 16 (completas para TFM)  
+**Versión final:** Enero 2026  
+**Dataset:** 100 prompts (Fase 5 - Expandido)
