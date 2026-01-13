@@ -1,0 +1,105 @@
+[build-system]
+requires = ["setuptools>=65.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "endocrine-llm"
+version = "0.6.1"
+description = "Sistema de Neuromodulación Endocrina para LLMs con Modulación Dinámica"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "MIT"}
+keywords = ["llm", "neuromodulation", "hormones", "nlp", "ai", "transformers"]
+authors = [
+    {name = "Nicola Korff", email = "nicola.korff@example.com"}
+]
+
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+
+dependencies = [
+    # Core ML - Versiones compatibles con Colab
+    "torch>=2.0.0",  # Permite cualquier torch 2.x (compatible con Colab)
+    "transformers>=4.30.0,<=4.45.0",  # Rango seguro, evita 4.46+
+    
+    # Data & Analysis
+    "pandas>=1.5.0",
+    "numpy>=1.24.0",
+    "scipy>=1.10.0",
+    
+    # Visualization
+    "matplotlib>=3.7.0",
+    "seaborn>=0.12.0",
+    
+    # NLP & Metrics
+    "nltk>=3.8.0",
+    "textblob>=0.17.0",
+    "sacrebleu>=2.3.0",
+    "rouge-score>=0.1.0",
+    
+    # Utilities
+    "tqdm>=4.65.0",
+]
+
+[project.optional-dependencies]
+# Semantic features (opcional)
+semantic = [
+    "sentence-transformers>=2.2.0",
+    "scikit-learn>=1.3.0",
+]
+
+# Development tools
+dev = [
+    "pytest>=7.4.0",
+    "black>=23.0.0",
+    "isort>=5.12.0",
+]
+
+# Jupyter notebooks
+notebook = [
+    "jupyter>=1.0.0",
+    "ipykernel>=6.25.0",
+]
+
+# Complete installation
+all = [
+    "sentence-transformers>=2.2.0",
+    "scikit-learn>=1.3.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/Nicolakorff/tfm-endocrine-llm"
+Repository = "https://github.com/Nicolakorff/tfm-endocrine-llm"
+"Bug Tracker" = "https://github.com/Nicolakorff/tfm-endocrine-llm/issues"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.black]
+line-length = 100
+target-version = ['py38', 'py39', 'py310', 'py311']
+include = '\.pyi?$'
+
+[tool.isort]
+profile = "black"
+line_length = 100
+skip_gitignore = true
+known_first_party = ["endocrine_llm"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = "test_*.py"
+addopts = ["-v", "--strict-markers"]
