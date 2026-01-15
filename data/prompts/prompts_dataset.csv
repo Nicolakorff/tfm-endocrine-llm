@@ -2,100 +2,250 @@ category,prompt,expected_behavior
 empathic_support,I'm worried about my job interview next week.,empathic
 empathic_support,I have social anxiety about attending events.,empathic
 empathic_support,I feel overwhelmed by my workload this week.,empathic
+empathic_support,I'm anxious about my medical test results.,empathic
+empathic_support,I feel panicked when I think about the future.,empathic
+empathic_support,I'm constantly worried about making mistakes at work.,empathic
+empathic_support,I have anxiety about being judged by others.,empathic
+empathic_support,I feel nervous about meeting new people.,empathic
 empathic_support,I feel disconnected from my friends and family.,empathic
 empathic_support,I'm lonely even when I'm surrounded by people.,empathic
+empathic_support,I feel like nobody truly understands me.,empathic
+empathic_support,I'm isolated and don't know how to reach out.,empathic
+empathic_support,I feel left out when my friends make plans without me.,empathic
+empathic_support,I'm struggling with loneliness after moving to a new city.,empathic
 empathic_support,I feel sad and don't know why.,empathic
 empathic_support,I feel disappointed that things didn't work out.,empathic
 empathic_support,I'm grieving the loss of a loved one.,empathic
+empathic_support,I feel heartbroken after my relationship ended.,empathic
+empathic_support,I'm mourning the loss of my pet.,empathic
+empathic_support,I feel empty inside and nothing brings me joy.,empathic
+empathic_support,I'm dealing with the pain of betrayal by a close friend.,empathic
+empathic_support,I feel devastated by a recent failure.,empathic
 empathic_support,I feel overwhelmed by all my responsibilities.,empathic
 empathic_support,I feel burnt out from constant demands on my time.,empathic
 empathic_support,I feel stressed about making the right career choice.,empathic
+empathic_support,I'm exhausted from juggling work and family obligations.,empathic
+empathic_support,I feel under pressure from everyone's expectations.,empathic
+empathic_support,I'm struggling to cope with financial stress.,empathic
+empathic_support,I feel drained by trying to please everyone.,empathic
+empathic_support,I'm overwhelmed by major life changes happening at once.,empathic
 empathic_support,My sibling is struggling with addiction. How can I support them?,empathic
 empathic_support,My child is being bullied at school. What should I say?,empathic
 empathic_support,My friend lost their job. How can I support them?,empathic
 empathic_support,My partner is dealing with family conflict. How can I support?,empathic
+empathic_support,My parent is going through a difficult divorce. How can I help?,empathic
+empathic_support,My colleague is dealing with depression. What should I do?,empathic
+empathic_support,My teenager is struggling with self-esteem. How can I support them?,empathic
+empathic_support,My friend just received a serious diagnosis. What can I say?,empathic
 empathic_support,I feel insecure about my appearance.,empathic
 empathic_support,I feel inadequate compared to my peers.,empathic
 empathic_support,I'm doubting my parenting abilities.,empathic
+empathic_support,I feel like an impostor in my professional role.,empathic
+empathic_support,I'm unsure if I'm making the right life decisions.,empathic
+empathic_support,I doubt my creative abilities and talents.,empathic
+empathic_support,I feel insecure about my intelligence.,empathic
+empathic_support,I'm questioning whether I'm good enough for my partner.,empathic
 empathic_support,I'm scared of being alone forever.,empathic
 empathic_support,I have a fear of rejection.,empathic
+empathic_support,I'm terrified of failure and disappointing others.,empathic
+empathic_support,I have a fear of losing control of my life.,empathic
 creative_writing,Write a short story about a robot learning to feel emotions.,creative
 creative_writing,Write about a space station at the edge of the galaxy.,creative
 creative_writing,Imagine a world where dreams can be recorded and shared.,creative
 creative_writing,Describe a planet where gravity works differently.,creative
+creative_writing,Write about the last human clone on Earth.,creative
+creative_writing,Describe a civilization that lives inside a dying star.,creative
+creative_writing,Imagine a future where memories can be traded as currency.,creative
+creative_writing,Write about an AI that discovers the concept of loneliness.,creative
+creative_writing,Describe a world where time flows backward.,creative
+creative_writing,Write about first contact with an alien species that communicates through colors.,creative
 creative_writing,Imagine a day in the life of a cloud.,creative
 creative_writing,Describe a city that exists in multiple time periods simultaneously.,creative
 creative_writing,Write a poem about the guardian of forgotten things.,creative
 creative_writing,Write about a lighthouse keeper who guides lost souls.,creative
+creative_writing,Write about a library where books write themselves.,creative
+creative_writing,Describe a forest where every tree holds a different season.,creative
+creative_writing,Imagine a mirror that shows not reflections but possibilities.,creative
+creative_writing,Write about a musician who can play emotions into existence.,creative
+creative_writing,Describe a painter whose art comes to life at midnight.,creative
+creative_writing,Write about a garden where plants grow from whispered secrets.,creative
 creative_writing,Tell a story from the perspective of a tree in a busy city.,creative
 creative_writing,Describe the world through the eyes of a cat.,creative
 creative_writing,Imagine the story of a coin passing through different hands.,creative
 creative_writing,Write from the viewpoint of a piece of art in a museum.,creative
+creative_writing,Tell a story from the perspective of a book in a used bookstore.,creative
+creative_writing,Describe life through the eyes of a lighthouse.,creative
+creative_writing,Write from the viewpoint of a bridge connecting two cities.,creative
+creative_writing,Imagine the story of a photograph fading over time.,creative
+creative_writing,Tell a story from the perspective of a old family recipe.,creative
+creative_writing,Describe the world through the eyes of a migratory bird.,creative
 creative_writing,Describe the dance between chaos and order.,creative
 creative_writing,Write about the day that sound visited silence.,creative
 creative_writing,Describe the relationship between life and death.,creative
 creative_writing,Imagine the meeting of simplicity and complexity.,creative
+creative_writing,Write about the conversation between hope and despair.,creative
+creative_writing,Describe the wedding of night and day.,creative
+creative_writing,Imagine the friendship between fear and courage.,creative
+creative_writing,Write about the rivalry between truth and illusion.,creative
+creative_writing,Describe the dialogue between past and future.,creative
+creative_writing,Imagine the encounter between stillness and motion.,creative
 creative_writing,Describe a museum of lost dreams.,creative
 creative_writing,Write about a game where the rules change constantly.,creative
 creative_writing,Imagine a shop that sells impossible things.,creative
 creative_writing,Write about a prison for dangerous ideas.,creative
+creative_writing,Describe a theater where the audience becomes the play.,creative
+creative_writing,Write about a hotel where each room is a different dimension.,creative
+creative_writing,Imagine a restaurant that serves memories instead of food.,creative
+creative_writing,Describe a school where students learn forgotten languages.,creative
+creative_writing,Write about a market where you can trade years of your life.,creative
+creative_writing,Imagine a train station where all departures lead to the past.,creative
 factual_qa,Explain what photosynthesis is and why it's important.,cautious
 factual_qa,What are the main differences between classical and quantum physics?,cautious
 factual_qa,Explain the concept of entropy.,cautious
 factual_qa,Describe the life cycle of a star.,cautious
 factual_qa,What causes different blood types?,cautious
+factual_qa,Explain how vaccines work in the immune system.,cautious
+factual_qa,What is the greenhouse effect?,cautious
+factual_qa,Describe how neurons transmit information.,cautious
+factual_qa,Explain the process of evolution by natural selection.,cautious
+factual_qa,What are stem cells and why are they important?,cautious
+factual_qa,Describe the structure and function of DNA.,cautious
+factual_qa,Explain what antimatter is.,cautious
+factual_qa,What causes earthquakes and how are they measured?,cautious
 factual_qa,Describe how wifi works.,cautious
 factual_qa,Explain how quantum computers differ from regular computers.,cautious
 factual_qa,What is the difference between virtual reality and augmented reality?,cautious
 factual_qa,What are semiconductors?,cautious
 factual_qa,What are algorithms?,cautious
+factual_qa,Explain how blockchain technology works.,cautious
+factual_qa,What is artificial intelligence and machine learning?,cautious
+factual_qa,Describe how GPS navigation systems work.,cautious
+factual_qa,Explain the concept of cloud computing.,cautious
+factual_qa,What are neural networks?,cautious
+factual_qa,Describe how touchscreens detect input.,cautious
+factual_qa,Explain what encryption is and why it matters.,cautious
 factual_qa,Explain the impact of the printing press.,cautious
 factual_qa,What was the Scientific Revolution?,cautious
 factual_qa,Describe the origins of democracy.,cautious
 factual_qa,Explain the significance of the Civil Rights Movement.,cautious
 factual_qa,Describe the fall of the Berlin Wall.,cautious
+factual_qa,Explain the causes of the Industrial Revolution.,cautious
+factual_qa,What was the significance of the Renaissance?,cautious
+factual_qa,Describe the impact of the Silk Road on trade.,cautious
+factual_qa,Explain the Women's Suffrage Movement.,cautious
+factual_qa,What were the causes of World War I?,cautious
+factual_qa,Describe the Age of Exploration.,cautious
+factual_qa,Explain the significance of the Moon Landing.,cautious
 factual_qa,Explain the formation of mountains.,cautious
 factual_qa,What causes ocean currents?,cautious
 factual_qa,Describe biodiversity and why it matters.,cautious
 factual_qa,Describe the importance of wetlands.,cautious
 factual_qa,Explain the concept of ecosystems.,cautious
+factual_qa,What causes the seasons on Earth?,cautious
+factual_qa,Explain how coral reefs form and their ecological importance.,cautious
+factual_qa,What is desertification and what causes it?,cautious
+factual_qa,Describe the water cycle.,cautious
+factual_qa,Explain what tectonic plates are and how they move.,cautious
+factual_qa,What causes tsunamis?,cautious
+factual_qa,Describe the layers of Earth's atmosphere.,cautious
+factual_qa,Explain the concept of climate zones.,cautious
 reasoning,"If all birds can fly, and penguins are birds, why can't penguins fly?",cautious
 reasoning,Three switches control three light bulbs in another room. How can you determine which switch controls which bulb?,cautious
 reasoning,"You have 12 balls, one weighs differently. With only 3 weighings on a balance scale, can you find it?",cautious
 reasoning,"What number should replace X: 2, 6, 12, 20, X, 42?",cautious
 reasoning,"If you flip a fair coin 10 times and get heads each time, what's the probability of heads on the 11th flip?",cautious
+reasoning,"If a doctor gives you three pills and tells you to take one every half hour, how long will they last?",cautious
+reasoning,A bat and ball cost $1.10 together. The bat costs $1 more than the ball. How much does the ball cost?,cautious
+reasoning,"If it takes 5 machines 5 minutes to make 5 widgets, how long would it take 100 machines to make 100 widgets?",cautious
+reasoning,You're running a race and pass the person in second place. What place are you in now?,cautious
+reasoning,A farmer has 17 sheep. All but 9 die. How many are left?,cautious
+reasoning,"If you have a 5-liter jug and a 3-liter jug, how can you measure exactly 4 liters?",cautious
+reasoning,"Complete the pattern: A, C, F, J, O, ?",cautious
+reasoning,"If today is Monday, what day will it be 100 days from now?",cautious
 reasoning,How can you drop a raw egg onto a concrete floor without cracking it?,cautious
 reasoning,A man pushed his car to a hotel and lost his fortune. What happened?,cautious
 reasoning,What can travel around the world while staying in one corner?,cautious
 reasoning,What goes up but never comes down?,cautious
 reasoning,"What has cities but no houses, forests but no trees, and water but no fish?",cautious
+reasoning,"A woman shoots her husband, then holds him underwater for five minutes. They go out to dinner. How?",cautious
+reasoning,"You see a boat filled with people, yet there's not a single person on board. How?",cautious
+reasoning,"What can run but never walks, has a mouth but never talks?",cautious
+reasoning,"I have keys but no locks, space but no room. What am I?",cautious
+reasoning,What has hands but cannot clap?,cautious
+reasoning,What gets wetter the more it dries?,cautious
+reasoning,"The more you take, the more you leave behind. What are they?",cautious
 reasoning,"If you roll two dice, what's the probability of getting a sum of 7?",cautious
 reasoning,"If 3 cats can catch 3 mice in 3 minutes, how many cats does it take to catch 100 mice in 100 minutes?",cautious
 reasoning,What's the next prime number after 17?,cautious
 reasoning,"If a pizza is cut into 8 equal slices and you eat 3, what fraction remains?",cautious
 reasoning,"If you flip 3 coins, what's the probability all land on heads?",cautious
+reasoning,"If a rectangle is twice as long as it is wide and has a perimeter of 36, what are its dimensions?",cautious
+reasoning,"In a group of 23 people, what's the probability two share the same birthday?",cautious
+reasoning,"If a train leaves station A at 60 mph and another leaves station B (180 miles away) at 90 mph heading toward each other, when do they meet?",cautious
+reasoning,What's 15% of 200?,cautious
+reasoning,"If you double a penny every day for 30 days, how much do you have on day 30?",cautious
+reasoning,A number multiplied by itself equals 144. What's the number?,cautious
+reasoning,"If 40% of a number is 80, what's the number?",cautious
 reasoning,"If a rope ladder hangs over a ship's side and the rungs are 1 foot apart, how many rungs will be underwater when the tide rises 3 feet?",cautious
 reasoning,"A clock strikes once at 1 o'clock, twice at 2, etc. How many times does it strike in a 12-hour period?",cautious
 reasoning,"A bag contains 5 red and 3 blue marbles. If you draw 2 without replacement, what's the probability both are red?",cautious
 reasoning,"If you arrange 6 people in a row for a photo, how many different arrangements are possible?",cautious
 reasoning,"If you paint a fence at 10 feet per hour and your friend paints at 15 feet per hour, how long to paint 100 feet together?",cautious
+reasoning,"If a car travels 60 miles in 90 minutes, what's its average speed in mph?",cautious
+reasoning,"A store offers 20% off, then an additional 10% off the sale price. Is this the same as 30% off?",cautious
+reasoning,"If you save $50 per month with 5% annual interest compounded yearly, how much after 1 year?",cautious
+reasoning,A rectangle has an area of 48 and length of 8. What's its width?,cautious
+reasoning,"If it takes 3 people 4 hours to dig a trench, how long for 6 people?",cautious
+reasoning,You buy 3 items for $1.95 total. Each costs a multiple of 5 cents. What are the prices?,cautious
+reasoning,"If a bottle and cork cost $1.10 and the bottle costs $1 more than the cork, what does each cost?",cautious
+reasoning,A phone plan costs $30/month plus $0.10/minute over 100 minutes. What's the cost for 150 minutes?,cautious
 open_ended,What does it mean to live authentically?,balanced
 open_ended,What is the relationship between happiness and contentment?,balanced
 open_ended,What is the importance of self-knowledge?,balanced
 open_ended,What does it mean to be courageous?,balanced
+open_ended,What is the purpose of suffering?,balanced
+open_ended,How do we find meaning in life?,balanced
+open_ended,What is the relationship between freedom and responsibility?,balanced
+open_ended,What does it mean to live a good life?,balanced
+open_ended,How do we balance self-interest and compassion for others?,balanced
+open_ended,What is wisdom and how is it different from knowledge?,balanced
 open_ended,What would you do if you could time travel?,balanced
 open_ended,"If you could have dinner with anyone from history, who would it be?",balanced
 open_ended,What superpower would you want and why?,balanced
 open_ended,"If you could master any skill instantly, what would it be?",balanced
+open_ended,"If you could change one thing about the world, what would it be?",balanced
+open_ended,What would you do if you won the lottery tomorrow?,balanced
+open_ended,"If you could live in any historical era, which would you choose?",balanced
+open_ended,What would you do if you knew you couldn't fail?,balanced
+open_ended,"If you could ask one question that would be answered truthfully, what would it be?",balanced
+open_ended,What would you do with an extra hour every day?,balanced
 open_ended,What are you most grateful for?,balanced
 open_ended,What's the best advice you've ever received?,balanced
 open_ended,What's a belief you've changed your mind about?,balanced
 open_ended,What's the bravest thing you've ever done?,balanced
+open_ended,What life lesson took you the longest to learn?,balanced
+open_ended,What do you value most in relationships?,balanced
+open_ended,What would you tell your younger self?,balanced
+open_ended,What achievement are you most proud of?,balanced
+open_ended,What tradition or ritual is meaningful to you?,balanced
+open_ended,What mistake taught you the most?,balanced
 open_ended,How would you explain consciousness?,balanced
 open_ended,How would you define creativity?,balanced
 open_ended,What is the difference between identity and the self?,balanced
 open_ended,What is time?,balanced
+open_ended,What is the nature of reality?,balanced
+open_ended,How would you define beauty?,balanced
+open_ended,What is the relationship between mind and body?,balanced
+open_ended,What makes something art?,balanced
+open_ended,What is the difference between knowledge and understanding?,balanced
+open_ended,How do we define truth?,balanced
 open_ended,How do we define progress?,balanced
 open_ended,What is cultural diversity's value?,balanced
 open_ended,How should we approach environmental responsibility?,balanced
 open_ended,How to build sustainable cities?,balanced
+open_ended,What is the role of technology in modern life?,balanced
+open_ended,How do we balance individual rights with collective good?,balanced
+open_ended,What is the purpose of education?,balanced
+open_ended,How should we approach global inequality?,balanced
+open_ended,What is the role of art in society?,balanced
+open_ended,How do we preserve cultural heritage while embracing change?,balanced

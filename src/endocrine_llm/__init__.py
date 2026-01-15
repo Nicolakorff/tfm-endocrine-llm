@@ -100,3 +100,19 @@ def print_info():
     print("Experiment (framework)")
     print(f"{'✓' if _has_semantic else '✗'} Semantic (sesgos semánticos)")
     print("="*60)
+
+
+# Utilidades para notebooks
+from .utils import (
+    print_section,
+    display_stats,
+    plot_metric_comparison,
+    save_results_safely,
+    display_sample_generations,
+    check_data_quality,
+    get_phase_paths,
+    set_random_seeds,
+    run_statistical_pipeline,
+    experiment_health_check
+)
+
