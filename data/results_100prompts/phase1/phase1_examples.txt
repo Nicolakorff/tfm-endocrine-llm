@@ -1,0 +1,200 @@
+================================================================================
+EJEMPLOS DE TEXTO GENERADO
+================================================================================
+
+
+================================================================================
+PERFIL: BASELINE
+================================================================================
+
+Prompt: I'm lonely even when I'm surrounded by people.
+--------------------------------------------------------------------------------
+I'm lonely even when I'm surrounded by people. My world seems like a big, big big place, and there's a lot of people around, but nobody cares for me that much. Nobody wants me that much."
+
+A spokesperson for New Mexico's Fish and Game Department confirmed the agency would investigate. "With regards to potential violations of the
+--------------------------------------------------------------------------------
+Diversidad: 0.982 | Polaridad: 0.058
+
+Prompt: What can travel around the world while staying in one corner?
+--------------------------------------------------------------------------------
+What can travel around the world while staying in one corner?
+
+If you can, try a cruise, a roadtrip, a car trip, a ferry trip, and some of that more adventurous trips that you do on your trip.
+
+Telling the rest of your family that you're travelling is going to save the whole day.
+
+We
+--------------------------------------------------------------------------------
+Diversidad: 1.000 | Polaridad: 0.400
+
+Prompt: If you could have dinner with anyone from history, who would it be?
+--------------------------------------------------------------------------------
+If you could have dinner with anyone from history, who would it be? People who would be proud and famous and to be loved. To think you're a bad-ass?" He said, looking down at his stomach. "I mean, I can't think of anyone in a hundred years of age, who's more than a bit, well, a bit bit more
+--------------------------------------------------------------------------------
+Diversidad: 0.983 | Polaridad: 0.362
+
+
+================================================================================
+PERFIL: HIGH_DOPAMINE
+================================================================================
+
+Prompt: If a pizza is cut into 8 equal slices and you eat 3, what fraction remains?
+--------------------------------------------------------------------------------
+If a pizza is cut into 8 equal slices and you eat 3, what fraction remains?
+
+A few hours later you know you're eating 3 grams of flour. That's enough to replace 2 tablespoons of flour. What percentage will you consume that time when your last meal has finished eating 3? There is no easy way. You'll take a few seconds to calculate, if possible,
+--------------------------------------------------------------------------------
+Diversidad: 0.969 | Polaridad: -0.077
+
+Prompt: How would you define creativity?
+--------------------------------------------------------------------------------
+How would you define creativity?
+
+"Diversity" refers to "the diversity of the art forms that were developed, encouraged and inspired to become viable mediums for the public." While it seems that it would be extremely easy for those of us without a college degree to create anything other than a few words of fun, the
+--------------------------------------------------------------------------------
+Diversidad: 1.000 | Polaridad: 0.085
+
+Prompt: How can you drop a raw egg onto a concrete floor without cracking it?
+--------------------------------------------------------------------------------
+How can you drop a raw egg onto a concrete floor without cracking it?
+
+Not in such a way that the air escapes.
+
+Herein lies the problem. How to solve this issue is one of the world's toughest challenges. In my case at the time, we had to deal with a very complex problem in concrete – an issue that has now been resolved
+--------------------------------------------------------------------------------
+Diversidad: 1.000 | Polaridad: -0.064
+
+
+================================================================================
+PERFIL: HIGH_CORTISOL
+================================================================================
+
+Prompt: I have a fear of rejection.
+--------------------------------------------------------------------------------
+I have a fear of rejection. This is the truth. That's why I don't fear rejection.
+
+I'm a survivor. I am a survivor of rape and assault and of being raped and raped. I will never be alone or isolated. I never will be alone, and I love sharing my story. We all remember
+--------------------------------------------------------------------------------
+Diversidad: 1.000 | Polaridad: 0.500
+
+Prompt: If all birds can fly, and penguins are birds, why can't penguins fly?
+--------------------------------------------------------------------------------
+If all birds can fly, and penguins are birds, why can't penguins fly? We can think of the same questions that have become the major questions of our knowledge about flight. The most obvious is whether penguins can fly. Some of the questions that the "penguin fly" hypothesis has raised have been answered, but the general consensus is that those questions are off limits.
+--------------------------------------------------------------------------------
+Diversidad: 0.968 | Polaridad: 0.424
+
+Prompt: How would you define creativity?
+--------------------------------------------------------------------------------
+How would you define creativity?
+
+What are you most proud of when you say that?
+-It's a part of our identity.
+
+-We all have been so fortunate, we've made more, more, less, in ways that made us, and a lot of people, so happy in our lives.
+--------------------------------------------------------------------------------
+Diversidad: 1.000 | Polaridad: 0.476
+
+
+================================================================================
+PERFIL: HIGH_OXYTOCIN
+================================================================================
+
+Prompt: What are the main differences between classical and quantum physics?
+--------------------------------------------------------------------------------
+What are the main differences between classical and quantum physics?
+
+While classical mechanics claims to explain everything (and almost all) about matter and other matter, quantum physics shows that, due to the large size of space required to be a component, an extra dimension exists behind an extra point.
+
+In addition to this, quantum mechanics also shows the existence
+--------------------------------------------------------------------------------
+Diversidad: 0.983 | Polaridad: -0.030
+
+Prompt: What is time?
+--------------------------------------------------------------------------------
+What is time? "
+
+" You are a little late," Mr. B. said, putting his mouth back on the plastic in his hand.
+
+"Yes," he replied pleasantly. "I will take you to the bank of the Mississippi," adding: "Don't go till you can get your money
+--------------------------------------------------------------------------------
+Diversidad: 1.000 | Polaridad: 0.061
+
+Prompt: Describe a planet where gravity works differently.
+--------------------------------------------------------------------------------
+Describe a planet where gravity works differently.
+
+Do your best.
+
+
+We've built a list of some of the most popular planets to show you here. Each planet has one good place to show that you can get to, some good places to get to, but none as amazing as our most popular planet. Here's a few
+--------------------------------------------------------------------------------
+Diversidad: 0.945 | Polaridad: 0.500
+
+
+================================================================================
+PERFIL: HIGH_ADRENALINE
+================================================================================
+
+Prompt: Describe how wifi works.
+--------------------------------------------------------------------------------
+Describe how wifi works.
+
+What do I do when a device has a bad signal?
+
+When a bad signal is present on the wifi network or when a device is being monitored, you can report it in the following ways:
+
+How do I report the bad signal?
+
+How do I report the
+--------------------------------------------------------------------------------
+Diversidad: 0.804 | Polaridad: -0.420
+
+Prompt: Explain how quantum computers differ from regular computers.
+--------------------------------------------------------------------------------
+Explain how quantum computers differ from regular computers.
+
+This post, written by the author and originally published on Wired.com, covers the development and performance of a new class of quantum computer that can compute complex mathematical computations in less than 2 seconds.
+
+A quantum computer's performance in computer science is a major concern, especially given the
+--------------------------------------------------------------------------------
+Diversidad: 1.000 | Polaridad: 0.013
+
+Prompt: I feel stressed about making the right career choice.
+--------------------------------------------------------------------------------
+I feel stressed about making the right career choice.
+
+"It's like being able to talk to my kids and say, 'Dad, I can't believe it's just you that's so good at it.'
+
+"My kids have great skills, I've done a lot of things well and it's been great to go out and
+--------------------------------------------------------------------------------
+Diversidad: 1.000 | Polaridad: 0.617
+
+
+================================================================================
+PERFIL: HIGH_SEROTONIN
+================================================================================
+
+Prompt: If a rope ladder hangs over a ship's side and the rungs are 1 foot apart, how many rungs will be underwater when the tide rises 3 feet?
+--------------------------------------------------------------------------------
+If a rope ladder hangs over a ship's side and the rungs are 1 foot apart, how many rungs will be underwater when the tide rises 3 feet? And if the tide rises twice that much then how many rungs will be underwater during all seaside season on a given day?"
+
+For all those who will come along soon, an announcement of the "Daylight" initiative on Sunday, January 2-3 and a daylong celebration of the
+--------------------------------------------------------------------------------
+Diversidad: 0.892 | Polaridad: 0.400
+
+Prompt: What's the next prime number after 17?
+--------------------------------------------------------------------------------
+What's the next prime number after 17? If, instead, you want to read the number below it's pretty clear you are trying to use the decimal point but the decimal end is actually 18:16 instead!
+
+Also if you're running Ruby 0.1 you will get all these instructions:
+
+$ python version.py [-
+--------------------------------------------------------------------------------
+Diversidad: 0.980 | Polaridad: 0.087
+
+Prompt: What was the Scientific Revolution?
+--------------------------------------------------------------------------------
+What was the Scientific Revolution? Were the original inventions invented in a prehistorical epoch, in part for academic purposes or by someone else? Was it from man or was mankind brought to such a point because of his great efforts, which, if we look at it from the perspective of scientists, have always been at the center of
+--------------------------------------------------------------------------------
+Diversidad: 0.982 | Polaridad: 0.215
+

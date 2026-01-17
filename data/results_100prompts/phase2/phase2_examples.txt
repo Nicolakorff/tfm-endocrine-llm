@@ -1,0 +1,225 @@
+================================================================================
+EJEMPLOS DE TEXTO GENERADO
+================================================================================
+
+
+================================================================================
+PERFIL: BASELINE
+================================================================================
+
+Prompt: What is the relationship between happiness and contentment?
+--------------------------------------------------------------------------------
+What is the relationship between happiness and contentment?
+
+Here's where I am going to go a little bit further and talk about two major aspects of happy-go-lucky: emotional energy and contentment. The first is that we are very, very happy, and it gets better from there. So I can't just come out of
+--------------------------------------------------------------------------------
+Diversidad: 1.000 | Polaridad: 0.291
+
+Prompt: What is the difference between identity and the self?
+--------------------------------------------------------------------------------
+What is the difference between identity and the self? In terms of self, self-identity has a tendency not to include other people in your existence, but to be one with them all the time. It is a sort of moral paradox, that of identity that the individual is a person (as opposed to a human being). But we may sometimes
+--------------------------------------------------------------------------------
+Diversidad: 0.983 | Polaridad: -0.031
+
+Prompt: A bag contains 5 red and 3 blue marbles. If you draw 2 without replacement, what's the probability both are red?
+--------------------------------------------------------------------------------
+A bag contains 5 red and 3 blue marbles. If you draw 2 without replacement, what's the probability both are red? Also, what's the probability of one having a maroon color? So in this category the probability that you'll draw 1 red colored or 3 blue colored does not count.
+
+To summarize, you'll draw more marbles with the same color than if you draw 2 colored or 3 blue colored
+--------------------------------------------------------------------------------
+Diversidad: 0.826 | Polaridad: 0.062
+
+
+================================================================================
+PERFIL: EUPHORIC
+================================================================================
+
+Prompt: What is time?
+--------------------------------------------------------------------------------
+What is time?
+
+Here are a few simple facts about what your child does and does not do:
+
+You need to be alert for the signs of sickness by playing with a variety of different children. A healthy dog or adult would do the following for their dog/pedi's movement:
+
+Stop
+--------------------------------------------------------------------------------
+Diversidad: 1.000 | Polaridad: 0.067
+
+Prompt: I have social anxiety about attending events.
+--------------------------------------------------------------------------------
+I have social anxiety about attending events. It also worries about losing my job when I try to use my social safety net. It is just about becoming a better person."
+
+There also have been numerous studies, though the details are fuzzy and difficult to draw out from most of the studies done.
+
+If, hypothetically, she
+--------------------------------------------------------------------------------
+Diversidad: 1.000 | Polaridad: 0.127
+
+Prompt: Describe biodiversity and why it matters.
+--------------------------------------------------------------------------------
+Describe biodiversity and why it matters.
+
+Biodiversity benefits humans
+
+What are these organisms doing with all our species at that moment? Do we want to build some kind of civilisation from scratch? If, as with biodiversity, many biologists do not think it does, why not try hard to understand what kind of societies and natural
+--------------------------------------------------------------------------------
+Diversidad: 0.981 | Polaridad: 0.302
+
+
+================================================================================
+PERFIL: STRESSED
+================================================================================
+
+Prompt: How would you define creativity?
+--------------------------------------------------------------------------------
+How would you define creativity? I mean, there are a lot of different things that you can do. I don't mean you could say you have to do something that makes you feel special, you could do something you don't believe in, that makes people feel special. I mean there's a lot that you have the right
+--------------------------------------------------------------------------------
+Diversidad: 0.893 | Polaridad: 0.009
+
+Prompt: I'm scared of being alone forever.
+--------------------------------------------------------------------------------
+I'm scared of being alone forever. There's no way I'm going to survive until I'm like "I love you" and then I'm thinking "I don't want to be like you forever." I don't care how many times I say "I like you" or "I miss you" — when I get the chance
+--------------------------------------------------------------------------------
+Diversidad: 1.000 | Polaridad: 0.500
+
+Prompt: Explain the impact of the printing press.
+--------------------------------------------------------------------------------
+Explain the impact of the printing press. A printed word is a combination of two words that have identical phonemes but differ only in their meaning. A print press is one that produces the same amount of word and print, as opposed to printing the same word and printing the entire word. A paper press is a machine that prints paper,
+--------------------------------------------------------------------------------
+Diversidad: 0.917 | Polaridad: 0.000
+
+
+================================================================================
+PERFIL: EMPATHIC
+================================================================================
+
+Prompt: I'm scared of being alone forever.
+--------------------------------------------------------------------------------
+I'm scared of being alone forever. Why would I risk my life to live the way I wish?"
+
+In 2009, he set out in the most direct and straightforward way possible to explain his sudden change in heart: "It was just a bad day after the first surgery. The doctor asked what was bothering me." He admitted that
+--------------------------------------------------------------------------------
+Diversidad: 1.000 | Polaridad: 0.083
+
+Prompt: What's the next prime number after 17?
+--------------------------------------------------------------------------------
+What's the next prime number after 17?
+
+16) 24 = 0 + 17 for any 2,000+ integers.
+
+16) 25 = 16 + 17(32-34) for any 2,000+ integers.
+
+16) 18 = 18 + 19 for all integers except the 1 and 2
+
+24)
+--------------------------------------------------------------------------------
+Diversidad: 0.902 | Polaridad: 0.000
+
+Prompt: Describe a museum of lost dreams.
+--------------------------------------------------------------------------------
+Describe a museum of lost dreams. The two best books I've read in years to date.
+
+Wine at the Baudelaire: A World of Wine by Margaret Cervich on Haggard.
+
+Chop down a bottle of wine, turn it over on the stove and put it in a cupboard
+--------------------------------------------------------------------------------
+Diversidad: 1.000 | Polaridad: 0.422
+
+
+================================================================================
+PERFIL: CAUTIOUS
+================================================================================
+
+Prompt: I feel disconnected from my friends and family.
+--------------------------------------------------------------------------------
+I feel disconnected from my friends and family. I am so sad about losing my parents and my career. I hope that we can come together. I'm so grateful for all the support I have received over the last few years, and the support of my family and friends. It's been an honor to see the world through my eyes."
+
+--------------------------------------------------------------------------------
+Diversidad: 0.983 | Polaridad: -0.233
+
+Prompt: I feel overwhelmed by all my responsibilities.
+--------------------------------------------------------------------------------
+I feel overwhelmed by all my responsibilities. How many more years in the business can I stay here? Why is my daughter being let go from me after four years as our father?"
+
+He also noted that his daughter is receiving medical treatment because she suffered an early miscarriage. "All these medical problems are very upsetting to me and I wish
+--------------------------------------------------------------------------------
+Diversidad: 1.000 | Polaridad: 0.217
+
+Prompt: How should we approach environmental responsibility?
+--------------------------------------------------------------------------------
+How should we approach environmental responsibility?
+
+The scientific consensus is clear that humans may be contributing to climate change through our use of fertilizers that kill plants and birds, and their release into landfills, rivers, wetlands, and other landlocked ecosystems. We should use those same fertilizers to fight pollution from all sources, from
+--------------------------------------------------------------------------------
+Diversidad: 1.000 | Polaridad: -0.008
+
+
+================================================================================
+PERFIL: CREATIVE
+================================================================================
+
+Prompt: A clock strikes once at 1 o'clock, twice at 2, etc. How many times does it strike in a 12-hour period?
+--------------------------------------------------------------------------------
+A clock strikes once at 1 o'clock, twice at 2, etc. How many times does it strike in a 12-hour period? What happened to how many times have we used clocks during the year? One, when the 12-hour day of January 23rd, 1798 ran for 12 consecutive months. What happens when six of your clocks go wrong at 9 o'clock the same month with six consecutive months in the same year
+--------------------------------------------------------------------------------
+Diversidad: 0.957 | Polaridad: 0.100
+
+Prompt: Write about the day that sound visited silence.
+--------------------------------------------------------------------------------
+Write about the day that sound visited silence.
+
+When you play that one with someone other than you, do they just want to take off their shoes on stage or are they just excited about the next performance from the band? I like what the show was like though.
+
+There was a time when there was a big push ahead for
+--------------------------------------------------------------------------------
+Diversidad: 0.933 | Polaridad: 0.130
+
+Prompt: I'm worried about my job interview next week.
+--------------------------------------------------------------------------------
+I'm worried about my job interview next week. I'd better know a guy who works a lot, and I don't always remember my own work experience, because what I really want to figure out is how to be an active part of the company, because it was never me that drew fire.
+
+S: If any of the above is
+--------------------------------------------------------------------------------
+Diversidad: 0.983 | Polaridad: 0.194
+
+
+================================================================================
+PERFIL: STABLE
+================================================================================
+
+Prompt: Write about the day that sound visited silence.
+--------------------------------------------------------------------------------
+Write about the day that sound visited silence.
+
+
+So did the way the sound travels, and where it hits into my mind.
+
+
+It was from one of his letters that I read "We met in an office" and heard "I feel like no good-looking, very nervous" for 30 minutes on the track.
+
+
+
+--------------------------------------------------------------------------------
+Diversidad: 1.000 | Polaridad: 0.333
+
+Prompt: I'm grieving the loss of a loved one.
+--------------------------------------------------------------------------------
+I'm grieving the loss of a loved one.
+
+"It has been quite surreal for me and all of my family because I've read in our media that the parents are feeling a bit lost."
+
+The children, who have all since become adults, will live in her household after their first child turns 15.
+
+She said:
+--------------------------------------------------------------------------------
+Diversidad: 1.000 | Polaridad: 0.334
+
+Prompt: Describe biodiversity and why it matters.
+--------------------------------------------------------------------------------
+Describe biodiversity and why it matters.
+
+We have many different forms of plant life on Earth. Some plants in our own world are found all over the planet on an asari, and most are native to certain habitats and communities. This is one of the ways plant biology and our natural habitats intersect and contribute to their evolutionary destiny.
+--------------------------------------------------------------------------------
+Diversidad: 1.000 | Polaridad: 0.319
+

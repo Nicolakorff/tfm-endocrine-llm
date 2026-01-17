@@ -153,8 +153,8 @@ class ExperimentRunner:
     def run_dynamic_experiment(
         self,
         prompts_df: pd.DataFrame,
-        num_generations: int = 2,
-        max_new_tokens: int = 50,
+        num_generations: int = 5,
+        max_new_tokens: int = 60,
         update_interval: int = 5,
         save_path: str = None
     ) -> pd.DataFrame:
@@ -199,24 +199,11 @@ class ExperimentRunner:
 
         all_profiles = {**dynamic_profiles, **static_equivalents}
 
-        # Usar subset del dataset (10-15 prompts por categoría)
-        if 'category' in prompts_df.columns:
-            sample_prompts = prompts_df.groupby('category').apply(
-                lambda x: x.sample(min(10, len(x)), random_state=42)
-            ).reset_index(drop=True)
-        else:
-            # Si no hay categorías, sample simple
-            sample_prompts = prompts_df.sample(min(50, len(prompts_df)), random_state=42)
-
-        print(f"Usando {len(sample_prompts)} prompts para experimento dinámico")
-        print(f"Perfiles: {len(all_profiles)} (3 dinámicos + 3 estáticos)")
-        print(f"Total generaciones: {len(sample_prompts) * len(all_profiles) * num_generations}\n")
-
         dynamic_results = []
-        total_iterations = len(sample_prompts) * len(all_profiles) * num_generations
+        total_iterations = len(prompts_df) * len(all_profiles) * num_generations
 
         with tqdm(total=total_iterations, desc="Progreso dinámico") as pbar:
-            for _, prompt_row in sample_prompts.iterrows():
+            for _, prompt_row in prompts_df.iterrows():
                 prompt = prompt_row['prompt']
                 category = prompt_row.get('category', 'general')
 

@@ -19,7 +19,7 @@ OUTPUT_FILE = DATA_DIR / "results/phase4_dynamic_results.csv"
 
 # Parámetros del experimento
 NUM_GENERATIONS = 3          # Repeticiones por combinación
-MAX_NEW_TOKENS = 50         # Longitud de generación
+MAX_NEW_TOKENS = 60         # Longitud de generación
 UPDATE_INTERVAL = 5         # Actualizar hormonas cada 5 tokens
 
 # Verificar GPU

@@ -1,0 +1,795 @@
+================================================================================
+ANÁLISIS CUALITATIVO: EXPERIMENTO SEMÁNTICO V2
+================================================================================
+
+Total generaciones: 500
+Fecha: 2026-01-10 08:44:15
+
+
+================================================================================
+1. EFECTO DEL SESGO LÉXICO (Baseline vs Lexical)
+================================================================================
+
+
+--------------------------------------------------------------------------------
+Ejemplo 1
+--------------------------------------------------------------------------------
+
+BASELINE (sin modulación):
+----------------------------------------
+Prompt: Describe the world through the eyes of a cat.
+Texto generado:
+  Describe the world through the eyes of a cat.
+
+How is this cat a cat?
+
+How do they see the world?
+
+
+We are going to introduce you to a cat named Lidia, a woman, who, while she is not well known by the people, has been having trouble keeping a cat like that! She's
+
+Métricas:
+  • Diversidad léxica (Distinct-2): 0.981
+  • Polaridad sentimiento: -0.250
+  • Tasa repetición: 0.000
+  • Longitud: 54 tokens
+
+Activación semántica:
+  • Empathy: 0.135
+  • Creativity: 0.240
+  • Caution: 0.102
+  • Categoría dominante: creativity
+
+LÉXICO (perfil empático):
+----------------------------------------
+Prompt: Describe the world through the eyes of a cat.
+Texto generado:
+  Describe the world through the eyes of a cat.
+
+See an example.
+
+Examples:
+
+
+open/close all folders
+
+Anime and Manga
+
+Film
+
+Literature
+
+Audio Drama and Fable: Lina gives the world some strange visuals. She is depicted as playing the heroine to a lovable girl,
+
+Métricas:
+  • Diversidad léxica (Distinct-2): 0.976
+  • Polaridad sentimiento: 0.225
+  • Tasa repetición: 0.000
+  • Longitud: 43 tokens
+
+Activación semántica:
+  • Empathy: 0.052
+  • Creativity: 0.378
+  • Caution: 0.030
+  • Categoría dominante: creativity
+
+COMPARACIÓN:
+  • Δ Distinct-2: -0.005
+  • Δ Sentimiento: +0.475
+
+
+--------------------------------------------------------------------------------
+Ejemplo 2
+--------------------------------------------------------------------------------
+
+BASELINE (sin modulación):
+----------------------------------------
+Prompt: If a pizza is cut into 8 equal slices and you eat 3, what fraction remains?
+Texto generado:
+  If a pizza is cut into 8 equal slices and you eat 3, what fraction remains?
+
+A pizza is made of one slice of dough and the other slice of bread.
+
+The size of your pizza can vary depending on how much moisture you've burned your oven. In my experience, I prefer to eat something medium or heavy. Sometimes I prefer something bigger.
+
+The
+
+Métricas:
+  • Diversidad léxica (Distinct-2): 0.937
+  • Polaridad sentimiento: -0.025
+  • Tasa repetición: 0.016
+  • Longitud: 64 tokens
+
+Activación semántica:
+  • Empathy: 0.046
+  • Creativity: -0.046
+  • Caution: -0.051
+  • Categoría dominante: empathy
+
+LÉXICO (perfil empático):
+----------------------------------------
+Prompt: If a pizza is cut into 8 equal slices and you eat 3, what fraction remains?
+Texto generado:
+  If a pizza is cut into 8 equal slices and you eat 3, what fraction remains? The dough in your pizza is actually pretty thick as well. The thicker the dough, the easier it is to stick it in.
+
+Now, if you've eaten at restaurants this size, that kind of thing doesn't affect them in a bad way – they'll probably keep eating better. In
+
+Métricas:
+  • Diversidad léxica (Distinct-2): 0.984
+  • Polaridad sentimiento: 0.058
+  • Tasa repetición: 0.000
+  • Longitud: 65 tokens
+
+Activación semántica:
+  • Empathy: 0.060
+  • Creativity: -0.050
+  • Caution: -0.009
+  • Categoría dominante: empathy
+
+COMPARACIÓN:
+  • Δ Distinct-2: +0.048
+  • Δ Sentimiento: +0.083
+
+
+--------------------------------------------------------------------------------
+Ejemplo 3
+--------------------------------------------------------------------------------
+
+BASELINE (sin modulación):
+----------------------------------------
+Prompt: Three switches control three light bulbs in another room. How can you determine which switch controls which bulb?
+Texto generado:
+  Three switches control three light bulbs in another room. How can you determine which switch controls which bulb?
+
+In all three cases, the computer knows your current and how much time you've taken to open the door. This information is available in the following 3 ways:
+
+To enter the computer at the address, type your new or old username, email address and password.
+
+To exit
+
+Métricas:
+  • Diversidad léxica (Distinct-2): 0.984
+  • Polaridad sentimiento: 0.155
+  • Tasa repetición: 0.000
+  • Longitud: 65 tokens
+
+Activación semántica:
+  • Empathy: 0.044
+  • Creativity: 0.039
+  • Caution: -0.022
+  • Categoría dominante: empathy
+
+LÉXICO (perfil empático):
+----------------------------------------
+Prompt: Three switches control three light bulbs in another room. How can you determine which switch controls which bulb?
+Texto generado:
+  Three switches control three light bulbs in another room. How can you determine which switch controls which bulb? This is a bit of a mystery to me. To tell, that is where I'd place an atomic bomb; but I wouldn't rule that out unless you put two in, e.g., for a switch which controls one bulb and is in a window on the other. A switch does more
+
+Métricas:
+  • Diversidad léxica (Distinct-2): 0.985
+  • Polaridad sentimiento: 0.258
+  • Tasa repetición: 0.000
+  • Longitud: 68 tokens
+
+Activación semántica:
+  • Empathy: 0.005
+  • Creativity: 0.055
+  • Caution: -0.007
+  • Categoría dominante: creativity
+
+COMPARACIÓN:
+  • Δ Distinct-2: +0.001
+  • Δ Sentimiento: +0.104
+
+
+================================================================================
+2. EFECTO DEL SESGO SEMÁNTICO (Lexical vs Semantic-Empathy)
+================================================================================
+
+Criterio de selección: Prompts con MAYOR CONTRASTE en Distinct-2
+
+
+--------------------------------------------------------------------------------
+Ejemplo con contraste alto (diferencia: 0.079)
+--------------------------------------------------------------------------------
+
+LÉXICO (solo modulación hormonal):
+----------------------------------------
+Prompt: I feel overwhelmed by my workload this week.
+Texto generado:
+  I feel overwhelmed by my workload this week. I can't finish another post that isn't an award. It would be amazing to see you in my office for work today. Thank you!
+
+I also noticed a bunch of folks who asked: "I will get my second book and the next one will be this one and I will share
+
+Métricas:
+  • Diversidad léxica (Distinct-2): 1.000
+  • Polaridad sentimiento: 0.250
+  • Tasa repetición: 0.000
+  • Longitud: 59 tokens
+
+Activación semántica:
+  • Empathy: 0.220
+  • Creativity: 0.224
+  • Caution: 0.048
+  • Categoría dominante: enthusiasm
+
+Prompt: I feel overwhelmed by my workload this week.
+Texto generado:
+  I feel overwhelmed by my workload this week. Not to mention it feels like our work has stalled for some time. I really wish the guys I spoke to wouldn't have called me and said my problems didn't really appear."
+
+On how many nights at DVRs are necessary after an evening in the office: "There might be times
+
+Métricas:
+  • Diversidad léxica (Distinct-2): 1.000
+  • Polaridad sentimiento: 0.225
+  • Tasa repetición: 0.000
+  • Longitud: 58 tokens
+
+Activación semántica:
+  • Empathy: 0.203
+  • Creativity: 0.055
+  • Caution: 0.157
+  • Categoría dominante: empathy
+
+SEMÁNTICO (hormonal + embeddings):
+----------------------------------------
+Prompt: I feel overwhelmed by my workload this week.
+Texto generado:
+  I feel overwhelmed by my workload this week. I just want to get in touch so that you can check into the clinic. I know you're busy on the phone so I want to get in touch with you before any other calls happen and let you know what I am doing. I know my new boss isn't up to playing with his schedule
+
+Métricas:
+  • Diversidad léxica (Distinct-2): 0.921
+  • Polaridad sentimiento: 0.037
+  • Tasa repetición: 0.048
+  • Longitud: 64 tokens
+
+Activación semántica:
+  • Empathy: 0.202
+  • Creativity: -0.066
+  • Caution: 0.033
+  • Categoría dominante: empathy
+  • Coherencia con objetivo: 0.202
+
+
+--------------------------------------------------------------------------------
+Ejemplo con contraste alto (diferencia: 0.075)
+--------------------------------------------------------------------------------
+
+LÉXICO (solo modulación hormonal):
+----------------------------------------
+Prompt: Explain the concept of entropy.
+Texto generado:
+  Explain the concept of entropy.
+
+Exposing the concept of a number.
+
+Explain the problem of the infinite.
+
+The theory for the notion of space.
+
+This is a very broad way to get to know what a universe means (or might say):
+
+Métricas:
+  • Diversidad léxica (Distinct-2): 0.925
+  • Polaridad sentimiento: 0.081
+  • Tasa repetición: 0.026
+  • Longitud: 41 tokens
+
+Activación semántica:
+  • Empathy: 0.019
+  • Creativity: 0.213
+  • Caution: 0.111
+  • Categoría dominante: creativity
+
+SEMÁNTICO (hormonal + embeddings):
+----------------------------------------
+Prompt: Explain the concept of entropy.
+Texto generado:
+  Explain the concept of entropy. In it, he calls it how "we know we're not there (and so all are), but we know that there are lots of things, the other things are the things, that the universe exists, so to have this idea of that is pretty revolutionary, but it isn't just in the
+
+Métricas:
+  • Diversidad léxica (Distinct-2): 1.000
+  • Polaridad sentimiento: 0.062
+  • Tasa repetición: 0.000
+  • Longitud: 55 tokens
+
+Activación semántica:
+  • Empathy: 0.069
+  • Creativity: 0.254
+  • Caution: 0.167
+  • Categoría dominante: creativity
+  • Coherencia con objetivo: 0.069
+
+
+--------------------------------------------------------------------------------
+Ejemplo con contraste alto (diferencia: 0.062)
+--------------------------------------------------------------------------------
+
+LÉXICO (solo modulación hormonal):
+----------------------------------------
+Prompt: Write about a game where the rules change constantly.
+Texto generado:
+  Write about a game where the rules change constantly.
+
+When playing a game on the iPhone I really don't want to play with an iPad.
+
+This seems like a good way to avoid annoying players who want you to play for real and it seems like they're doing the same with playing on the iPad.
+
+It's a feature
+
+Métricas:
+  • Diversidad léxica (Distinct-2): 0.930
+  • Polaridad sentimiento: -0.062
+  • Tasa repetición: 0.000
+  • Longitud: 58 tokens
+
+Activación semántica:
+  • Empathy: 0.063
+  • Creativity: 0.089
+  • Caution: 0.052
+  • Categoría dominante: creativity
+
+Prompt: Write about a game where the rules change constantly.
+Texto generado:
+  Write about a game where the rules change constantly. Sometimes you need to look for new techniques when you're running in real-life time. And the process of reviewing the game is the best one I can get. That said, it's still a work in progress.
+
+What's unique is the game is incredibly fun. That said, many
+
+Métricas:
+  • Diversidad léxica (Distinct-2): 0.927
+  • Polaridad sentimiento: 0.123
+  • Tasa repetición: 0.019
+  • Longitud: 56 tokens
+
+Activación semántica:
+  • Empathy: 0.095
+  • Creativity: 0.300
+  • Caution: 0.165
+  • Categoría dominante: creativity
+
+SEMÁNTICO (hormonal + embeddings):
+----------------------------------------
+Prompt: Write about a game where the rules change constantly.
+Texto generado:
+  Write about a game where the rules change constantly. The game is so good because it uses it so much. It's really great here and there. The only way to go is to start by reviewing game review games by the fans of the original games. This game made my review by having it for 4-7 hours and it made me think about
+
+Métricas:
+  • Diversidad léxica (Distinct-2): 1.000
+  • Polaridad sentimiento: 0.031
+  • Tasa repetición: 0.000
+  • Longitud: 63 tokens
+
+Activación semántica:
+  • Empathy: 0.096
+  • Creativity: 0.266
+  • Caution: 0.134
+  • Categoría dominante: creativity
+  • Coherencia con objetivo: 0.096
+
+Prompt: Write about a game where the rules change constantly.
+Texto generado:
+  Write about a game where the rules change constantly. "I was like, 'Yeah, but how will I fix the first rule?' So I wrote me a new rule, or maybe 'Yeah, you could fix what I said so don't change it.' You know what we did with "Upturnum": I made a new character and
+
+Métricas:
+  • Diversidad léxica (Distinct-2): 0.981
+  • Polaridad sentimiento: 0.025
+  • Tasa repetición: 0.000
+  • Longitud: 54 tokens
+
+Activación semántica:
+  • Empathy: 0.102
+  • Creativity: 0.202
+  • Caution: 0.160
+  • Categoría dominante: creativity
+  • Coherencia con objetivo: 0.102
+
+
+--------------------------------------------------------------------------------
+Ejemplo con contraste alto (diferencia: 0.060)
+--------------------------------------------------------------------------------
+
+LÉXICO (solo modulación hormonal):
+----------------------------------------
+Prompt: What are the main differences between classical and quantum physics?
+Texto generado:
+  What are the main differences between classical and quantum physics?
+
+"Physicists like to try and understand things. In fact, in an ordinary field there is almost zero difference between the states of matter that describe how particles, molecules and subatomic particles behave in the body and, in the next step, what's happening inside them to produce them."
+
+Métricas:
+  • Diversidad léxica (Distinct-2): 0.982
+  • Polaridad sentimiento: -0.021
+  • Tasa repetición: 0.000
+  • Longitud: 57 tokens
+
+Activación semántica:
+  • Empathy: -0.026
+  • Creativity: 0.083
+  • Caution: -0.040
+  • Categoría dominante: creativity
+
+Prompt: What are the main differences between classical and quantum physics?
+Texto generado:
+  What are the main differences between classical and quantum physics?
+
+The main difference is that quantum mechanics describes the quantum distribution of masses. The major difference between classical and quantum physics is that quantum physics does not follow an exact formula to describe a quantum system. These are called quantum vacuum, quantum double-wave, and photon physics.
+
+A second important
+
+Métricas:
+  • Diversidad léxica (Distinct-2): 0.879
+  • Polaridad sentimiento: 0.115
+  • Tasa repetición: 0.053
+  • Longitud: 59 tokens
+
+Activación semántica:
+  • Empathy: -0.061
+  • Creativity: 0.005
+  • Caution: -0.098
+  • Categoría dominante: creativity
+
+SEMÁNTICO (hormonal + embeddings):
+----------------------------------------
+Prompt: What are the main differences between classical and quantum physics?
+Texto generado:
+  What are the main differences between classical and quantum physics?
+
+A. This is more often a matter of subjective opinion as you're always thinking about it, like if it was true that there are four photons.
+
+B. It's more typically you're thinking about things outside this particular area, like the light of your own hand. Or,
+
+Métricas:
+  • Diversidad léxica (Distinct-2): 0.982
+  • Polaridad sentimiento: 0.252
+  • Tasa repetición: 0.000
+  • Longitud: 56 tokens
+
+Activación semántica:
+  • Empathy: -0.019
+  • Creativity: 0.125
+  • Caution: 0.015
+  • Categoría dominante: creativity
+  • Coherencia con objetivo: -0.019
+
+Prompt: What are the main differences between classical and quantum physics?
+Texto generado:
+  What are the main differences between classical and quantum physics?
+
+Mick: Classical is how I learned to calculate with a few words in English in school: it took about 18 months, for example, (in my home, when I was 4, I had this experience of learning by doing – as I get older and more sophisticated that I am,
+
+Métricas:
+  • Diversidad léxica (Distinct-2): 1.000
+  • Polaridad sentimiento: 0.142
+  • Tasa repetición: 0.000
+  • Longitud: 59 tokens
+
+Activación semántica:
+  • Empathy: -0.030
+  • Creativity: 0.037
+  • Caution: -0.078
+  • Categoría dominante: enthusiasm
+  • Coherencia con objetivo: -0.030
+
+
+--------------------------------------------------------------------------------
+Ejemplo con contraste alto (diferencia: 0.055)
+--------------------------------------------------------------------------------
+
+LÉXICO (solo modulación hormonal):
+----------------------------------------
+Prompt: I'm scared of being alone forever.
+Texto generado:
+  I'm scared of being alone forever. I feel like this would be for my whole family someday. Do not leave."
+
+She also wrote a poem, about what she called an obsession with her new house, that she never heard anyone mention.
+
+A Facebook page titled "Dear Kitty, Why Do You Make Me This Sad?"
+
+Métricas:
+  • Diversidad léxica (Distinct-2): 1.000
+  • Polaridad sentimiento: -0.055
+  • Tasa repetición: 0.000
+  • Longitud: 54 tokens
+
+Activación semántica:
+  • Empathy: 0.266
+  • Creativity: 0.049
+  • Caution: 0.056
+  • Categoría dominante: empathy
+
+Prompt: I'm scared of being alone forever.
+Texto generado:
+  I'm scared of being alone forever. Just let it settle back down." She says this while he tries to calm down: "What do you like, Daddy?" Finally though her face drops a bit and she looks over at Daddy: "Well, let me start by telling you some jokes now. They're great!" She lets out a
+
+Métricas:
+  • Diversidad léxica (Distinct-2): 1.000
+  • Polaridad sentimiento: 0.127
+  • Tasa repetición: 0.000
+  • Longitud: 55 tokens
+
+Activación semántica:
+  • Empathy: 0.248
+  • Creativity: 0.003
+  • Caution: 0.093
+  • Categoría dominante: empathy
+
+SEMÁNTICO (hormonal + embeddings):
+----------------------------------------
+Prompt: I'm scared of being alone forever.
+Texto generado:
+  I'm scared of being alone forever. You see that in her face as well you see that on her face. And that's really where you're really scared right now. It hurts if I don't be what I am. You know how in certain circumstances you can't do that? You can't stand your own son and her.
+
+Métricas:
+  • Diversidad léxica (Distinct-2): 0.945
+  • Polaridad sentimiento: 0.300
+  • Tasa repetición: 0.019
+  • Longitud: 56 tokens
+
+Activación semántica:
+  • Empathy: 0.257
+  • Creativity: -0.020
+  • Caution: 0.023
+  • Categoría dominante: empathy
+  • Coherencia con objetivo: 0.257
+
+
+================================================================================
+3. COMPARACIÓN ENTRE CATEGORÍAS SEMÁNTICAS
+================================================================================
+
+Prompt seleccionado: Describe how wifi works.
+
+
+--------------------------------------------------------------------------------
+EMPATHY
+--------------------------------------------------------------------------------
+
+Prompt: Describe how wifi works.
+Texto generado:
+  Describe how wifi works.
+
+When wifi reaches a high point, it's generally that when you activate you have the ability to turn off your network and switch back on.
+
+The wifi then switches off to all the other features that were not built-in when you set the 'high' option of your router.
+
+Métricas:
+  • Diversidad léxica (Distinct-2): 0.980
+  • Polaridad sentimiento: 0.049
+  • Tasa repetición: 0.000
+  • Longitud: 52 tokens
+
+Activación semántica:
+  • Empathy: -0.093
+  • Creativity: 0.068
+  • Caution: -0.094
+  • Categoría dominante: enthusiasm
+  • Coherencia con objetivo: -0.093
+
+Prompt: Describe how wifi works.
+Texto generado:
+  Describe how wifi works. (10:25:36 PM, -) from szurik> brigade I hope we dont need it after i said what we just said, and as for the way we have to report bugs this is a bit much too much to describe. I do it because I like to
+
+Métricas:
+  • Diversidad léxica (Distinct-2): 1.000
+  • Polaridad sentimiento: 0.200
+  • Tasa repetición: 0.000
+  • Longitud: 49 tokens
+
+Activación semántica:
+  • Empathy: 0.051
+  • Creativity: 0.086
+  • Caution: 0.115
+  • Categoría dominante: enthusiasm
+  • Coherencia con objetivo: 0.051
+
+
+--------------------------------------------------------------------------------
+CREATIVITY
+--------------------------------------------------------------------------------
+
+Prompt: Describe how wifi works.
+Texto generado:
+  Describe how wifi works.
+
+What is my favorite thing about my new iPad?
+
+My newest tablet is the 4.8-inch N7 (1:4:3. My 6th Nexus 7). No questions, I'm not impressed so i made this post on how wifi works with that device. I
+
+Métricas:
+  • Diversidad léxica (Distinct-2): 0.976
+  • Polaridad sentimiento: 0.045
+  • Tasa repetición: 0.000
+  • Longitud: 43 tokens
+
+Activación semántica:
+  • Empathy: -0.013
+  • Creativity: 0.057
+  • Caution: -0.031
+  • Categoría dominante: enthusiasm
+  • Coherencia con objetivo: 0.057
+
+
+--------------------------------------------------------------------------------
+CAUTION
+--------------------------------------------------------------------------------
+
+Prompt: Describe how wifi works.
+Texto generado:
+  Describe how wifi works.
+
+In this video I explain how wifi works on Windows Vista and Windows 7, and then build code for our WiFi devices.
+
+We're building a network with a Raspberry Pi, the two devices we can take advantage of – the RPi, from a Pi Zero, and a Raspberry Pi
+
+Métricas:
+  • Diversidad léxica (Distinct-2): 0.962
+  • Polaridad sentimiento: 0.000
+  • Tasa repetición: 0.000
+  • Longitud: 53 tokens
+
+Activación semántica:
+  • Empathy: -0.072
+  • Creativity: 0.088
+  • Caution: -0.036
+  • Categoría dominante: enthusiasm
+  • Coherencia con objetivo: -0.036
+
+
+================================================================================
+4. ANÁLISIS DE COHERENCIA SEMÁNTICA
+================================================================================
+
+TOP 3: MAYOR COHERENCIA SEMÁNTICA
+--------------------------------------------------------------------------------
+
+Coherencia: 0.562 | Condición: semantic_creativity
+Prompt: How would you define creativity?
+Texto generado:
+  How would you define creativity?
+
+Chen Yili: One of my favorite creative things is "What happens next?" or other creative projects, like the "Noodle Doodles" and other ones. "What happens to me then, with the "Hip Hop" world in the future?" That's just an
+
+Métricas:
+  • Diversidad léxica (Distinct-2): 0.977
+  • Polaridad sentimiento: 0.179
+  • Tasa repetición: 0.000
+  • Longitud: 44 tokens
+
+Activación semántica:
+  • Empathy: 0.035
+  • Creativity: 0.562
+  • Caution: 0.105
+  • Categoría dominante: creativity
+  • Coherencia con objetivo: 0.562
+----------------------------------------
+
+Coherencia: 0.548 | Condición: semantic_creativity
+Prompt: How would you define creativity?
+Texto generado:
+  How would you define creativity?
+
+I think the idea of it is very good to do it for people, in terms of building those communities. There will be a period at various points when the first things that were needed to be needed were and then as time went by people would go out into the real world so many things
+
+Métricas:
+  • Diversidad léxica (Distinct-2): 1.000
+  • Polaridad sentimiento: 0.372
+  • Tasa repetición: 0.000
+  • Longitud: 61 tokens
+
+Activación semántica:
+  • Empathy: 0.016
+  • Creativity: 0.548
+  • Caution: 0.120
+  • Categoría dominante: creativity
+  • Coherencia con objetivo: 0.548
+----------------------------------------
+
+Coherencia: 0.528 | Condición: semantic_creativity
+Prompt: How would you define creativity?
+Texto generado:
+  How would you define creativity? And what about the power of culture? Are you looking to turn your work into an art – music or cinema?
+
+So far you had some good points about what it is you are doing on the blog, you know? The key is not being too self-conscious, if you are a
+
+Métricas:
+  • Diversidad léxica (Distinct-2): 0.982
+  • Polaridad sentimiento: 0.267
+  • Tasa repetición: 0.000
+  • Longitud: 56 tokens
+
+Activación semántica:
+  • Empathy: 0.116
+  • Creativity: 0.528
+  • Caution: 0.088
+  • Categoría dominante: creativity
+  • Coherencia con objetivo: 0.528
+----------------------------------------
+
+
+BOTTOM 3: MENOR COHERENCIA SEMÁNTICA
+--------------------------------------------------------------------------------
+
+Coherencia: -0.144 | Condición: semantic_caution
+Prompt: What causes different blood types?
+Texto generado:
+  What causes different blood types?
+
+Preliminary results suggest that testosterone, but not follicle-stimulating hormone (FSH), causes the changes in the menstrual cycle. It can also affect both testosterone levels and progestins, or a combination of all five. FSH regulates many important hormones, such as growth factors
+
+Métricas:
+  • Diversidad léxica (Distinct-2): 1.000
+  • Polaridad sentimiento: 0.225
+  • Tasa repetición: 0.000
+  • Longitud: 46 tokens
+
+Activación semántica:
+  • Empathy: -0.138
+  • Creativity: -0.112
+  • Caution: -0.144
+  • Categoría dominante: factual
+  • Coherencia con objetivo: -0.144
+----------------------------------------
+
+Coherencia: -0.115 | Condición: semantic_caution
+Prompt: What is the difference between virtual reality and augmented reality?
+Texto generado:
+  What is the difference between virtual reality and augmented reality?
+
+Virtual reality is a much simpler process than augmented reality. Unlike augmented reality, there is a lot of variation when it comes to what it is and what it is not. It depends on different devices, which has other differences as well. It is not like that when it comes to creating a
+
+Métricas:
+  • Diversidad léxica (Distinct-2): 0.871
+  • Polaridad sentimiento: 0.025
+  • Tasa repetición: 0.049
+  • Longitud: 63 tokens
+
+Activación semántica:
+  • Empathy: 0.001
+  • Creativity: 0.023
+  • Caution: -0.115
+  • Categoría dominante: creativity
+  • Coherencia con objetivo: -0.115
+----------------------------------------
+
+Coherencia: -0.109 | Condición: semantic_empathy
+Prompt: What was the Scientific Revolution?
+Texto generado:
+  What was the Scientific Revolution?
+
+
+It wasn't just that we were beginning to experiment with using DNA. It was that we weren't even sure what we were building at the time. The new material could make DNA very much like bacteria – there were some really rough assumptions about how they could reproduce, but most would say they
+
+Métricas:
+  • Diversidad léxica (Distinct-2): 0.965
+  • Polaridad sentimiento: 0.259
+  • Tasa repetición: 0.000
+  • Longitud: 58 tokens
+
+Activación semántica:
+  • Empathy: -0.109
+  • Creativity: 0.205
+  • Caution: 0.086
+  • Categoría dominante: creativity
+  • Coherencia con objetivo: -0.109
+----------------------------------------
+
+
+================================================================================
+5. ESTADÍSTICAS RESUMEN
+================================================================================
+
+Métricas promedio por condición:
+
+                    distinct_2           sentiment_polarity           repetition_rate           semantic_coherence          
+                          mean       std               mean       std            mean       std               mean       std
+condition                                                                                                                   
+baseline              0.952887  0.060183           0.132156  0.226952        0.016830  0.036110                NaN       NaN
+lexical_empathy       0.979807  0.030829           0.137936  0.161279        0.005168  0.016230                NaN       NaN
+semantic_caution      0.976610  0.029789           0.173184  0.175125        0.004499  0.014275           0.079603  0.098989
+semantic_creativity   0.978164  0.038674           0.120563  0.206778        0.006559  0.024325           0.144950  0.129754
+semantic_empathy      0.979071  0.030063           0.163721  0.226323        0.005622  0.020164           0.087376  0.095515
+
+
+================================================================================
+FIN DEL ANÁLISIS CUALITATIVO
+================================================================================

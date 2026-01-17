@@ -27,7 +27,7 @@ OUTPUT_DIR = Path("data/results/semantic_comparison_v2")
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
 # Generaciones por condición
-N_PER_CONDITION = 100  # Balanceado
+N_PER_CONDITION = 250  # Balanceado
 
 # Configuración experimental
 SEMANTIC_STRENGTH = 3.0  # Aumentado de 1.5 a 3.0
@@ -91,14 +91,14 @@ experimental_conditions = [
     {
         'name': 'semantic_creativity',
         'description': 'Sesgo semántico creativity (parcialmente coherente)',
-        'hormone_profile': HORMONE_PROFILES["empathic"],  # ¡Conflicto intencional!
+        'hormone_profile': HORMONE_PROFILES["empathic"],  # conflicto intencional
         'semantic_category': 'creativity',
         'semantic_strength': SEMANTIC_STRENGTH
     },
     {
         'name': 'semantic_caution',
         'description': 'Sesgo semántico caution (opuesto a empático)',
-        'hormone_profile': HORMONE_PROFILES["empathic"],  # ¡Conflicto máximo!
+        'hormone_profile': HORMONE_PROFILES["empathic"],  # conflicto alto
         'semantic_category': 'caution',
         'semantic_strength': SEMANTIC_STRENGTH
     }
@@ -291,7 +291,7 @@ print()
 
 # 2. Métricas por condición
 print("2. Métricas promedio por condición:")
-metrics_cols = ['distinct_2', 'sentiment_polarity', 'repetition_rate', 'length']
+metrics_cols = ['distinct_2', 'sentiment_polarity', 'repetition_rate', 'length', 'perplexity']
 summary = df.groupby('condition')[metrics_cols].agg(['mean', 'std'])
 print(summary.round(4))
 print()
@@ -325,7 +325,7 @@ from scipy import stats
 lexical = df[df['condition'] == 'lexical_empathy']
 semantic_emp = df[df['condition'] == 'semantic_empathy']
 
-for metric in ['distinct_2', 'repetition_rate', 'sentiment_polarity']:
+for metric in ['distinct_2', 'repetition_rate', 'sentiment_polarity', 'perplexity']:
     lex_vals = lexical[metric].dropna()
     sem_vals = semantic_emp[metric].dropna()
     

@@ -1,0 +1,32 @@
+\begin{table}[h]
+\centering
+\caption{Correlaciones significativas entre niveles hormonales y métricas de texto}
+\label{tab:hormone_correlations}
+\begin{tabular}{llccc}
+\hline
+\textbf{Hormona} & \textbf{Métrica} & \textbf{r} & \textbf{p} & \textbf{Interpretación} \\
+\hline
+Dopamine & perplexity & 0.249 & < 0.001$^{***}$ & débil positiva \\
+Cortisol & perplexity & -0.233 & < 0.001$^{***}$ & débil negativa \\
+Adrenaline & distinct 2 & -0.224 & < 0.001$^{***}$ & débil negativa \\
+Serotonin & perplexity & 0.193 & < 0.001$^{***}$ & débil positiva \\
+Serotonin & distinct 2 & 0.168 & < 0.001$^{***}$ & débil positiva \\
+Adrenaline & perplexity & -0.154 & < 0.001$^{***}$ & débil negativa \\
+Dopamine & distinct 2 & 0.149 & < 0.001$^{***}$ & débil positiva \\
+Adrenaline & repetition rate & 0.135 & < 0.001$^{***}$ & débil positiva \\
+Cortisol & distinct 2 & -0.107 & < 0.001$^{***}$ & débil negativa \\
+Oxytocin & perplexity & 0.067 & < 0.001$^{***}$ & débil positiva \\
+Serotonin & repetition rate & -0.045 & < 0.001$^{***}$ & débil negativa \\
+Cortisol & repetition rate & -0.044 & < 0.001$^{***}$ & débil negativa \\
+Oxytocin & distinct 2 & 0.040 & 0.001$^{**}$ & débil positiva \\
+Dopamine & repetition rate & -0.032 & 0.009$^{**}$ & débil negativa \\
+Serotonin & length & 0.031 & 0.013$^{*}$ & débil positiva \\
+Adrenaline & length & -0.030 & 0.016$^{*}$ & débil negativa \\
+\hline
+\end{tabular}
+\begin{tablenotes}
+\small
+\item Nota: $^{*}$p < 0.05, $^{**}$p < 0.01, $^{***}$p < 0.001
+\item Interpretación de r: |r| < 0.3 (débil), 0.3-0.5 (moderada), > 0.5 (fuerte)
+\end{tablenotes}
+\end{table}
