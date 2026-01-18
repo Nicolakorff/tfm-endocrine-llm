@@ -32,7 +32,7 @@ N_PER_CONDITION = 250  # Balanceado
 
 # Configuración experimental
 SEMANTIC_STRENGTH = 3.0  # Aumentado de 1.5 a 3.0
-MAX_NEW_TOKENS = 60
+MAX_NEW_TOKENS = 80
 
 print("="*80)
 print("EXPERIMENTO MEJORADO: LÉXICO VS SEMÁNTICO")
