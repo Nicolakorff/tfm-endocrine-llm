@@ -7,7 +7,8 @@ Experimento Fase 3: Comparación Léxico vs Semántico
 from endocrine_llm import (
     EndocrineModulatedLLM,
     HORMONE_PROFILES,
-    TextMetrics
+    TextMetrics,
+    AdvancedMetrics,
 )
 from endocrine_llm.semantic import (
     SemanticBiasManager,
@@ -47,6 +48,9 @@ print()
 
 print("Inicializando modelo...")
 model = EndocrineModulatedLLM("gpt2")
+
+print("Inicializando métricas avanzadas (perplexity)...")
+advanced_metrics = AdvancedMetrics(model.model, model.tokenizer, model.device)
 
 print("Inicializando SemanticBiasManager...")
 semantic_manager = SemanticBiasManager(model.tokenizer, device=model.device)
@@ -200,6 +204,13 @@ with tqdm(total=total_generations, desc="Generaciones totales") as pbar:
                 
                 # Métricas básicas
                 metrics = TextMetrics.compute_all(generated_text)
+
+                # Perplexity con el modelo base (puede fallar puntualmente)
+                try:
+                    metrics['perplexity'] = advanced_metrics.compute_perplexity(generated_text)
+                except Exception as e:
+                    print(f"  Error calculando perplexity: {e}")
+                    metrics['perplexity'] = float('nan')
                 
                 # Análisis semántico (para todas las condiciones)
                 semantic_analysis = analyze_semantic_activation(
