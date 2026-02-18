@@ -15,10 +15,10 @@ Sistema biológicamente inspirado que modula la generación de texto en LLMs med
 
 ## Notebooks demo para Colab:
 
-1. Demo basic: [![Open In Colab](https://colab.research.google.com/drive/1oozkxQkSFVE0itr-IlzBGLAIwFdZ1nZx?usp=drive_link)
-2. Demo isolated: [![Open In Colab](https://colab.research.google.com/drive/1GpIASEVdCiJDkmeE2wY4536GpDrp1yil?usp=drive_link)
-3. Demo semantic: [![Open In Colab](https://colab.research.google.com/drive/1gVMihyl-DJEP73cHHO6BnehwnPuBJAFP?usp=drive_link)
-4. Demo dynamic: [![Open In Colab](https://colab.research.google.com/drive/1Xxl0M1H-ckstMC5Oi7h5pz3hNps-uthA?usp=drive_link)
+1. Demo isolated: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1oozkxQkSFVE0itr-IlzBGLAIwFdZ1nZx?usp=sharing)
+2. Demo profiles: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1GpIASEVdCiJDkmeE2wY4536GpDrp1yil?usp=sharing)
+3. Demo semantic: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1gVMihyl-DJEP73cHHO6BnehwnPuBJAFP?usp=sharing)
+4. Demo dynamic: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1Xxl0M1H-ckstMC5Oi7h5pz3hNps-uthA?usp=sharing)
 
 ---
 
