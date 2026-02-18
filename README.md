@@ -180,18 +180,18 @@ texts = model.generate_with_semantic_bias(
                      │
          ┌───────────▼────────────┐
          │  Procesador de Logits  │
-         │  • Temperatura          │
-         │  • Top-K dinámico       │
-         │  • Suavizado            │
-         │  • Sesgo prosocial      │
+         │  • Temperatura         │
+         │  • Top-K dinámico      │
+         │  • Suavizado           │
+         │  • Sesgo prosocial     │
          └───────────┬────────────┘
                      │
          ┌───────────▼────────────┐
          │  Feedback (Dinámico)   │
-         │  • Confianza            │
-         │  • Entropía             │
-         │  • Repetición           │
-         │  • Sentimiento          │
+         │  • Confianza           │
+         │  • Entropía            │
+         │  • Repetición          │
+         │  • Sentimiento         │
          └────────────────────────┘
 ```
 
