@@ -355,7 +355,6 @@ Este proyecto está bajo la Licencia MIT - ver el archivo [LICENSE](LICENSE) par
 ## Contacto
 
 **Nicola Korff**  
-nicola.korff@example.com  
 GitHub](https://github.com/Nicolakorff) | [LinkedIn](https://www.linkedin.com/in/nicolakorff)
 
 ---
