@@ -91,7 +91,7 @@ print(texts[0])
 | **Perplexity**        | 28.95       | 17.24  | +67.9%     | <0.001  | 1.05      |
 | **Hormonal change**   | 0.18 ± 0.09 | 0.00   | –          | –       | –         |
 
-> **Interpreting the results:** dynamic mode reduces repetition and increases lexical diversity, but at the cost of higher perplexity (large effect, d = 1.05). This suggests the generated text drifts further from the base model's distribution; whether that trade-off is acceptable depends on the use case (creativity vs. fidelity). *[Review this interpretation and adjust it to your thesis conclusions.]*
+> **Interpreting the results:** dynamic mode reduces repetition and increases lexical diversity, but at the cost of higher perplexity (large effect, d = 1.05). This suggests the generated text drifts further from the base model's distribution; whether that trade-off is acceptable depends on the use case (creativity vs. fidelity). 
 
 ### Semantic vs. lexical bias
 
@@ -376,7 +376,7 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 **Nicola Korff**
 nicolavonkorff@gmail.com
-[GitHub](https://github.com/Nicolakorff) | [LinkedIn](https://www.linkedin.com/in/nicola-korff/)
+[GitHub](https://github.com/Nicolakorff) | [LinkedIn](https://www.linkedin.com/in/nicolakorff/)
 
 ---
 
