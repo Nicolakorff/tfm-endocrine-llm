@@ -91,7 +91,7 @@ print(texts[0])
 | **Perplejidad**       | 28.95       | 17.24    | +67.9%     | <0.001  | 1.05      |
 | **Cambio hormonal**   | 0.18 ± 0.09 | 0.00     | -          | -       | -         |
 
-> **Lectura de resultados:** el modo dinámico reduce la repetición y aumenta la diversidad léxica, pero a costa de una mayor perplejidad (efecto grande, d = 1.05). Esto indica que el texto se aleja de la distribución del modelo base; si ese coste es aceptable depende del caso de uso (creatividad frente a fidelidad). *[Revisa esta interpretación y ajústala a las conclusiones de tu memoria.]*
+> **Lectura de resultados:** el modo dinámico reduce la repetición y aumenta la diversidad léxica, pero a costa de una mayor perplejidad (efecto grande, d = 1.05). Esto indica que el texto se aleja de la distribución del modelo base; si ese coste es aceptable depende del caso de uso (creatividad frente a fidelidad).
 
 ### Sesgos semánticos vs. léxicos
 
