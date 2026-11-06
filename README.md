@@ -7,7 +7,7 @@
 
 > **TFM - Máster en Grandes Modelos de Lenguaje y Lingüística Computacional**
 > **Universidad:** Universidad de la Rioja | **Fecha:** Enero 2026
-> **Autor:** Nicola Korff | **Tutor:** Matías Nuñez 
+> **Autora:** Nicola Korff | **Tutor:** Matías Nuñez 
 
 Sistema biológicamente inspirado que modula la generación de texto en LLMs mediante un **sistema hormonal artificial** con 5 hormonas sintéticas que ajustan dinámicamente el comportamiento del modelo.
 
